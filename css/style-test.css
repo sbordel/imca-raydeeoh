@@ -61,7 +61,7 @@ body {
     margin: 0;
 }
 body a {
-    color: #0029ff;
+    color: #0000ff;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -88,9 +88,6 @@ body a:hover {
     /*margin: 10px;*/
     color: black;
 }
-#header a#submit {
-    color: yellowgreen;
-}
 #footer {
     text-align: center;
     margin-top: 30px;
@@ -110,7 +107,7 @@ body a:hover {
     text-align: center;
 }
 table {
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-collapse: separate;
     width:100%;
 }
@@ -158,8 +155,8 @@ td.block-start-time {
 
 }
 td.block-title {
-    background: blue;
-    color: white;
+    background: #ffff00;
+    color: #000000;
 }
 td.video-start-time {
     font-size: 20px;

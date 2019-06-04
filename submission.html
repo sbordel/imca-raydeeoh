@@ -20,7 +20,7 @@
   <input type="text" name="lastname" value="second">
   <br>
   <form>
-  pronouns* :<br>
+  <label for="pronouns">pronouns* :</label><br>
   <input type="radio" name="gender" value="GNC">they/them<br>
   <input type="radio" name="gender" value="female">she/her<br>
   <input type="radio" name="gender" value="male">he/him<br>
@@ -56,7 +56,7 @@
   link (personal website, mixcloud, facebook, instagram, etc.):<br>
   <input type="text" name="link" value="link">
   <br>
-  category of project propose* :<br>
+  category of project* :<br>
   <input type="radio" name="category" value="soundart">sound art<br>
   <input type="radio" name="category" value="fieldrecording"> field recording<br>
   <input type="radio" name="category" value="music">music (DIY or self-produced)<br>
@@ -69,7 +69,8 @@
   (if "other" selected):<br>
   <input type="text" name="othercategory" value="othercategory">
   <br>
-  day<br>
+    <label for="time">timeslots* (choose 3 timeslots for your show to be aired. one will be choosed according to availabilities) :</label>
+    <br><label for="day">day </label><br>
     <select name="day">
       <option value="monday">monday</option>
       <option value="tuesday">tuesday</option>
@@ -77,9 +78,7 @@
       <option value="thursday">thursday</option>
       <option value="friday">friday</option>
     </select>
-    <br><br>
-
-   time<br>
+    <br>
    from  :  <select name="day">
    <option value="">10:00 AM</option>
    <option value="">10:30 AM</option>
@@ -98,7 +97,6 @@
    <option value="">05:00 PM</option>
    <option value="">05:30 PM</option>
    </select>
-
    to  :<select name="day">
    <option value="">10:30 AM</option>
    <option value="">11:00 AM</option>
@@ -127,9 +125,7 @@
       <option value="thursday">thursday</option>
       <option value="friday">friday</option>
     </select>
-    <br><br>
-
-   time<br>
+    <br>
    from  :  <select name="day">
    <option value="">10:00 AM</option>
    <option value="">10:30 AM</option>
@@ -148,7 +144,6 @@
    <option value="">05:00 PM</option>
    <option value="">05:30 PM</option>
    </select>
-
    to  :<select name="day">
    <option value="">10:30 AM</option>
    <option value="">11:00 AM</option>
@@ -176,10 +171,8 @@
       <option value="thursday">thursday</option>
       <option value="friday">friday</option>
     </select>
-    <br><br>
-
-   time<br>
-   from  :  <select name="day">
+    <br>
+   from : <select name="day">
    <option value="">10:00 AM</option>
    <option value="">10:30 AM</option>
    <option value="">11:00 AM</option>

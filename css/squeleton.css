@@ -13,6 +13,31 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.body-about {
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(to bottom , #ccccff , #99ffcc);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.body-schedule {
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(to bottom , #99ffcc , #ff9966 , #ff9966);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.body-submission {
+  background-color: #ccccff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.body-archive {
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(to bottom , #ccff33 , #99ffcc);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 #main-logo{
-  size: 30%;
 }

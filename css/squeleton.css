@@ -39,5 +39,20 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* -- INDEX -- */
 #main-logo{
+  width: 55%;
+  padding: 10px;
+}
+#about-icon{
+  width: 24%;
+}
+#archive-icon{
+  width: 20%;
+}
+#submission-icon{
+  width: 20%;
+}
+#schedule-icon{
+  width: 20%;
 }

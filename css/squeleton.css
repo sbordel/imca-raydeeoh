@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'MisterPixel' ;
+  src: url(../fonts/misterpixel/otf/mister-pixel-tools.otf);
+}
+@font-face {
+  font-family: 'VG5000' ;
+  src: url(../fonts/vg5000/fonts/VG5000-Regular.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -40,8 +48,9 @@ html {
   background-attachment: fixed;
 }
 h2{
-  font-family:;
-  font-size: 2vh;
+  font-family: 'VG5000';
+  font-size: 2vw;
+  font-weight: lighter;
   color: #0033ff;
   text-decoration: underline;
 }
@@ -51,32 +60,65 @@ h2{
   padding-top:40px;
   padding-left:40px;
   padding-right: 20px;
-  margin-bottom: -15px;
+  margin-bottom: -5px;
 }
-.icon-box{
+.navigation-box{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.index-icons{
+.icon-box{
+  text-align: center;
 }
 #about-icon{
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 20%;
+  width: 78%;
+  margin-bottom: -12px;
+}
+#about-icon:hover{
+    -webkit-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
+     filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
 }
 #archive-icon{
-  padding-left: 15px;
-  padding-right: 10px;
-  width: 18%;
+  width: 74%;
+}
+#archive-icon:hover{
+    -webkit-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
+     filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
 }
 #submission-icon{
-  padding-left: 10px;
-  padding-right: 15px;
-  width: 18%;
+  width: 74%;
+}
+#submission-icon:hover{
+    -webkit-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
+     filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
 }
 #schedule-icon{
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 17%;
+  width: 74%;
+}
+#schedule-icon:hover{
+    -webkit-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
+     filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
+}
+/* player */
+#player-container{
+ text-align:center;
+ position:absolute;
+ bottom:0;
+ width:100%;
+}
+#player{
+ background-color:#000000;
+ padding:5px;
+  height: 30px;
+}
+input[type="image"]{
+ float:left;
+ height:20px;
+ margin-left:2px;
+ margin-right:5px;
+ margin-top:2px;
+}
+#volume-icon{
+ margin-left:10%;
+ width:1%;
 }

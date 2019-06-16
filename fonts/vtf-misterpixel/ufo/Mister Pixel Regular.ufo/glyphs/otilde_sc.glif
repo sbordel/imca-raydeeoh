@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="otilde.sc" format="1">
+  <advance width="564"/>
+  <unicode hex="E01E"/>
+  <outline>
+    <contour>
+      <point x="379" y="685" type="line"/>
+      <point x="441" y="685" type="line"/>
+      <point x="441" y="753" type="line"/>
+      <point x="373" y="753" type="line"/>
+      <point x="373" y="690" type="line"/>
+      <point x="316" y="690" type="line"/>
+      <point x="316" y="753" type="line"/>
+      <point x="248" y="753" type="line"/>
+      <point x="248" y="690" type="line"/>
+      <point x="185" y="690" type="line"/>
+      <point x="185" y="622" type="line"/>
+      <point x="254" y="622" type="line"/>
+      <point x="254" y="685" type="line"/>
+      <point x="310" y="685" type="line"/>
+      <point x="310" y="622" type="line"/>
+      <point x="379" y="622" type="line"/>
+    </contour>
+    <contour>
+      <point x="441" y="60" type="line"/>
+      <point x="504" y="60" type="line"/>
+      <point x="504" y="503" type="line"/>
+      <point x="441" y="503" type="line"/>
+      <point x="441" y="565" type="line"/>
+      <point x="123" y="565" type="line"/>
+      <point x="123" y="503" type="line"/>
+      <point x="60" y="503" type="line"/>
+      <point x="60" y="60" type="line"/>
+      <point x="123" y="60" type="line"/>
+      <point x="123" y="-3" type="line"/>
+      <point x="441" y="-3" type="line"/>
+    </contour>
+    <contour>
+      <point x="373" y="497" type="line"/>
+      <point x="373" y="65" type="line"/>
+      <point x="191" y="65" type="line"/>
+      <point x="191" y="497" type="line"/>
+    </contour>
+  </outline>
+</glyph>

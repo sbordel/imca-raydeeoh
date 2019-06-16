@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="four.osf" format="1">
+  <advance width="563"/>
+  <unicode hex="E004"/>
+  <outline>
+    <contour>
+      <point x="503" y="0" type="line"/>
+      <point x="503" y="68" type="line"/>
+      <point x="441" y="68" type="line"/>
+      <point x="441" y="568" type="line"/>
+      <point x="310" y="568" type="line"/>
+      <point x="310" y="506" type="line"/>
+      <point x="248" y="506" type="line"/>
+      <point x="248" y="443" type="line"/>
+      <point x="185" y="443" type="line"/>
+      <point x="185" y="318" type="line"/>
+      <point x="123" y="318" type="line"/>
+      <point x="123" y="193" type="line"/>
+      <point x="60" y="193" type="line"/>
+      <point x="60" y="0" type="line"/>
+      <point x="310" y="0" type="line"/>
+      <point x="310" y="-125" type="line"/>
+      <point x="441" y="-125" type="line"/>
+      <point x="441" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="310" y="68" type="line"/>
+      <point x="128" y="68" type="line"/>
+      <point x="128" y="188" type="line"/>
+      <point x="191" y="188" type="line"/>
+      <point x="191" y="313" type="line"/>
+      <point x="253" y="313" type="line"/>
+      <point x="253" y="438" type="line"/>
+      <point x="310" y="438" type="line"/>
+    </contour>
+  </outline>
+</glyph>

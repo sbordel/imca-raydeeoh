@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bullet" format="1">
+  <advance width="1006"/>
+  <unicode hex="2022"/>
+  <outline>
+    <contour>
+      <point x="1006" y="563" type="line"/>
+      <point x="1006" y="818" type="line"/>
+      <point x="0" y="818" type="line"/>
+      <point x="0" y="563" type="line"/>
+    </contour>
+    <contour>
+      <point x="1006" y="250" type="line"/>
+      <point x="1006" y="443" type="line"/>
+      <point x="0" y="443" type="line"/>
+      <point x="0" y="250" type="line"/>
+    </contour>
+    <contour>
+      <point x="1006" y="0" type="line"/>
+      <point x="1006" y="131" type="line"/>
+      <point x="0" y="131" type="line"/>
+      <point x="0" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="1006" y="-187" type="line"/>
+      <point x="1006" y="-119" type="line"/>
+      <point x="0" y="-119" type="line"/>
+      <point x="0" y="-187" type="line"/>
+    </contour>
+  </outline>
+</glyph>

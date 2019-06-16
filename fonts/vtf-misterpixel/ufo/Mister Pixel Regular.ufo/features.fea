@@ -1,0 +1,19 @@
+feature aalt{
+  feature smcp;
+  feature c2sc;
+  feature onum;
+} aalt;
+feature smcp { # Bdc > Petites Capitales
+    sub @bdc by @smcp;
+} smcp;
+feature c2sc { # Capitales > Petites Capitales
+    sub @cap by @smcp;
+} c2sc;
+feature onum { # Chiffres Old Style Variables
+    sub @cnum by @onum;
+} onum;
+
+
+
+
+

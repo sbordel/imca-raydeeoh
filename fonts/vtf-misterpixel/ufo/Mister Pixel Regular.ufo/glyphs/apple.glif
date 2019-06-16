@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="apple" format="1">
+  <advance width="435"/>
+  <outline>
+    <contour>
+      <point x="249" y="126" type="line"/>
+      <point x="375" y="126" type="line"/>
+      <point x="375" y="189" type="line"/>
+      <point x="249" y="189" type="line"/>
+      <point x="249" y="315" type="line"/>
+      <point x="375" y="315" type="line"/>
+      <point x="375" y="378" type="line"/>
+      <point x="60" y="378" type="line"/>
+      <point x="60" y="315" type="line"/>
+      <point x="186" y="315" type="line"/>
+      <point x="186" y="0" type="line"/>
+      <point x="249" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="60" y="630" type="line"/>
+      <point x="123" y="630" type="line"/>
+      <point x="123" y="504" type="line"/>
+      <point x="186" y="504" type="line"/>
+      <point x="186" y="441" type="line"/>
+      <point x="249" y="441" type="line"/>
+      <point x="249" y="504" type="line"/>
+      <point x="186" y="504" type="line"/>
+      <point x="186" y="630" type="line"/>
+      <point x="123" y="630" type="line"/>
+      <point x="123" y="819" type="line"/>
+      <point x="60" y="819" type="line"/>
+    </contour>
+    <contour>
+      <point x="312" y="630" type="line"/>
+      <point x="375" y="630" type="line"/>
+      <point x="375" y="819" type="line"/>
+      <point x="312" y="819" type="line"/>
+    </contour>
+    <contour>
+      <point x="249" y="504" type="line"/>
+      <point x="312" y="504" type="line"/>
+      <point x="312" y="630" type="line"/>
+      <point x="249" y="630" type="line"/>
+    </contour>
+  </outline>
+</glyph>

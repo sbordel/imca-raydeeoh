@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="oe.sc" format="1">
+  <advance width="751"/>
+  <unicode hex="E028"/>
+  <outline>
+    <contour>
+      <point x="123" y="-3" type="line"/>
+      <point x="691" y="-3" type="line"/>
+      <point x="691" y="65" type="line"/>
+      <point x="503" y="65" type="line"/>
+      <point x="503" y="247" type="line"/>
+      <point x="629" y="247" type="line"/>
+      <point x="629" y="315" type="line"/>
+      <point x="503" y="315" type="line"/>
+      <point x="503" y="497" type="line"/>
+      <point x="691" y="497" type="line"/>
+      <point x="691" y="565" type="line"/>
+      <point x="123" y="565" type="line"/>
+      <point x="123" y="503" type="line"/>
+      <point x="60" y="503" type="line"/>
+      <point x="60" y="60" type="line"/>
+      <point x="123" y="60" type="line"/>
+    </contour>
+    <contour>
+      <point x="373" y="497" type="line"/>
+      <point x="373" y="65" type="line"/>
+      <point x="191" y="65" type="line"/>
+      <point x="191" y="497" type="line"/>
+    </contour>
+  </outline>
+</glyph>

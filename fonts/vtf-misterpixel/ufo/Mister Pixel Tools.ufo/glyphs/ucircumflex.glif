@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ucircumflex" format="1">
+  <advance width="1006"/>
+  <unicode hex="00FB"/>
+  <outline>
+    <contour>
+      <point x="1006" y="-187" type="line"/>
+      <point x="1006" y="818" type="line"/>
+      <point x="938" y="818" type="line"/>
+      <point x="938" y="-187" type="line"/>
+    </contour>
+    <contour>
+      <point x="818" y="-187" type="line"/>
+      <point x="818" y="818" type="line"/>
+      <point x="688" y="818" type="line"/>
+      <point x="688" y="-187" type="line"/>
+    </contour>
+    <contour>
+      <point x="568" y="-187" type="line"/>
+      <point x="568" y="818" type="line"/>
+      <point x="375" y="818" type="line"/>
+      <point x="375" y="-187" type="line"/>
+    </contour>
+    <contour>
+      <point x="256" y="-187" type="line"/>
+      <point x="256" y="818" type="line"/>
+      <point x="0" y="818" type="line"/>
+      <point x="0" y="-187" type="line"/>
+    </contour>
+  </outline>
+</glyph>

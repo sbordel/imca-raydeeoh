@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sterling" format="1">
+  <advance width="1006"/>
+  <unicode hex="00A3"/>
+  <outline>
+    <contour>
+      <point x="1006" y="563" type="line"/>
+      <point x="1006" y="818" type="line"/>
+      <point x="0" y="818" type="line"/>
+      <point x="0" y="563" type="line"/>
+    </contour>
+    <contour>
+      <point x="1006" y="63" type="line"/>
+      <point x="1006" y="318" type="line"/>
+      <point x="0" y="318" type="line"/>
+      <point x="0" y="63" type="line"/>
+    </contour>
+  </outline>
+</glyph>

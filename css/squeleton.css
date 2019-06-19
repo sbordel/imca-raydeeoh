@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'MisterPixel' ;
-  src: url(../fonts/misterpixel/otf/mister-pixel-tools.otf);
+  src: url(../fonts/misterpixel/otf/mister-pixel-regular.otf);
 }
 @font-face {
   font-family: 'VG5000' ;
@@ -124,11 +124,13 @@ input[type="image"]{
  margin-left: -80%;
  width: 2%;
 }
-#change_vol{
-}
-#play-icon{
-}
-#pause-icon{
+p{
+  font-family: 'MisterPixel';
+  font-size: 1.25vw;
+  margin-top: 0.5%;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #ccff33;
 }
 
 /**** MOBILE DEVICE VERSION ****/
@@ -146,7 +148,14 @@ input[type="image"]{
   /*  position: fixed;*/
     width: 70%;
   }
+  #about-icon{
+    margin-bottom: -15%;
+  }
   h2{
     font-size: 3vw;
+    padding-bottom: 10%;  
+  }
+  #player-container{
+    display: none;
   }
 }

@@ -64,6 +64,30 @@ header{
   color: #0000ff;
   margin-left: 10%;
 }
+#return-button{
+  position: absolute;
+  font-family: 'VG5000';
+  font-size: 2vw;
+  font-weight: lighter;
+  text-decoration: none;
+  color: #000000;
+  top:0;
+  left:0;
+  margin-top: 3px;
+  margin-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  padding-left: 4.5px;
+  padding-right: 5px;
+}
+#return-button:hover{
+  border: 0.5px black dotted;
+  padding-top: 0.5px;
+  padding-bottom: 1.5px;
+  padding-left: 4px;
+  padding-right: 4.5px;
+  cursor: pointer;
+}
 h2{
   font-family: 'VG5000';
   font-size: 2vw;
@@ -87,7 +111,34 @@ h2{
   left:91%;
   margin-top: -8%;
 }
-
+#button-tab{
+  position: sticky;
+  text-align: center;
+  width: 100%;
+  margin-top: 6%;
+}
+button{
+  font-family: 'MisterPixel';
+  font-size: 1.4vw;
+  margin-top: 0.5%;
+  background-color: #FFFFFF;
+  border: 0.15vw black solid;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8% 4%;
+  /*padding: 10px 50px;*/
+  border-radius: 17px;
+  cursor: pointer;
+}
+button:hover{
+ color: #FFFFFF;
+ background-color: #000000;
+}
+button:active{
+ border: 0.15vw white dotted;
+}
 /* -- INDEX -- */
 #main-logo{
   width: 40%;
@@ -166,37 +217,21 @@ p{
   font-weight: lighter;
   color: #ccff33;
 }
-/* -- SCHEDULE-- */
-#button-tab{
-  position: sticky;
-  text-align: center;
-  width: 100%;
-  margin-top: 6%;
-}
-button{
-  font-family: 'MisterPixel';
-  font-size: 1.4vw;
-  margin-top: 0.5%;
-  background-color: #FFFFFF;
-  border: 0.15vw black solid;
+/* -- ABOUT -- */
+#about-page-title{
+  position: relative;
+  font-family: 'VG5000';
+  font-size: 4vw;
+  font-weight: lighter;
   color: #000000;
-  /*padding: 10px 50px;*/
-  padding: 0.8% 4%;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 17px;
-  /*margin: 2px 10px;*/
+}
+/* -- SCHEDULE-- */
+.schedule-button{
   margin: 0.2% 0.7%;
-  cursor: pointer;
-}
-button:hover{
- color: #FFFFFF;
- background-color: #000000;
-}
-button:active{
- color: #0000FF;
- background-color: #000000;
+  /*margin: 2px 10px;*/
+  padding: 0.8% 4%;
+  /*padding: 10px 50px;*/
 }
 #schedule{
  position: relative;
@@ -210,7 +245,7 @@ table {
  width:100%;
 }
 table#schedule-table {
-  margin-top: 15%;
+  margin-top: 15.5%;
   text-align:center;
 }
 td{
@@ -238,6 +273,34 @@ td.host-name {
 }
 td.show-description {
    width:70%;
+}
+/* SUBMISSION */
+#submission-button{
+  font-family: 'MisterPixel';
+  font-size: 1.4vw;
+  margin-top: 0.5%;
+  background-color: #0000FF;
+  border: 0.15vw black solid;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8% 4%;
+  /*padding: 10px 50px;*/
+  border-radius: 17px;
+  cursor: pointer;
+}
+#submission-button:hover{
+  background-color: #FFFFFF;
+  color: #0000FF;
+}
+#submission-button:active{
+  border: 0.15vw black dotted;
+}
+/* ARCHIVE */
+.archive-button{
+  margin: 0.2% 4%;
+  /*margin: 2px 10px;*/
 }
 /**** MOBILE DEVICE VERSION ****/
 @media screen and (max-width: 600px){

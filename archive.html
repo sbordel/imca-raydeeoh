@@ -5,6 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('clock').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
 </head>
-<body class="body-archive">
-<!-- LOGO -->
+<body class="body-archive" onload="startTime()">
+
+<header>
+<h1 id="general-page-title">schedule</h1>
+<a id="return-button" href="index.html">⤶</a>
+<img id="header-icon" src="assets/vectorized/icons/full/archive_full.svg" alt="archive icon">
+  <div id="clock"></div>
+<div id="button-tab">
+  <button class="archive-button">show title</button>
+  <button class="archive-button">artist</button>
+  <button class="archive-button">category</button>
+</div>
+<!--<div id="sub-button-tab"><button></button><button></button><button></button></div>-->
+</header>

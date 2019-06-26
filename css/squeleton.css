@@ -236,10 +236,10 @@ p{
 .sub-navigation-box{
   position: fixed;
   margin-top: 10%;
+  width: 50%;
 }
 .sub-icon-box{
-  text-align: center;
-  border: 0.5 blue solid;
+   text-align: center;
 }
 .about-nav{
   font-family: 'VG5000';
@@ -249,17 +249,23 @@ p{
 }
 .about-icons{
  width: 15%;
- padding: 5px;
- margin-bottom: 5px;
- text-align: center;
+ margin: 5px;
 }
 #mission-icon{
 }
+#mission-icon:hover{
+}
 #mandate-icon{
+}
+#mandate-icon:hover{
 }
 #values-icon{
 }
+#values-icon:hover{
+}
 #policies-icon{
+}
+#policies-icon:hover{
 }
 /* -- SCHEDULE-- */
 .schedule-button{

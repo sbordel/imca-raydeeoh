@@ -5,9 +5,128 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('clock').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
 </head>
-<body class="body-schedule">
+<body class="body-schedule" onload="startTime()">
 
-<!-- TESTING BUMPTV TEMPLATE SCHEDULE -->
+<header>
+<h1 id="general-page-title">schedule</h1>
+<img id="header-icon" src="assets/vectorized/icons/full/schedule_full.svg" alt="schedule icon">
+  <div id="clock"></div>
+<div id="button-tab"><button>monday</button><button>tuesday</button><button>wednesday</button><button>thursday</button><button>friday</button></div>
+</header>
+
+  <div id="schedule">
+    <table id="schedule-table">
+    <ul id="scrolling-table">
+      <tbody class="list">
+
+        <tr class="block-row">
+        <td class="show-time">10:00:00 AM</td>
+        <td><table>
+        <tbody class="list">
+        <tr>
+        <td class="show-name">Name of the show</td>
+        <td class="host-name">name of artist</td>
+        <td class="show-description">blablablablatestingblablablabla  (description of the show)
+        </td></tr></tbody></table></td></td></tr>
+
+        <tr class="block-row">
+        <td class="show-time">11:00:00 AM</td>
+        <td><table>
+        <tbody class="list">
+        <tr>
+        <td class="show-name">Name of the show</td>
+        <td class="host-name">name of artist</td>
+        <td class="show-description">blablablablatestingblablablabla  (description of the show)
+        </td></tr></tbody></table></td></td></tr>
+
+        <tr class="block-row">
+        <td class="show-time">12:00:00 PM</td>
+        <td><table>
+        <tbody class="list">
+        <tr>
+        <td class="show-name">Name of the show</td>
+        <td class="host-name">name of artist</td>
+        <td class="show-description">blablablablatestingblablablabla  (description of the show)
+        </td></tr></tbody></table></td></td></tr>
+
+        <tr class="block-row">
+        <td class="show-time">01:00:00 PM</td>
+        <td><table>
+        <tbody class="list">
+        <tr>
+        <td class="show-name">Name of the show</td>
+        <td class="host-name">name of artist</td>
+        <td class="show-description">blablablablatestingblablablabla  (description of the show)
+        </td></tr></tbody></table></td></td></tr>
+
+        <tr class="block-row">
+        <td class="show-time">02:00:00 PM</td>
+        <td><table>
+        <tbody class="list">
+        <tr>
+        <td class="show-name">Name of the show</td>
+        <td class="host-name">name of artist</td>
+        <td class="show-description">blablablablatestingblablablabla  (description of the show)
+        </td></tr></tbody></table></td></td></tr>
+
+        <tr class="block-row">
+        <td class="show-time">03:00:00 PM</td>
+        <td><table>
+        <tbody class="list">
+        <tr>
+        <td class="show-name">Name of the show</td>
+        <td class="host-name">name of artist</td>
+        <td class="show-description">blablablablatestingblablablabla  (description of the show)
+        </td></tr></tbody></table></td></td></tr>
+
+        <tr class="block-row">
+        <td class="show-time">04:00:00 PM</td>
+        <td><table>
+        <tbody class="list">
+        <tr>
+        <td class="show-name">Name of the show</td>
+        <td class="host-name">name of artist</td>
+        <td class="show-description">blablablablatestingblablablabla  (description of the show)
+        </td></tr></tbody></table></td></td></tr>
+
+        <tr class="block-row">
+        <td class="show-time">05:00:00 PM</td>
+        <td><table>
+        <tbody class="list">
+        <tr>
+        <td class="show-name">Name of the show</td>
+        <td class="host-name">name of artist</td>
+        <td class="show-description">blablablablatestingblablablabla  (description of the show)
+        </td></tr></tbody></table></td></td></tr>
+
+        <tr class="block-row">
+        <td class="show-time">06:00:00 PM</td>
+        <td><table>
+        <tbody class="list">
+        <tr>
+        <td class="show-name">Name of the show</td>
+        <td class="host-name">name of artist</td>
+        <td class="show-description">blablablablatestingblablablabla  (description of the show)
+        </td></tr></tbody></table></td></td></tr>
+</tbody></ul></table></div>
+
 </body>
 </html>

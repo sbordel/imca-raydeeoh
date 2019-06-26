@@ -61,7 +61,7 @@ header{
   font-family: 'VG5000';
   font-size: 4vw;
   font-weight: lighter;
-  color: #0000ff;
+  color: #0033ff;
   margin-left: 10%;
 }
 #return-button{
@@ -88,13 +88,6 @@ header{
   padding-right: 4.5px;
   cursor: pointer;
 }
-h2{
-  font-family: 'VG5000';
-  font-size: 2vw;
-  font-weight: lighter;
-  color: #0033ff;
-  text-decoration: underline;
-}
 #header-icon{
   position: relative;
   max-width: 10%;
@@ -107,7 +100,7 @@ h2{
   font-family: 'VG5000';
   font-size: 2vw;
   font-weight: lighter;
-  color: #0000ff;
+  color: #0033ff;
   left:91%;
   margin-top: -8%;
 }
@@ -153,6 +146,13 @@ button:active{
   display: -webkit-flex;*/
   justify-content: center;
   align-items: center;
+}
+h2{
+  font-family: 'VG5000';
+  font-size: 2vw;
+  font-weight: lighter;
+  color: #0033ff;
+  text-decoration: underline;
 }
 .icon-box{
   text-align: center;
@@ -226,6 +226,41 @@ p{
   color: #000000;
   text-align: center;
 }
+#second-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 12%;
+}
+.sub-navigation-box{
+  position: fixed;
+  margin-top: 10%;
+}
+.sub-icon-box{
+  text-align: center;
+  border: 0.5 blue solid;
+}
+.about-nav{
+  font-family: 'VG5000';
+  font-size: 1.5vw;
+  font-weight: lighter;
+  color: #0033ff;
+}
+.about-icons{
+ width: 15%;
+ padding: 5px;
+ margin-bottom: 5px;
+ text-align: center;
+}
+#mission-icon{
+}
+#mandate-icon{
+}
+#values-icon{
+}
+#policies-icon{
+}
 /* -- SCHEDULE-- */
 .schedule-button{
   margin: 0.2% 0.7%;
@@ -279,9 +314,9 @@ td.show-description {
   font-family: 'MisterPixel';
   font-size: 1.4vw;
   margin-top: 0.5%;
-  background-color: #0000FF;
+  background-color: #0033ff;
   border: 0.15vw black solid;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -291,8 +326,8 @@ td.show-description {
   cursor: pointer;
 }
 #submission-button:hover{
-  background-color: #FFFFFF;
-  color: #0000FF;
+  background-color: #ffffff;
+  color: #0000ff;
 }
 #submission-button:active{
   border: 0.15vw black dotted;

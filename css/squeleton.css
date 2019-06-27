@@ -238,21 +238,19 @@ p{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  margin-top: 12%;
+  margin-top: 8%;
 }
 .about-header-icon{
   display: none;
 }
-.sub-navigation-box{
-  position: fixed;
-  right: 0;
-  left: 0;
-  margin-right: auto;
+.sub-navigation-box-2{
+  display: block;
+  position: sticky;
+  margin-top: 0%;
   margin-left: auto;
-  padding-top: 50px;
-  margin-top: 10%;
-  width: 100%;
-  /*height: 60%;*/
+  margin-right: auto;
+  width: 90%;
+  height: 65%;
 }
 .sub-icon-box{
   display: block;
@@ -266,43 +264,33 @@ p{
   z-index: 1;
 }
 .about-icons{
-  width: 4%;
+  width: 5%;
   margin: 5px;
 }
-#mission-icon{
-  position: relative;
-  right: 36%;
-  /*top: 200px;*/
+#mission-icon-box{
+  position: -webkit-sticky;
+  position: sticky;
 }
 #mission-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);
   -webkit-filter: drop-shadow(0px 0px 15px #ccff33);
   -moz-filter: drop-shadow(0px 0px 15px #ccff33);
 }
-#mandate-icon{
-  position: relative;
-  right: 14.5%;
-  /*top: -115px;*/
+#mandate-icon-box{
 }
 #mandate-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);
   -webkit-filter: drop-shadow(0px 0px 15px #ccff33);
   -moz-filter: drop-shadow(0px 0px 15px #ccff33);
 }
-#values-icon{
-  position:relative;
-  left: 16%;
-  top: 60%;
+#values-icon-box{
 }
 #values-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);
   -webkit-filter: drop-shadow(0px 0px 15px #ccff33);
   -moz-filter: drop-shadow(0px 0px 15px #ccff33);
 }
-#policies-icon{
-  position:relative;
-  left: 30%;
-  top: -40%;
+#policies-icon-box{
 }
 #policies-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);

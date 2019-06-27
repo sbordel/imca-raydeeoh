@@ -96,19 +96,23 @@ header{
   margin-top: -8%;
 }
 #clock{
-  position: relative;
-  font-family: 'VG5000';
-  font-size: 2vw;
-  font-weight: lighter;
-  color: #0033ff;
-  left:91%;
-  margin-top: -8%;
+position: absolute;
+font-family: 'VG5000';
+font-size: 2vw;
+font-weight: lighter;
+color: #0033ff;
+top:0;
+right:0;
+margin-top: 3px;
+margin-right: 5px;
+padding-top: 10px;
+padding-right: 30px;
 }
 #button-tab{
   position: sticky;
   text-align: center;
   width: 100%;
-  margin-top: 6%;
+  margin-top: 1%;
 }
 button{
   font-family: 'MisterPixel';
@@ -121,7 +125,6 @@ button{
   text-decoration: none;
   display: inline-block;
   padding: 0.8% 4%;
-  /*padding: 10px 50px;*/
   border-radius: 17px;
   cursor: pointer;
 }
@@ -142,8 +145,8 @@ button:active{
 }
 .navigation-box{
   display: flex;
-  /*display: -webkit-box;
-  display: -webkit-flex;*/
+  display: -webkit-box;
+  display: -webkit-flex;
   justify-content: center;
   align-items: center;
 }
@@ -236,6 +239,9 @@ p{
   margin-right: auto;
   width: 50%;
   margin-top: 12%;
+}
+.about-header-icon{
+  display: none;
 }
 .sub-navigation-box{
   position: fixed;
@@ -381,6 +387,48 @@ td.show-description {
 }
 /**** MOBILE DEVICE VERSION ****/
 @media screen and (max-width: 800px){
+  #general-page-title{
+    margin-left: 7%;
+    font-size: 7vw;
+  }
+  #return-button{
+    font-size: 6vw;
+  }
+  /*
+--header with visible clock --
+
+  #header-icon{
+    position: fixed;
+    max-width: 15%;
+    left:65%;
+    margin-top: -11%;
+  }
+  */
+  #header-icon{
+    position: absolute;
+    max-width: 20%;
+    top:0;
+    right:0;
+    margin-top: 3px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-right: 30px;
+  }
+  #clock{
+    display: none;
+    font-size: 4vw;
+    padding-right: 20px;
+}
+  #button-tab{
+    position: sticky;
+    height: 20%;
+    margin-top: 2%;
+  }
+  button{
+    font-size: 2.5vw;
+    border-radius: 17px;
+    cursor: pointer;
+  }
   /* INDEX */
   .navigation-box{
     display: block;
@@ -399,11 +447,47 @@ td.show-description {
     margin-bottom: -15%;
   }
   h2{
-    font-size: 3vw;
+    font-size: 4vw;
     padding-bottom: 10%;
   }
   #player-container{
     display: none;
   }
-/* ABOUT */
+  /* ABOUT */
+  #about-page-title{
+    margin-left: 7%;
+    text-align: left;
+    font-size: 7vw;
+    width:80%;
+  }
+  #second-logo{
+    display: none;
+  }
+ .about-header-icon{
+   display: block;
+ }
+ .sub-navigation-box-2{
+   position: sticky;
+   padding-top:35%;
+ }
+ .about-nav{
+   font-size: 4vw;
+ }
+ .about-icons{
+   width: 10%;
+ }
+  #mission-icon, #mandate-icon, #values-icon, #policies-icon{
+  position: relative;
+  top: 0;
+  left: 0;
+ }
+/* SCHEDULE */
+.schedule-button{
+  margin: 1% 5%;
+  padding: 1.5% 5%;
+}
+/* ARCHIVE BUTTON */
+.archive-button{
+  margin: 1% 5%;
+  padding: 1.5% 5%;
 }

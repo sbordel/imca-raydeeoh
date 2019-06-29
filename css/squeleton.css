@@ -119,7 +119,7 @@ button{
   font-size: 1.4vw;
   margin-top: 0.5%;
   background-color: #FFFFFF;
-  border: 0.15vw black solid;
+  border: 0.15vw solid black;
   color: #000000;
   text-align: center;
   text-decoration: none;
@@ -297,6 +297,87 @@ p{
   -webkit-filter: drop-shadow(0px 0px 15px #ccff33);
   -moz-filter: drop-shadow(0px 0px 15px #ccff33);
 }
+[id^=modal] {
+  display: none;
+  position: fixed;
+  font-family: 'MisterPixel';
+  border: 0.1vw solid black;
+  background-color: #ffffff;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-height: 40%;
+  min-width: 30%;
+  max-height: 70%;
+  max-width: 35%;
+  overflow: scroll;
+  padding: 10px;
+  z-index: 1;
+  }
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  }
+#modal1:target {
+  display: block;
+  }
+#modal2:target {
+  display: block;
+  }
+#modal3:target {
+  display: block;
+  }
+#modal4:target {
+  display: block;
+  }
+  h3{
+    font-size: 3vh;
+    font-weight: lighter;
+    color: #000000;
+    border: 0.1vw solid black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.8% 4%;
+    border-radius: 17px;
+    cursor: pointer;
+    margin: 2%;
+    margin-top: -1%;
+  }
+.inner-modal{
+  display: block;
+  color: #0000ff;
+  font-size: 2.4vh;
+  line-height: 35px;
+  border: 1px solid black;
+  min-height: 200px;
+  max-height: 30%;
+  padding: 10px;
+}
+[id^=modal] a {
+  float: right;
+  }
+  .close {
+    display: block;
+    position: fixed;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+  }
+  .close:hover,
+  .close:focus {
+    background-color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 /* -- SCHEDULE-- */
 .schedule-button{
   margin: 0.2% 0.7%;

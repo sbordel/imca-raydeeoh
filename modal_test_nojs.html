@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face {
+    font-family: 'MisterPixel' ;
+    src: url(fonts/misterpixel/otf/mister-pixel-regular.otf);
+  }
+@font-face {
+    font-family: 'VG5000' ;
+    src: url(fonts/vg5000/fonts/VG5000-Regular.otf);
+  }
+body {
+font-family: 'MisterPixel';
+font-weight: lighter;
+}
+[id^=modal] {
+  display: none;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-height: 30%;
+  min-width: 30%;
+  max-height: 50%;
+  max-width: 40%;
+  border: 0.1vw solid black;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0);
+  overflow: scroll;
+  padding: 10px;
+  z-index: 1;
+  }
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  }
+#modal1:target {
+  display: block;
+  }
+#modal2:target {
+  display: block;
+  }
+.inner-modal{
+  display: block;
+  border: 1px solid black;
+  height: 30%;
+  padding: 10px;
+  color: #0000ff;
+  font-size: 2.4vh;
+  line-height: 35px;
+}
+[id^=modal] a {
+  float: right;
+  }
+  .close {
+    display: block;
+    position: fixed;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+  }
+  .close:hover,
+  .close:focus {
+    background-color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+h3{
+  font-family: 'MisterPixel';
+  font-size: 3vh;
+  font-weight: lighter;
+  color: #000000;
+  border: 0.1vw solid black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8% 4%;
+  border-radius: 17px;
+  cursor: pointer;
+  margin: 2%;
+  margin-top: -1%;
+}
+</style>
+<div id="content">
+    <a href="#modal1">first modal</a><br>
+    <a href="#modal2">second modal</a>
+  <div id="modal1"><h3>MANDATE</h3><a class="close" href="#">&times;</a><span class="inner-modal">IMCA RAYDEEOH is a web-based radio founded by Intermedia students at Concordia University, located on unceded Kanien’kehá:ka territory. It is available for active participation from all students of the Fine Arts Faculty and accessible for listening to anyone within reach of an internet connection. The purpose of this web-radio would be to showcase the work of students who are interested in sharing their own sound pieces, mixes, podcasts, and any other audio content relating to DIY, experimental or non-mainstream arts.</span></div>
+  <div id="modal2"><h3>MISSION</h3><a class="close" href="#">&times;</a><div class="inner-modal">This project serves as another platform for artists to proliferate outside of the context of a gallery or art center, but still within the boundaries of Concordia University. IMCA RAYDEEOH’s live stream will be accessible on a website, along with an archive of past shows and links to the personal portfolios of the showcased artists. </div></div>
+</div>

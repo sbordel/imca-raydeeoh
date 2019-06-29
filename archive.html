@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="js/ux.js"></script>
 </head>
 <body class="body-archive" onload="startTime()">
@@ -15,9 +17,70 @@
 <img id="header-icon" src="assets/vectorized/icons/full/archive_full.svg" alt="archive icon">
   <div id="clock"></div>
 <div id="button-tab">
-  <button class="archive-button">show title</button>
-  <button class="archive-button">artist</button>
-  <button class="archive-button">category</button>
+  <button class="archive-button" id="show-button">show title</button>
+  <button class="archive-button" id="artist-button">artist</button>
+  <button class="archive-button" id="category-button">category</button>
 </div>
 <!--<div id="sub-button-tab"><button></button><button></button><button></button></div>-->
 </header>
+
+<div id="list-section">
+<ul class="archive-list" id="show-list">
+  <!--<div id="show-list">-->
+  <li>show name that start with a</li>
+  <li>show name that start with a</li>
+  <li>show name that start with a</li>
+  <li>show name that start with a</li>
+  <li>show name that start with a</li>
+  <li>show name that start with a</li>
+  <li>show name that start with a</li>
+  <li>show name that start with a</li>
+  <li>show name that start with a</li>
+  <li>show name that start with a</li>
+  <li>show name that start with b</li>
+  <li>show name that start with b</li>
+  <li>show name that start with b</li>
+  <li>show name that start with b</li>
+  <li>show name that start with b</li>
+  <li>show name that start with c</li>
+  <li>show name that start with c</li>
+  <li>show name that start with c</li>
+  <li>show name that start with c</li>
+  <li>show name that start with c</li>
+  <li>show name that start with c</li>
+</ul>
+
+<ul class="archive-list" id="artist-list">
+  <!--<div id="artist-list">-->
+  <li>artist name that starts with a</li>
+  <li>artist name that starts with a</li>
+  <li>artist name that starts with a</li>
+  <li>artist name that starts with a</li>
+  <li>artist name that starts with a</li>
+  <li>artist name that starts with a</li>
+  <li>artist name that starts with a</li>
+  <li>artist name that starts with a</li>
+  <li>artist name that starts with a</li>
+  <li>artist name that starts with b</li>
+  <li>artist name that starts with b</li>
+  <li>artist name that starts with b</li>
+  <li>artist name that starts with b</li>
+  <li>artist name that starts with b</li>
+  <li>artist name that starts with b</li>
+  <li>artist name that starts with b</li>
+  <li>artist name that starts with c</li>
+  <li>artist name that starts with c</li>
+  <li>artist name that starts with c</li>
+  <li>artist name that starts with c</li>
+  <li>artist name that starts with c</li>
+  <li>artist name that starts with c</li>
+</ul>
+
+<ul class="archive-list" id="category-list">
+  <!--<div id="category-list">-->
+  <li>category name that starts with a</li>
+  <li>category name that starts with b</li>
+  <li>category name that starts with c</li>
+  <li>category name that starts with c</li>
+</ul>
+</div>

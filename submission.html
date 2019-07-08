@@ -18,7 +18,6 @@
 
 <div id="form">
 <form action="/action_page.php">
-<fieldset>
     <legend>general information</legend>
   first name* :<br>
   <input type="text" name="firstname" value="first">
@@ -44,9 +43,7 @@
   field of study* :<br>
   <input type="text" name="fieldstudy" value="field">
   <br>
-  </fieldset>
 
-  <fieldset>
     <legend>show application</legend>
    host/artist/collective name* :<br>
   <input type="text" name="artistname" value="artistname">
@@ -55,24 +52,51 @@
   <input type="text" name="showtitle" value="showtitle">
   <br>
   project/show description* (50-100 words max):<br>
-  <input type="text" name="showdescrip" value="showdescription">
+  <input id="large-input" type="text" name="showdescrip" value="showdescription">
   <br>
   short bio* (50 words max) :<br>
-  <input type="text" name="bio" value="bio">
+  <input id="large-input" type="text" name="bio" value="bio">
   <br>
   link (personal website, mixcloud, facebook, instagram, etc.):<br>
   <input type="text" name="link" value="link">
   <br>
   category of project* :<br>
-  <input type="radio" name="category" value="soundart">sound art<br>
+  <!--<input type="radio" name="category" value="soundart">sound art<br>
   <input type="radio" name="category" value="fieldrecording"> field recording<br>
   <input type="radio" name="category" value="music">music (DIY or self-produced)<br>
-  <input type="radio" name="category" value="performance">
-  performance or live experimentation<br>
-  <input type="radio" name="category" value="musiqueconcrete">
-  "musique concrète"<br>
-  <input type="radio" name="category" value="podcast">podcast or talk show<br>
-  <input type="radio" name="category" value="other">other<br>
+  <input type="radio" name="category" value="performance">-->
+  <!--<label class="radio-button-container">sound art
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="radio-button-container">field recording
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="radio-button-container">music (DIY or self-produced)
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="radio-button-container">sound art
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="radio-button-container">performance or live experimentation
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="radio-button-container">"musique concrète"
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="radio-button-container">podcast or talk show
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="radio-button-container">other
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>-->
   (if "other" selected):<br>
   <input type="text" name="othercategory" value="othercategory">
   <br>
@@ -216,12 +240,10 @@
    <option value="">05:30 PM</option>
    <option value="">06:00 PM</option>
    </select>
-  </fieldset>
-</form>
+  </div>
   <br>
   <input type="submit" value="submit" id="submission-button">
 </form>
-</div>
 
 </body>
 </html>

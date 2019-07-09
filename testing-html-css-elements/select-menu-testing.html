@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> testing select menu </title>
+</head>
+<style>
+  @font-face {
+    font-family: 'MisterPixel' ;
+    src: url(../fonts/misterpixel/otf/mister-pixel-regular.otf);
+  }
+  @font-face {
+    font-family: 'VG5000' ;
+    src: url(../fonts/vg5000/fonts/VG5000-Regular.otf);
+  }
+.select-css {
+	display: block;
+	font-size: 20px;
+	font-family: 'VG5000' ;
+  font-weight:lighter;
+	color: #000000;
+	padding: .6em 1.4em .5em .8em;
+	width: 30%;
+	margin: 0;
+	border: 2px solid #000000;
+  border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+  background-image: url('../assets/vectorized/icons/double-arrows-select-menu.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: 12px auto, 100%;
+}
+}
+.select-css::-ms-expand {
+	display: none;
+}
+.select-css:hover {
+	border-color: #000;
+}
+.select-css:focus {
+	border-color: #000000;
+	color: #000000;
+}
+.select-css option {
+	font-weight:normal;
+}
+</style>
+
+<body>
+  <select class="select-css">
+	<option>Monday</option>
+	<option>Tuesday</option>
+	<option>Wednesday</option>
+	<option>Thursday</option>
+	<option>Friday</option>
+</select>
+</body>
+</html>

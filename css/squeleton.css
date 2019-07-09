@@ -588,17 +588,7 @@ li{
   }
   #return-button{
     font-size: 6vw;
-  }
-  /*
---header with visible clock --
-
-  #header-icon{
-    position: fixed;
-    max-width: 15%;
-    left:65%;
-    margin-top: -11%;
-  }
-  */
+ }
   #header-icon{
     position: absolute;
     max-width: 20%;
@@ -613,7 +603,7 @@ li{
     display: none;
     font-size: 4vw;
     padding-right: 20px;
-}
+  }
   #button-tab{
     position: sticky;
     height: 20%;
@@ -664,40 +654,40 @@ li{
   }
  .about-header-icon{
    display: block;
- }
+   }
  .sub-navigation-box-2{
    position: sticky;
    padding-top:35%;
- }
+   }
  .about-nav{
    font-size: 4vw;
- }
+   }
  .about-icons{
    width: 10%;
- }
+   }
   #mission-icon, #mandate-icon, #values-icon, #policies-icon{
   position: relative;
   top: 0;
   left: 0;
- }
+   }
 /* SCHEDULE */
-.schedule-button{
-  margin: 1% 5%;
-  padding: 1.5% 5%;
-}
+  .schedule-button{
+    margin: 1% 5%;
+    padding: 1.5% 5%;
+  }
 /* ARCHIVE BUTTON */
-.archive-button{
-  margin: 1% 5%;
-  padding: 1.5% 5%;
-}
-.archive-list{
-  margin-top: 30%;
-  height: 65%;
-  width: 71%;
-}
-li{
-  font-size: 2.5vw;
-}
+  .archive-button{
+    margin: 1% 5%;
+    padding: 1.5% 5%;
+  }
+  .archive-list{
+    margin-top: 30%;
+    height: 65%;
+    width: 71%;
+  }
+  li{
+    font-size: 2.5vw;
+  }
 }
 @media screen and (max-height: 500px){
   /* INDEX */

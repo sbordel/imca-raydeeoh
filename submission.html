@@ -9,7 +9,7 @@
 </head>
 <body class="body-submission" onload="startTime()">
 
-<header>
+<header class="header-submission">
 <h1 id="general-page-title">submission</h1>
 <a id="return-button" href="index.html">⤶</a>
 <img id="header-icon" src="assets/vectorized/icons/full/submission_full.svg" alt="submission icon">
@@ -18,87 +18,61 @@
 
 <div id="form">
 <form action="/action_page.php">
+
     <legend>general information</legend>
-  first name* :<br>
-  <input type="text" name="firstname" value="first">
+  <label for="f-name">first name* :</label><br>
+  <input id="f-name" type="text" name="firstname">
   <br>
-  last name* :<br>
-  <input type="text" name="lastname" value="second">
+  <label for="s-name">last name* :</label><br>
+  <input id="s-name" type="text" name="lastname">
   <br>
-  <form>
+
   <label for="pronouns">pronouns* :</label><br>
-  <input type="radio" name="gender" value="GNC">they/them<br>
-  <input type="radio" name="gender" value="female">she/her<br>
-  <input type="radio" name="gender" value="male">he/him<br>
-  <input type="radio" name="gender" value="other">other<br>
-  (if "other" selected):<br>
-  <input type="text" name="pronoun" value="pronoun">
+  <input id="gnc" type="radio" name="gender">they/them<br>
+  <input id="female" type="radio" name="gender">she/her<br>
+  <input id="male" type="radio" name="gender">he/him<br>
+  <input id="other" type="radio" name="gender">other<br>
+  <label for="o-pronoun">(if "other" selected):</label><br>
+  <input id="o-pronoun" type="text" name="pronoun">
   <br>
-  email* :<br>
-  <input type="text" name="email" value="email">
+  <label for="email">email* :</label><br>
+  <input id="email" type="text" name="email">
   <br>
-  student ID* :<br>
-  <input type="text" name="studentid" value="studentid">
+  <label for="student-id">student ID*</label><br>
+  <input id="student-id" type="text" name="studentid">
   <br>
-  field of study* :<br>
-  <input type="text" name="fieldstudy" value="field">
+  <label for="f-study">field of study* :</label><br>
+  <input id="f-study" type="text" name="fieldstudy">
   <br>
 
     <legend>show application</legend>
-   host/artist/collective name* :<br>
-  <input type="text" name="artistname" value="artistname">
+    <label for="artist-name"></label>host/artist/collective name* :<br>
+  <input id="artist-name" type="text" name="artistname">
   <br>
-  show title (can be tentative)* :<br>
-  <input type="text" name="showtitle" value="showtitle">
+  <label for="show-title">show title (can be tentative)* :</label><br>
+  <input id="show-title" type="text" name="showtitle">
   <br>
-  project/show description* (50-100 words max):<br>
-  <input id="large-input" type="text" name="showdescrip" value="showdescription">
+  <label for="description">project/show description* (50-100 words max):</label><br>
+  <input id="description" type="text" name="showdescription">
   <br>
-  short bio* (50 words max) :<br>
-  <input id="large-input" type="text" name="bio" value="bio">
+  <label for="bio">short bio* (50 words max) :</label><br>
+  <input id="bio" type="text" name="bio">
   <br>
-  link (personal website, mixcloud, facebook, instagram, etc.):<br>
-  <input type="text" name="link" value="link">
+  <label for="web-link">link (personal website, mixcloud, facebook, instagram, etc.):</label><br>
+  <input id="web-link" type="text" name="link">
   <br>
-  category of project* :<br>
-  <!--<input type="radio" name="category" value="soundart">sound art<br>
+  <fieldset class="project-type">
+  <label for="category">category of project* :</label><br>
+  <input type="radio" name="category" value="soundart">sound art<br>
   <input type="radio" name="category" value="fieldrecording"> field recording<br>
   <input type="radio" name="category" value="music">music (DIY or self-produced)<br>
-  <input type="radio" name="category" value="performance">-->
-  <!--<label class="radio-button-container">sound art
-  <input type="radio" checked="checked" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="radio-button-container">field recording
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="radio-button-container">music (DIY or self-produced)
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="radio-button-container">sound art
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="radio-button-container">performance or live experimentation
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="radio-button-container">"musique concrète"
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="radio-button-container">podcast or talk show
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="radio-button-container">other
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>-->
-  (if "other" selected):<br>
-  <input type="text" name="othercategory" value="othercategory">
+  <input type="radio" name="category" value="performance">performance or live experimentation<br>
+  <input type="radio" name="category" value="performance">music concrète<br>
+  <input type="radio" name="category" value="performance">podcast or talk show<br>
+  <input type="radio" name="category" value="performance">other<br>
+</fieldset>
+<label for="other-category">(if "other" selected):</label><br>
+  <input id="other-category" type="text" name="othercategory">
   <br>
     <label for="time">timeslots* (choose 3 timeslots for your show to be aired. one will be choosed according to availabilities) :</label>
     <br><label for="day">day </label><br>
@@ -111,40 +85,40 @@
     </select>
     <br>
    from  :  <select name="day">
-   <option value="">10:00 AM</option>
-   <option value="">10:30 AM</option>
-   <option value="">11:00 AM</option>
-   <option value="">11:30 AM</option>
-   <option value="">12:00 PM</option>
-   <option value="">12:30 PM</option>
-   <option value="">01:00 PM</option>
-   <option value="">01:30 PM</option>
-   <option value="">02:00 PM</option>
-   <option value="">02:30 PM</option>
-   <option value="">03:00 PM</option>
-   <option value="">03:30 PM</option>
-   <option value="">04:00 PM</option>
-   <option value="">04:30 PM</option>
-   <option value="">05:00 PM</option>
-   <option value="">05:30 PM</option>
+   <option value="1000AM">10:00 AM</option>
+   <option value="1030AM">10:30 AM</option>
+   <option value="1100AM">11:00 AM</option>
+   <option value="1130AM">11:30 AM</option>
+   <option value="1200PM">12:00 PM</option>
+   <option value="1230PM">12:30 PM</option>
+   <option value="1300PM">01:00 PM</option>
+   <option value="1330PM">01:30 PM</option>
+   <option value="1400PM">02:00 PM</option>
+   <option value="1430PM">02:30 PM</option>
+   <option value="1500PM">03:00 PM</option>
+   <option value="1530PM">03:30 PM</option>
+   <option value="1600PM">04:00 PM</option>
+   <option value="1630PM">04:30 PM</option>
+   <option value="1700PM">05:00 PM</option>
+   <option value="1730PM">05:30 PM</option>
    </select>
    to  :<select name="day">
-   <option value="">10:30 AM</option>
-   <option value="">11:00 AM</option>
-   <option value="">11:30 AM</option>
-   <option value="">12:00 PM</option>
-   <option value="">12:30 PM</option>
-   <option value="">01:00 PM</option>
-   <option value="">01:30 PM</option>
-   <option value="">02:00 PM</option>
-   <option value="">02:30 PM</option>
-   <option value="">03:00 PM</option>
-   <option value="">03:30 PM</option>
-   <option value="">04:00 PM</option>
-   <option value="">04:30 PM</option>
-   <option value="">05:00 PM</option>
-   <option value="">05:30 PM</option>
-   <option value="">06:00 PM</option>
+     <option value="1030AM">10:30 AM</option>
+     <option value="1100AM">11:00 AM</option>
+     <option value="1130AM">11:30 AM</option>
+     <option value="1200PM">12:00 PM</option>
+     <option value="1230PM">12:30 PM</option>
+     <option value="1300PM">01:00 PM</option>
+     <option value="1330PM">01:30 PM</option>
+     <option value="1400PM">02:00 PM</option>
+     <option value="1430PM">02:30 PM</option>
+     <option value="1500PM">03:00 PM</option>
+     <option value="1530PM">03:30 PM</option>
+     <option value="1600PM">04:00 PM</option>
+     <option value="1630PM">04:30 PM</option>
+     <option value="1700PM">05:00 PM</option>
+     <option value="1730PM">05:30 PM</option>
+     <option value="1800PM">06:00 PM</option>
    </select>
    <br>
    +
@@ -157,44 +131,45 @@
       <option value="friday">friday</option>
     </select>
     <br>
-   from  :  <select name="day">
-   <option value="">10:00 AM</option>
-   <option value="">10:30 AM</option>
-   <option value="">11:00 AM</option>
-   <option value="">11:30 AM</option>
-   <option value="">12:00 PM</option>
-   <option value="">12:30 PM</option>
-   <option value="">01:00 PM</option>
-   <option value="">01:30 PM</option>
-   <option value="">02:00 PM</option>
-   <option value="">02:30 PM</option>
-   <option value="">03:00 PM</option>
-   <option value="">03:30 PM</option>
-   <option value="">04:00 PM</option>
-   <option value="">04:30 PM</option>
-   <option value="">05:00 PM</option>
-   <option value="">05:30 PM</option>
+    from  :  <select name="day">
+    <option value="1000AM">10:00 AM</option>
+    <option value="1030AM">10:30 AM</option>
+    <option value="1100AM">11:00 AM</option>
+    <option value="1130AM">11:30 AM</option>
+    <option value="1200PM">12:00 PM</option>
+    <option value="1230PM">12:30 PM</option>
+    <option value="1300PM">01:00 PM</option>
+    <option value="1330PM">01:30 PM</option>
+    <option value="1400PM">02:00 PM</option>
+    <option value="1430PM">02:30 PM</option>
+    <option value="1500PM">03:00 PM</option>
+    <option value="1530PM">03:30 PM</option>
+    <option value="1600PM">04:00 PM</option>
+    <option value="1630PM">04:30 PM</option>
+    <option value="1700PM">05:00 PM</option>
+    <option value="1730PM">05:30 PM</option>
+    </select>
+    to  :<select name="day">
+      <option value="1030AM">10:30 AM</option>
+      <option value="1100AM">11:00 AM</option>
+      <option value="1130AM">11:30 AM</option>
+      <option value="1200PM">12:00 PM</option>
+      <option value="1230PM">12:30 PM</option>
+      <option value="1300PM">01:00 PM</option>
+      <option value="1330PM">01:30 PM</option>
+      <option value="1400PM">02:00 PM</option>
+      <option value="1430PM">02:30 PM</option>
+      <option value="1500PM">03:00 PM</option>
+      <option value="1530PM">03:30 PM</option>
+      <option value="1600PM">04:00 PM</option>
+      <option value="1630PM">04:30 PM</option>
+      <option value="1700PM">05:00 PM</option>
+      <option value="1730PM">05:30 PM</option>
+      <option value="1800PM">06:00 PM</option>
    </select>
-   to  :<select name="day">
-   <option value="">10:30 AM</option>
-   <option value="">11:00 AM</option>
-   <option value="">11:30 AM</option>
-   <option value="">12:00 PM</option>
-   <option value="">12:30 PM</option>
-   <option value="">01:00 PM</option>
-   <option value="">01:30 PM</option>
-   <option value="">02:00 PM</option>
-   <option value="">02:30 PM</option>
-   <option value="">03:00 PM</option>
-   <option value="">03:30 PM</option>
-   <option value="">04:00 PM</option>
-   <option value="">04:30 PM</option>
-   <option value="">05:00 PM</option>
-   <option value="">05:30 PM</option>
-   <option value="">06:00 PM</option>
-   </select><br>
-   +<br>
-    day<br>
+   <br>
+   +
+   <br>day<br>
     <select name="day">
       <option value="monday">monday</option>
       <option value="tuesday">tuesday</option>
@@ -203,47 +178,47 @@
       <option value="friday">friday</option>
     </select>
     <br>
-   from : <select name="day">
-   <option value="">10:00 AM</option>
-   <option value="">10:30 AM</option>
-   <option value="">11:00 AM</option>
-   <option value="">11:30 AM</option>
-   <option value="">12:00 PM</option>
-   <option value="">12:30 PM</option>
-   <option value="">01:00 PM</option>
-   <option value="">01:30 PM</option>
-   <option value="">02:00 PM</option>
-   <option value="">02:30 PM</option>
-   <option value="">03:00 PM</option>
-   <option value="">03:30 PM</option>
-   <option value="">04:00 PM</option>
-   <option value="">04:30 PM</option>
-   <option value="">05:00 PM</option>
-   <option value="">05:30 PM</option>
-   </select>
-
-   to  :<select name="day">
-   <option value="">10:30 AM</option>
-   <option value="">11:00 AM</option>
-   <option value="">11:30 AM</option>
-   <option value="">12:00 PM</option>
-   <option value="">12:30 PM</option>
-   <option value="">01:00 PM</option>
-   <option value="">01:30 PM</option>
-   <option value="">02:00 PM</option>
-   <option value="">02:30 PM</option>
-   <option value="">03:00 PM</option>
-   <option value="">03:30 PM</option>
-   <option value="">04:00 PM</option>
-   <option value="">04:30 PM</option>
-   <option value="">05:00 PM</option>
-   <option value="">05:30 PM</option>
-   <option value="">06:00 PM</option>
+    from  :  <select name="day">
+    <option value="1000AM">10:00 AM</option>
+    <option value="1030AM">10:30 AM</option>
+    <option value="1100AM">11:00 AM</option>
+    <option value="1130AM">11:30 AM</option>
+    <option value="1200PM">12:00 PM</option>
+    <option value="1230PM">12:30 PM</option>
+    <option value="1300PM">01:00 PM</option>
+    <option value="1330PM">01:30 PM</option>
+    <option value="1400PM">02:00 PM</option>
+    <option value="1430PM">02:30 PM</option>
+    <option value="1500PM">03:00 PM</option>
+    <option value="1530PM">03:30 PM</option>
+    <option value="1600PM">04:00 PM</option>
+    <option value="1630PM">04:30 PM</option>
+    <option value="1700PM">05:00 PM</option>
+    <option value="1730PM">05:30 PM</option>
+    </select>
+    <label for=""></label><br>
+    to  :<select name="day">
+      <option value="1030AM">10:30 AM</option>
+      <option value="1100AM">11:00 AM</option>
+      <option value="1130AM">11:30 AM</option>
+      <option value="1200PM">12:00 PM</option>
+      <option value="1230PM">12:30 PM</option>
+      <option value="1300PM">01:00 PM</option>
+      <option value="1330PM">01:30 PM</option>
+      <option value="1400PM">02:00 PM</option>
+      <option value="1430PM">02:30 PM</option>
+      <option value="1500PM">03:00 PM</option>
+      <option value="1530PM">03:30 PM</option>
+      <option value="1600PM">04:00 PM</option>
+      <option value="1630PM">04:30 PM</option>
+      <option value="1700PM">05:00 PM</option>
+      <option value="1730PM">05:30 PM</option>
+      <option value="1800PM">06:00 PM</option>
    </select>
   </div>
   <br>
   <input type="submit" value="submit" id="submission-button">
 </form>
-
+<footer></footer>
 </body>
 </html>

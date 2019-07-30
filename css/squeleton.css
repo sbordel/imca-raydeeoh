@@ -57,15 +57,23 @@ header{
   padding-right: 50px;
   padding-left: 50px;
 }
+.header-about{
+  height: 22%;
+}
 .header-schedule{
   height: 22%;
   background-image: linear-gradient(to bottom , #99ffcc , #99ffcc , #ff9966);
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: 0;
 }
 .header-submission{
-  height: 18%;
+  height: 22%;
   background-color: #ccccff;
+  z-index: 0;
+}
+.header-archive{
+  height: 22%;
+  background-color: #ccff33 , #ccff33 , #99ffcc ;
   z-index: 0;
 }
 #general-page-title{
@@ -148,6 +156,17 @@ button:hover{
 button:active{
  border: 0.15vw white dotted;
 }
+/* - scrollbar - */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #000000; }
+::-webkit-scrollbar-thumb:hover { background: #000000; }
+
+/* - hidden scrollbar on index */
+.body-index::-webkit-scrollbar { width: 0 !important }
+.body-index{ -ms-overflow-style: none; }
+.body-index{ overflow: -moz-scrollbars-none; }
+
 /* -- INDEX -- */
 #main-logo{
   width: 40%;
@@ -471,6 +490,7 @@ form{
   justify-content: left;
   margin-top: 15%;
   width: 90%;
+  padding-top: 10vh;
 }
 fieldset{
   border: none;
@@ -698,10 +718,16 @@ li{
   .navigation-box{
     margin-top: -10px;
   }
+  .header-about{
+    height: 125px;
+  }
   .header-schedule{
     height: 125px;
   }
   .header-submission{
+    height: 125px;
+  }
+  .header-archive{
     height: 125px;
   }
 }

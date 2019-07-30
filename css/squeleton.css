@@ -72,7 +72,7 @@ header{
   z-index: 0;
 }
 .header-archive{
-  height: 22%;
+  height: 30%;
   background-color: #ccff33 , #ccff33 , #99ffcc ;
   z-index: 0;
 }
@@ -148,6 +148,7 @@ button{
   padding: 0.8% 4%;
   border-radius: 17px;
   cursor: pointer;
+  z-index: -1;
 }
 button:hover{
  color: #FFFFFF;
@@ -161,13 +162,16 @@ button:active{
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #000000; }
 ::-webkit-scrollbar-thumb:hover { background: #000000; }
+::-webkit-scrollbar-button { background: transparent; }
+::-webkit-scrollbar-track-piece { background: transparent;  }
+::-webkit-scrollbar-corner { background: transparent; }
 
+/* -- INDEX -- */
 /* - hidden scrollbar on index */
 .body-index::-webkit-scrollbar { width: 0 !important }
 .body-index{ -ms-overflow-style: none; }
 .body-index{ overflow: -moz-scrollbars-none; }
 
-/* -- INDEX -- */
 #main-logo{
   width: 40%;
   padding-top:40px;
@@ -478,11 +482,15 @@ td.show-description {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
-  bottom: 10%;
+  /*bottom: 10%;*/
+  padding-bottom: 10%;
   padding-top:3%;
-  overflow-y: scroll;
   z-index: -1;
 }
+#form::-webkit-scrollbar { width: 0 !important }
+#form{ -ms-overflow-style: none; }
+#form{ overflow: -moz-scrollbars-none; }
+
 form{
   /*display: inline-flex;
   flex-direction: row;
@@ -551,24 +559,22 @@ footer{
   /*margin: 2px 10px;*/
 }
 #list-section{
-  position: fixed;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  overflow-y: scroll;
 }
 .archive-list{
   display: block;
   position: relative;
-  overflow: scroll;
+  width: 54%;
+  padding: 5px;
+  padding-bottom: 10%;
+  margin-top: 18%;
   margin-left: auto;
   margin-right: auto;
-  padding: 5px;
   line-height: 100%;
-  margin-top: 18%;
   text-align:left;
-  width: 54%;
-  height: 50%;
-  z-index: -1;
+  z-index: -9999;
 }
 #show-list{
   display: none;

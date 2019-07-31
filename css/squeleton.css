@@ -57,22 +57,22 @@ header{
   padding-right: 50px;
   padding-left: 50px;
 }
-.header-about{
-  height: 22%;
-}
 .header-schedule{
-  height: 22%;
+  /*height: 32%;*/
+  height: 200px;
   background-image: linear-gradient(to bottom , #99ffcc , #99ffcc , #ff9966);
   background-repeat: no-repeat;
   z-index: 0;
 }
 .header-submission{
-  height: 22%;
+  /*height: 22%;*/
+  height: 150px;
   background-color: #ccccff;
   z-index: 0;
 }
 .header-archive{
-  height: 30%;
+  /*height: 30%;*/
+  height: 200px;
   background-color: #ccff33 , #ccff33 , #99ffcc ;
   z-index: 0;
 }
@@ -163,7 +163,7 @@ button:active{
 ::-webkit-scrollbar-thumb { background: #000000; }
 ::-webkit-scrollbar-thumb:hover { background: #000000; }
 ::-webkit-scrollbar-button { background: transparent; }
-::-webkit-scrollbar-track-piece { background: transparent;  }
+::-webkit-scrollbar-track-piece { background: #ffffff;  }
 ::-webkit-scrollbar-corner { background: transparent; }
 
 /* -- INDEX -- */
@@ -431,9 +431,8 @@ h3{
  height: 60%;
  top: 30%;
  bottom: 10%;
- /*padding-top:1%;*/
+ padding-top:1%;
  z-index: -1;
- border: 0.5px blue solid;
 }
 table {
  border: 1px solid transparent;

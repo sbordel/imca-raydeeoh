@@ -117,17 +117,17 @@ header{
   padding: 0.5%;
 }
 #clock{
-position: absolute;
-font-family: 'VG5000';
-font-size: 2vw;
-font-weight: lighter;
-color: #0033ff;
-top:0;
-right:0;
-margin-top: 3px;
-margin-right: 5px;
-padding-top: 10px;
-padding-right: 30px;
+  position: absolute;
+  font-family: 'VG5000';
+  font-size: 2vw;
+  font-weight: lighter;
+  color: #0033ff;
+  top:0;
+  right:0;
+  margin-top: 3px;
+  margin-right: 5px;
+  padding-top: 10px;
+  padding-right: 30px;
 }
 #button-tab{
   position: sticky;
@@ -151,8 +151,8 @@ button{
   z-index: -1;
 }
 button:hover{
- color: #FFFFFF;
- background-color: #000000;
+  color: #FFFFFF;
+  background-color: #000000;
 }
 button:active{
  border: 0.15vw white dotted;
@@ -166,6 +166,7 @@ button:active{
 ::-webkit-scrollbar-track-piece { background: #ffffff;  }
 ::-webkit-scrollbar-corner { background: transparent; }
 
+/* *************** */
 /* -- INDEX -- */
 /* - hidden scrollbar on index */
 .body-index::-webkit-scrollbar { width: 0 !important }
@@ -263,6 +264,7 @@ p{
   font-weight: lighter;
   color: #ccff33;
 }
+/* *************** */
 /* -- ABOUT -- */
 #about-page-title{
   position: relative;
@@ -362,14 +364,14 @@ p{
   min-width: 30%;
   max-height: 70%;
   max-width: 35%;
-  overflow: scroll;
+  overflow-y: scroll;
   padding: 10px;
   z-index: 1;
-  }
-input[type=checkbox] {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  }
+}
+h4{
+ font-weight: normal;
+ text-decoration: underline;
+}
 #modal1:target {
   display: block;
   }
@@ -429,6 +431,7 @@ h3{
     text-decoration: none;
     cursor: pointer;
   }
+/* *************** */
 /* -- SCHEDULE-- */
 .schedule-button{
   margin: 0.2% 0.7%;
@@ -482,6 +485,7 @@ td.host-name {
 td.show-description {
    width:70%;
 }
+/* *************** */
 /* SUBMISSION */
 #form{
   display: block;
@@ -565,6 +569,7 @@ input[type=text]{
 footer{
   padding-bottom: 5%;
 }
+/* *************** */
 /* ARCHIVE */
 .archive-button{
   margin: 0.2% 4%;
@@ -606,6 +611,7 @@ li{
   color: #000000;
   line-height: 150%;
 }
+/* ****************************** */
 /**** MOBILE DEVICE VERSION ****/
 @media screen and (max-width: 800px), screen and (max-width: 800px and max-height: 500px){
   #general-page-title{
@@ -641,7 +647,7 @@ li{
     cursor: pointer;
   }
   .header-schedule{
-    height: 27%;
+    height: 40%;
   }
   .header-submission{
     height: 25%;
@@ -653,7 +659,8 @@ li{
     left: 50%;
     top: 50%;
     margin-left: -150px;
-    margin-top: -250px;
+    /*margin-top: -250px;*/
+    margin-top: -20%;
     margin-bottom: 10%;
   }
   .icon-box{
@@ -661,8 +668,8 @@ li{
     height: 100%;
   }
   #main-logo{
-  /*  position: fixed;*/
-    width: 70%;
+    position: fixed;
+    width: 400px;
   }
   #about-icon{
     margin-bottom: -15%;
@@ -741,7 +748,7 @@ li{
     height: 125px;
   }
   .header-schedule{
-    height: 195px;
+    height: 210px;
   }
   .header-submission{
     height: 125px;

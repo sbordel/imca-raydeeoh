@@ -1,4 +1,4 @@
-// CLOCK
+// clock
 function startTime() {
   var today = new Date();
   var h = today.getHours();
@@ -14,13 +14,14 @@ function checkTime(i) {
   if (i < 10) {i = "0" + i};
   return i;
 }
+
 // ABOUT: POP-UP MODALS
 $(function() {
   $( "#modal1").draggable();
   $( "#modal2").draggable();
   $( "#modal3").draggable();
   $( "#modal4").draggable();
-} );
+});
 // SCHEDULE: BUTTON SWITCH
 $(function(){
   $("#monday-button").click(function(){
@@ -57,6 +58,7 @@ $(function(){
   $("#wednesday-list").hide();
   $("#tuesday-list").hide();
   $("#monday-list").hide();
+});
 });
 // ARCHIVE: BUTTON SWITCH
 $(function(){

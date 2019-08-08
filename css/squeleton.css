@@ -302,8 +302,12 @@ p{
   color: #0033ff;
   z-index: 1;
 }
+.sub-icon-box{
+  max-width: 10%;
+  text-align: center;
+}
 .about-icons{
-  width: 5%;
+  width: 45%;
   margin: 5px;
 }
 #mission-icon-box{
@@ -516,6 +520,9 @@ form{
   width: 90%;
   padding-top: 10vh;
 }
+.form-section{
+  margin: 2.5px;
+}
 fieldset{
   border: none;
 }
@@ -523,6 +530,9 @@ legend{
   padding-top: 20px;
   padding-bottom: 20px;
   text-transform: uppercase;
+  font-size: 1.5vw;
+  /*text-align: center;*/
+  /*border: 0.5px dotted #ff9966;*/
 }
 input{
   font-family: 'VG5000';
@@ -542,6 +552,14 @@ input[type=text]{
   text-align: justify;
   text-overflow: inherit;
   overflow-x: auto;
+}
+.timeslot{
+  width: 50%;
+  padding: 5px;
+  border: 0.5px dotted #ff9966;
+}
+.timeslot-span{
+  font-size: 1.2vw;
 }
 #submission-button{
   display: block;
@@ -650,7 +668,7 @@ li{
     height: 30%;
   }
   .header-submission{
-    height: 25%;
+    height: 50%;
   }
   /* INDEX */
   .navigation-box{
@@ -693,23 +711,57 @@ li{
   }
  .about-header-icon{
    display: block;
-   }
+  }
  .sub-navigation-box-2{
+   display:block;
    position: absolute;
    width: 100%;
    height: 65%;
-   }
- .about-nav{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 25%;
+  }
+  .about-icons{
+    width: 100%;
+  }
+  .about-nav{
    font-size: 4vw;
-   }
- .about-icons{
-   width: 10%;
-   }
+  }
   .sub-icon-box{
+   text-align: center;
+  }
+  #mission-icon-box{
    display: block;
-   align-items: center;
-   margin-top: 100px;
-}
+   position: relative;
+   width: 100%;
+   top: auto;
+   left: 40%;
+   margin: 20px;
+  }
+  #mandate-icon-box{
+    display: block;
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: 40%;
+    margin: 20px;
+  }
+  #values-icon-box{
+    display: block;
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: 40%;
+    margin: 20px;
+  }
+  #policies-icon-box{
+    display: block;
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: 40%;
+    margin: 20px;
+  }
 /* SUBMISSION */
 .header-submission{
   height: 16%;
@@ -719,6 +771,12 @@ li{
 }
 #form{
   font-size: 3vw;
+}
+legend{
+  font-size: 3.2vw;
+}
+.timeslot-span{
+  font-size: 2.8vw;
 }
 /* SCHEDULE */
   .schedule-button{

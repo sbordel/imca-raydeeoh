@@ -19,50 +19,73 @@
 <div id="form">
 <form action="/action_page.php">
 
-    <legend>general information</legend>
+<div class="form-section">
+    <legend>general information</legend><br>
   <label for="f-name">first name* :</label><br>
   <input id="f-name" type="text" name="firstname">
+</div>
   <br>
+  <div class="form-section">
   <label for="s-name">last name* :</label><br>
   <input id="s-name" type="text" name="lastname">
+</div>
   <br>
-
+<div class="form-section">
   <label for="pronouns">pronouns* :</label><br>
   <input id="gnc" type="radio" name="gender">they/them<br>
   <input id="female" type="radio" name="gender">she/her<br>
   <input id="male" type="radio" name="gender">he/him<br>
   <input id="other" type="radio" name="gender">other<br>
+    <br>
   <label for="o-pronoun">(if "other" selected):</label><br>
   <input id="o-pronoun" type="text" name="pronoun">
+</div>
   <br>
+<div class="form-section">
   <label for="email">email* :</label><br>
   <input id="email" type="text" name="email">
+</div>
   <br>
-  <label for="student-id">student ID*</label><br>
+<div class="form-section">
+  <label for="student-id">student ID* :</label><br>
   <input id="student-id" type="text" name="studentid">
+</div>
   <br>
+<div class="form-section">
   <label for="f-study">field of study* :</label><br>
   <input id="f-study" type="text" name="fieldstudy">
+  </div>
   <br>
 
-    <legend>show application</legend>
+<div class="form-section">
+      <br><legend>show application</legend><br>
     <label for="artist-name"></label>host/artist/collective name* :<br>
   <input id="artist-name" type="text" name="artistname">
+</div>
   <br>
+<div class="form-section">
   <label for="show-title">show title (can be tentative)* :</label><br>
   <input id="show-title" type="text" name="showtitle">
+</div>
   <br>
+<div class="form-section">
   <label for="description">project/show description* (50-100 words max):</label><br>
   <input id="description" type="text" name="showdescription">
+</div>
   <br>
+<div class="form-section">
   <label for="bio">short bio* (50 words max) :</label><br>
   <input id="bio" type="text" name="bio">
+</div>
   <br>
+<div class="form-section">
   <label for="web-link">link (personal website, mixcloud, facebook, instagram, etc.):</label><br>
   <input id="web-link" type="text" name="link">
+</div>
   <br>
+<div class="form-section">
   <fieldset class="project-type">
-  <label for="category">category of project* :</label><br>
+  <label for="category">project category* :</label><br>
   <input type="radio" name="category" value="soundart">sound art<br>
   <input type="radio" name="category" value="fieldrecording"> field recording<br>
   <input type="radio" name="category" value="music">music (DIY or self-produced)<br>
@@ -70,12 +93,18 @@
   <input type="radio" name="category" value="performance">music concrète<br>
   <input type="radio" name="category" value="performance">podcast or talk show<br>
   <input type="radio" name="category" value="performance">other<br>
-</fieldset>
+</fieldset>  <br>
 <label for="other-category">(if "other" selected):</label><br>
   <input id="other-category" type="text" name="othercategory">
+  </div>
   <br>
-    <label for="time">timeslots* (choose 3 timeslots for your show to be aired. one will be choosed according to availabilities) :</label>
-    <br><label for="day">day </label><br>
+
+  <div class="form-section">
+    <label for="time">timeslots* :
+      <br>(choose 3 timeslots for your show to be aired. one will be chosen according to availabilities)</label>
+    <br><br>
+    <div class="timeslot">
+    <label for="day">day :</label>&nbsp&nbsp&nbsp
     <select class="select-menu" name="day">
       <option value="monday">monday</option>
       <option value="tuesday">tuesday</option>
@@ -83,8 +112,8 @@
       <option value="thursday">thursday</option>
       <option value="friday">friday</option>
     </select>
-    <br>
-   from  :  <select name="day">
+    <br><br>
+   from :&nbsp&nbsp&nbsp<select name="day">
    <option value="1000AM">10:00 AM</option>
    <option value="1030AM">10:30 AM</option>
    <option value="1100AM">11:00 AM</option>
@@ -101,8 +130,8 @@
    <option value="1630PM">04:30 PM</option>
    <option value="1700PM">05:00 PM</option>
    <option value="1730PM">05:30 PM</option>
-   </select>
-   to  :<select name="day">
+   </select>&nbsp&nbsp&nbsp&nbsp&nbsp
+   to : &nbsp&nbsp&nbsp<select name="day">
      <option value="1030AM">10:30 AM</option>
      <option value="1100AM">11:00 AM</option>
      <option value="1130AM">11:30 AM</option>
@@ -119,10 +148,12 @@
      <option value="1700PM">05:00 PM</option>
      <option value="1730PM">05:30 PM</option>
      <option value="1800PM">06:00 PM</option>
-   </select>
+   </select></div>
    <br>
-   +
-   <br>day<br>
+   <div class="timeslot-span">or</div>
+  <br>
+  <div class="timeslot">
+   day : &nbsp&nbsp&nbsp
     <select name="day">
       <option value="monday">monday</option>
       <option value="tuesday">tuesday</option>
@@ -130,8 +161,8 @@
       <option value="thursday">thursday</option>
       <option value="friday">friday</option>
     </select>
-    <br>
-    from  :  <select name="day">
+    <br><br>
+    from :&nbsp&nbsp&nbsp<select name="day">
     <option value="1000AM">10:00 AM</option>
     <option value="1030AM">10:30 AM</option>
     <option value="1100AM">11:00 AM</option>
@@ -148,8 +179,8 @@
     <option value="1630PM">04:30 PM</option>
     <option value="1700PM">05:00 PM</option>
     <option value="1730PM">05:30 PM</option>
-    </select>
-    to  :<select name="day">
+    </select>&nbsp&nbsp&nbsp&nbsp&nbsp
+    to :&nbsp&nbsp&nbsp<select name="day">
       <option value="1030AM">10:30 AM</option>
       <option value="1100AM">11:00 AM</option>
       <option value="1130AM">11:30 AM</option>
@@ -166,10 +197,12 @@
       <option value="1700PM">05:00 PM</option>
       <option value="1730PM">05:30 PM</option>
       <option value="1800PM">06:00 PM</option>
-   </select>
+   </select></div>
    <br>
-   +
-   <br>day<br>
+   <div class="timeslot-span">or</div>
+   <br>
+   <div class="timeslot">
+   day : &nbsp&nbsp&nbsp
     <select name="day">
       <option value="monday">monday</option>
       <option value="tuesday">tuesday</option>
@@ -177,8 +210,8 @@
       <option value="thursday">thursday</option>
       <option value="friday">friday</option>
     </select>
-    <br>
-    from  :  <select name="day">
+    <br><br>
+    from :&nbsp&nbsp&nbsp<select name="day">
     <option value="1000AM">10:00 AM</option>
     <option value="1030AM">10:30 AM</option>
     <option value="1100AM">11:00 AM</option>
@@ -195,9 +228,9 @@
     <option value="1630PM">04:30 PM</option>
     <option value="1700PM">05:00 PM</option>
     <option value="1730PM">05:30 PM</option>
-    </select>
-    <label for=""></label><br>
-    to  :<select name="day">
+    </select>&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label for="to"></label>
+    to :&nbsp&nbsp&nbsp<select name="day">
       <option value="1030AM">10:30 AM</option>
       <option value="1100AM">11:00 AM</option>
       <option value="1130AM">11:30 AM</option>
@@ -214,12 +247,14 @@
       <option value="1700PM">05:00 PM</option>
       <option value="1730PM">05:30 PM</option>
       <option value="1800PM">06:00 PM</option>
-   </select>
+   </select></div>
+     </div>
    <br>
    <br>
    <br>
+   <div class="form-section">
      <input id="confirm" type="checkbox" name="confirmed" value="confirmed">I have read and respect the submission rules stated in <a href="">this document</a>
-  </div>
+  </div></div>
   <br>
   <input type="submit" value="submit" id="submission-button">
 </form>

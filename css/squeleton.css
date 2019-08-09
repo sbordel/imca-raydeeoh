@@ -1,10 +1,13 @@
 @font-face {
   font-family: 'MisterPixel' ;
-  src: url(../fonts/misterpixel/otf/mister-pixel-regular.otf);
+  src: url('../fonts/misterpixel/otf/mister-pixel-regular.otf');
 }
 @font-face {
   font-family: 'VG5000' ;
-  src: url(../fonts/vg5000/fonts/VG5000-Regular.otf);
+  src: url('../fonts/vg5000/fonts/VG5000-Regular.otf') format('otf'),
+  url('../fonts/vg5000/fonts/webfonts/VG5000-Regular.ttf') format('ttf'),
+  url('../fonts/vg5000/fonts/webfonts/VG5000-Regular.woff') format('woff'),
+  url('../fonts/vg5000/fonts/webfonts/VG5000-Regular.woff2') format('woff2'),;
 }
 * {
   margin: 0;
@@ -335,8 +338,8 @@ p{
 #values-icon-box{
   position: absolute;
   width: 100%;
-  top: 19%;
-  left: 61%;
+  top: 8%;
+  left: 47%;
 }
 #values-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);
@@ -346,10 +349,21 @@ p{
 #policies-icon-box{
   position: absolute;
   width: 100%;
-  top: 67%;
-  left: 73%;
+  top: 19%;
+  left: 61%;
 }
 #policies-icon:hover{
+  filter:drop-shadow(0px 0px 15px #ccff33);
+  -webkit-filter: drop-shadow(0px 0px 15px #ccff33);
+  -moz-filter: drop-shadow(0px 0px 15px #ccff33);
+}
+#contact-icon-box{
+  position: absolute;
+  width: 100%;
+  top: 75%;
+  left: 70%;
+}
+#contact-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);
   -webkit-filter: drop-shadow(0px 0px 15px #ccff33);
   -moz-filter: drop-shadow(0px 0px 15px #ccff33);
@@ -388,6 +402,9 @@ h4{
 #modal4:target {
   display: block;
   }
+#modal5:target {
+    display: block;
+    }
 h3{
     font-size: 3vh;
     font-weight: lighter;
@@ -755,6 +772,14 @@ li{
     margin: 20px;
   }
   #policies-icon-box{
+    display: block;
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: 40%;
+    margin: 20px;
+  }
+  #contact-icon-box{
     display: block;
     position: relative;
     width: 100%;

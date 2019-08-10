@@ -582,6 +582,9 @@ textarea{
 .timeslot-span{
   font-size: 1.2vw;
 }
+span.error, .field-needed{
+  color: #FF0000;
+}
 #submission-button{
   display: block;
   margin-left: auto;

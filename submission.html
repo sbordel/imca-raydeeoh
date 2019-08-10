@@ -38,13 +38,15 @@
 
 <div class="form-section">
     <legend>general information</legend><br>
-  <label for="f-name">first name* :</label><br>
+  <label for="f-name">first name :</label><br>
   <input id="f-name" type="text" name="firstname">
+  <span class="field-needed">*</span>
 </div>
   <br>
   <div class="form-section">
-  <label for="s-name">last name* :</label><br>
+  <label for="s-name">last name :</label><br>
   <input id="s-name" type="text" name="lastname">
+  <span class="field-needed">*</span>
 </div>
   <br>
 <div class="form-section">
@@ -59,40 +61,47 @@
 </div>
   <br>
 <div class="form-section">
-  <label for="email">email* :</label><br>
+  <label for="email">email :</label><br>
   <input id="email" type="text" name="email">
+  <span class="field-needed">*</span>
 </div>
   <br>
 <div class="form-section">
-  <label for="student-id">student ID* :</label><br>
+  <label for="student-id">student ID :</label><br>
   <input id="student-id" type="text" name="studentid">
+  <span class="field-needed">*</span>
 </div>
   <br>
 <div class="form-section">
-  <label for="f-study">field of study* :</label><br>
+  <label for="f-study">field of study :</label><br>
   <input id="f-study" type="text" name="fieldstudy">
+  <span class="field-needed">*</span>
   </div>
   <br>
 
 <div class="form-section">
       <br><legend>show application</legend><br>
-    <label for="artist-name"></label>host/artist/collective name* :<br>
+    <label for="artist-name"></label>host/artist/collective name :<br>
   <input id="artist-name" type="text" name="artistname">
+  <span class="field-needed">*</span>
 </div>
   <br>
 <div class="form-section">
-  <label for="show-title">show title (can be tentative)* :</label><br>
+  <label for="show-title">show title (can be tentative) :</label><br>
   <input id="show-title" type="text" name="showtitle">
+  <span class="field-needed">*</span>
 </div>
   <br>
 <div class="form-section">
-  <label for="description">project/show description* (50-100 words max):</label><br>
+  <label for="description">project/show description (50-100 words max):</label><br>
   <textarea name="description"></textarea>
+  <span class="field-needed">*</span>
 </div>
   <br>
 <div class="form-section">
-  <label for="bio">short bio* (50 words max) :</label><br>
+  <label for="bio">short bio (50 words max) :</label><br>
   <textarea name="bio"></textarea>
+  <span class="field-needed">*</span>
 </div>
   <br>
 <div class="form-section">
@@ -102,7 +111,7 @@
   <br>
 <div class="form-section">
   <fieldset class="project-type" name="category">
-  <label for="category">project category* :</label><br>
+  <label for="category">project category :</label>  <span class="field-needed">*</span><br>
   <input type="radio" name="soundart" value="soundart">sound art<br>
   <input type="radio" name="fieldrecording" value="fieldrecording"> field recording<br>
   <input type="radio" name="music" value="music">music (DIY or self-produced)<br>
@@ -110,14 +119,15 @@
   <input type="radio" name="musicconcrete" value="musicconcrete">music concrète<br>
   <input type="radio" name="podcast" value="podcast">podcast or talk show<br>
   <input type="radio" name="other" value="other">other<br>
-</fieldset>  <br>
+</fieldset>
+<br>
 <label for="other-category">(if "other" selected):</label><br>
   <input id="other-category" type="text" name="othercategory">
   </div>
   <br>
 
   <div class="form-section">
-    <label for="time">timeslots* :
+    <label for="time">timeslots :
       <br>(choose 3 timeslots for your show to be aired. one will be chosen according to availabilities)</label>
     <br><br>
     <div class="timeslot">
@@ -165,7 +175,7 @@
      <option value="1700PM">05:00 PM</option>
      <option value="1730PM">05:30 PM</option>
      <option value="1800PM">06:00 PM</option>
-   </select></div>
+   </select><span class="field-needed"> *</span></div>
    <br>
    <div class="timeslot-span">or</div>
   <br>
@@ -214,7 +224,7 @@
       <option value="1700PM">05:00 PM</option>
       <option value="1730PM">05:30 PM</option>
       <option value="1800PM">06:00 PM</option>
-   </select></div>
+   </select><span class="field-needed"> *</span></div>
    <br>
    <div class="timeslot-span">or</div>
    <br>
@@ -264,13 +274,14 @@
       <option value="1700PM">05:00 PM</option>
       <option value="1730PM">05:30 PM</option>
       <option value="1800PM">06:00 PM</option>
-   </select></div>
+   </select><span class="field-needed"> *</span></div>
      </div>
    <br>
    <br>
    <br>
    <div class="form-section">
      <input id="confirm" type="checkbox" name="confirmed" value="confirmed">I have read and respect the submission rules stated in <a href="">this document</a>
+     <span class="field-needed">*</span><span class="field-needed">*</span>
   </div></div>
   <br>
   <input type="submit" value="submit" id="submission-button" onclick="alert('Thank you for your submission :-)')">

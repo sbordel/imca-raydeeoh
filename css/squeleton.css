@@ -47,7 +47,7 @@ html {
 .body-archive {
   height: 100%;
   margin: 0;
-  background-image: linear-gradient(to bottom , #ccff33 , #99ffcc );
+  background-image: linear-gradient(to bottom , #ccff33 , #ccff99 ,  #ccff99 , #99ffcc , #99ffcc );
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -76,16 +76,18 @@ header{
 .header-archive{
   /*height: 30%;*/
   height: 225px;
-  background-color: #ccff33 , #ccff33 , #99ffcc ;
+  background-image: linear-gradient(to bottom , #ccff33 , #ccff33 , #ccff99);
   z-index: 0;
 }
 #general-page-title{
   position: relative;
+  display: inline-block;
   font-family: 'VG5000';
   font-size: 4vw;
   font-weight: lighter;
   color: #0033ff;
   margin-left: 10%;
+  margin-bottom: 22px;
 }
 #return-button{
   position: absolute;
@@ -139,7 +141,7 @@ header{
   margin-top: 1%;
 }
 button{
-  font-family: 'MisterPixel';
+  font-family: 'MisterPixel', 'VG5000';
   font-size: 1.4vw;
   margin-top: 0.5%;
   background-color: #FFFFFF;
@@ -260,7 +262,7 @@ input[type="image"]{
  width: 2%;
 }
 p{
-  font-family: 'MisterPixel';
+  font-family: 'MisterPixel', 'VG5000';
   font-size: 1.25vw;
   margin-top: 0.5%;
   text-transform: uppercase;
@@ -271,11 +273,45 @@ p{
 /* -- ABOUT -- */
 #about-page-title{
   position: relative;
+  display: inline-block;
   font-family: 'VG5000';
   font-size: 4vw;
   font-weight: lighter;
   color: #000000;
   text-align: center;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 0%);
+}
+#about-page-link{
+  text-decoration: none;
+  color: #000000;
+}
+.tooltip{
+  font-family: 'VG5000';
+  font-size: 1vw;
+  font-weight: lighter;
+  font-style: italic;
+  color: #000000;
+  text-align: center;
+}
+#about-page-title .tooltip {
+  visibility: hidden;
+  background-color: #ffffcc;
+  color: #000000;
+  border: 0.5px black solid;
+  width: 200px;
+  padding: 5px 0;
+  text-align: center;
+
+  /* tool tip position */
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 105%;
+}
+#about-page-title:hover .tooltip {
+  visibility: visible;
 }
 #second-logo{
   display: block;
@@ -371,7 +407,7 @@ p{
 [id^=modal] {
   display: none;
   position: fixed;
-  font-family: 'MisterPixel';
+  font-family: 'MisterPixel', 'VG5000';
   border: 0.15vw solid black;
   background-color: #ffffff;
   text-align: center;
@@ -460,7 +496,7 @@ h3{
   padding: 0.8% 4%;
   /*padding: 10px 50px;*/
 }
-#schedule{
+.schedule{
  display: block;
  position: relative;
  width: 100%;
@@ -491,7 +527,7 @@ td{
   padding: 10px;
 }
 .show-name, .host-name, .show-description{
-  font-family: 'MisterPixel';
+  font-family: 'MisterPixel', 'VG5000';
   font-size: 1.3vw;
   font-weight: lighter;
   padding: 5px;
@@ -508,10 +544,32 @@ td.show-description {
 }
 /* *************** */
 /* SUBMISSION */
+#submission-page-link{
+  text-decoration: none;
+  color: #0033ff;
+}
+#general-page-title .tooltip {
+  visibility: hidden;
+  background-color: #ffffcc;
+  color: #000000;
+  border: 0.5px black solid;
+  width: 200px;
+  padding: 5px 0;
+  text-align: center;
+
+  /* tool tip position */
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 105%;
+}
+#general-page-title:hover .tooltip {
+  visibility: visible;
+}
 #form{
   display: block;
   text-align:left;
-  font-family: 'MisterPixel';
+  font-family: 'MisterPixel', 'VG5000';
   font-size: 1.4vw;
   font-weight: lighter;
   color: #000000;
@@ -589,7 +647,7 @@ span.error, .field-needed{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'MisterPixel';
+  font-family: 'MisterPixel', 'VG5000';
   font-size: 1.4vw;
   margin-top: 0.5%;
   background-color: #0033ff;
@@ -628,12 +686,12 @@ footer{
   width: 54%;
   padding: 5px;
   padding-bottom: 10%;
-  margin-top: 18%;
+  margin-top: 27%;
   margin-left: auto;
   margin-right: auto;
   line-height: 100%;
   text-align:left;
-  z-index: -9999;
+  z-index: -2;
 }
 #show-list{
   display: none;
@@ -648,7 +706,7 @@ ul{
   list-style: circle inside none;
 }
 li{
-  font-family: 'MisterPixel';
+  font-family: 'MisterPixel', 'VG5000';
   font-size: 1.3vw;
   color: #000000;
   line-height: 150%;
@@ -694,6 +752,9 @@ li{
   .header-submission{
     height: 50%;
   }
+  .header-archive{
+    height: 32%;
+  }
   /* INDEX */
   .navigation-box{
     display: block;
@@ -729,6 +790,9 @@ li{
     text-align: left;
     font-size: 7vw;
     width:80%;
+    left: 0%;
+    top: 0%;
+    transform: translate(-0%, 0%);
   }
   #second-logo{
     display: none;
@@ -795,9 +859,6 @@ li{
     margin: 20px;
   }
 /* SUBMISSION */
-.header-submission{
-  height: 16%;
-}
 #form{
  padding-top: 55px;
 }
@@ -821,6 +882,7 @@ legend{
     padding: 1.5% 5%;
   }
   .archive-list{
+    padding-top: 55px;
     margin-top: 30%;
     height: 65%;
     width: 71%;
@@ -844,6 +906,6 @@ legend{
     height: 125px;
   }
   .header-archive{
-    height: 125px;
+    height: 210px;
   }
 }

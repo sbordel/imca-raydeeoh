@@ -563,12 +563,16 @@ input[type=text]{
   background-image: linear-gradient(to bottom , #ccccff , #ff9966);
   height: 25px;
 }
-#description, #bio{
+textarea{
+  border: 0.1vw black solid;
+  background-image: linear-gradient(to bottom , #ccccff , #ff9966);
   width: 40%;
   height: 100px;
+  margin-top: 5px;
+  margin-left: 5px;
+  overflow-x: auto;
   text-align: justify;
   text-overflow: inherit;
-  overflow-x: auto;
 }
 .timeslot{
   width: 50%;

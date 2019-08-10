@@ -33,8 +33,88 @@
   <div id="clock"></div>
 </header>
 
+<?php
+$firstnameErr = $lastnameErr = $emailErr = $studentidErr = $fieldstudyErr = $artistnameErr = $showtitleErr = $descriptionErr = $bioErr = $categoryErr = $timeErr = "";
+$firstname = $lastname = $pronoun = $email = $studentid = $fieldstudy = $artistname = $showtitle = $description = $bio = $link = $category = $time = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["firstname"])) {
+    $firstnameErr = "required";
+  } else {
+    $firstname = test_input($_POST["firstname"]);
+  }
+  if (empty($_POST["firstname"])) {
+    $lastnameErr = "required";
+  } else {
+    $lastname = test_input($_POST["lastname"]);
+  }
+  if (empty($_POST["pronoun"])) {
+    $pronoun = "";
+  } else {
+    $pronoun = test_input($_POST["pronoun"]);
+  }
+  if (empty($_POST["email"])) {
+    $emailErr = "required";
+  } else {
+    $email = test_input($_POST["email"]);
+  }
+  if (empty($_POST["studentid"])) {
+    $studentidErr = "required";
+  } else {
+    $studentid = test_input($_POST["studentid"]);
+  }
+  if (empty($_POST["fieldstudy"])) {
+    $fieldstudyErr = "required";
+  } else {
+    $fieldstudy = test_input($_POST["fieldstudy"]);
+  }
+  if (empty($_POST["artistname"])) {
+    $artistnameErr = "required";
+  } else {
+    $artistname = test_input($_POST["artistname"]);
+  }
+  if (empty($_POST["showtitle"])) {
+    $showtitleErr = "required";
+  } else {
+    $showtitle = test_input($_POST["showtitle"]);
+  }
+  if (empty($_POST["description"])) {
+    $descriptionErr = "required";
+  } else {
+    $description = test_input($_POST["description"]);
+  }
+  if (empty($_POST["bio"])) {
+    $bioErr = "required";
+  } else {
+    $bio = test_input($_POST["bio"]);
+  }
+  if (empty($_POST["link"])) {
+    $link = "";
+  } else {
+    $link = test_input($_POST["link"]);
+  }
+  if (empty($_POST["category"])) {
+    $categoryErr = "required";
+  } else {
+    $category = test_input($_POST["category"]);
+  }
+  if (empty($_POST["time"])) {
+    $timeErr = "required";
+  } else {
+    $time = test_input($_POST["time"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
 <div id="form">
-<form action="/action_page.php" method="post">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
 <div class="form-section">
     <legend>general information</legend><br>
@@ -275,6 +355,3 @@
   <br>
   <input type="submit" value="submit" id="submission-button" onclick="alert('Thank you for your submission :-)')">
 </form>
-<footer></footer>
-</body>
-</html>

@@ -269,6 +269,7 @@ p{
   font-weight: lighter;
   color: #ccff33;
 }
+/*
 .floating-player-menu{
   display: block;
   position: fixed;
@@ -301,14 +302,14 @@ p{
   width: 500px;
   top: -1050%;
   left: -200%;
-}*/
+}
 #volume-off-button{
   display: none;
   position: absolute;
   width: 500px;
   top: -1050%;
   left: -200%;
-}
+}*/
 /* *************** */
 /* -- ABOUT -- */
 #about-page-title{

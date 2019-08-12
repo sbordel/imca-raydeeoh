@@ -22,6 +22,7 @@
 <meta name="theme-color" content="#ffffff">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
+<script src="js/player.js"></script>
 </head>
 <body class="body-index">
 
@@ -85,40 +86,5 @@
 <!--<a id="volumeoff-button" href="#void"><input type="image" src="assets/audio_player_files/volumeoffbutton.png" id="volumeoff-icon">--></a>
 <p id="player-text">      (track 1)   -    unknown</p>
 </div>
-
-
-<!-- player <> VPS script  -->
-<script>
-
-	//open stream from VPS
-	var myaudio = new Audio('http://rhizotron.net:80/listen.mp3');
-	//global variables
-	let init = false;
-	let status = true;
-
-
-	function play(){
-		if (init === false){
-		myaudio.play(); 
-		init = true;
-		console.log("stream opened!");	
-		}
-
-		if (status === true){
-		myaudio.muted = false;
-		status = false;
-		// console.log(status);
-		document.getElementById("volumeon-icon-index").src = "assets/audio_player_files/volumeonbutton.png";
-
-		} else if (status === false){
-			myaudio.muted = true;
-			status = true;
-			// console.log(status);
-			document.getElementById("volumeon-icon-index").src = "assets/audio_player_files/volumeoffbutton.png";
-		}
-	}
- 
-</script>
-
 </body>
 </html>

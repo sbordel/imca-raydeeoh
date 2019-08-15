@@ -171,16 +171,19 @@ button:active{
 ::-webkit-scrollbar-track-piece { background: #ffffff;  }
 ::-webkit-scrollbar-corner { background: transparent; }
 
-/* - general player - */
-#player-container{
+/* PLAYER */
+/* main player */
+.player-container#main-player{
  position:fixed;
- float: left;
+ text-align:center;
  bottom:0;
  left:0;
  width:100%;
- height: 5%;
+ background-color:#000000;
+ height: 4%;
  padding:5px;
  padding-bottom:2.5%;
+ overflow-y: visible;
 }
 input[type="image"]{
  float:left;
@@ -188,18 +191,43 @@ input[type="image"]{
 }
 #volumeon-icon{
   float:left;
-  height:1%;
-  left:0%;
+  width: 2%;
   padding: 0.1%;
 }
 #volumeoff-icon{
   display: none;
-  padding: -0.1%;
+  width: 2%;
+  padding: 0.1%;
+}
+p#player-text{
+  font-family: 'MisterPixel', 'VG5000';
+  font-size: 1.25vw;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #ccff33;
+  padding: 0.5%;
+  width: 100%;
+  height: 4%;
+}
+/* secondary player */
+.player-container#secondary-player{
+ position:fixed;
+ text-align:center;
+ bottom:0;
+ left:0;
+ width:100%;
+ background-color: none;
+ height: 4%;
+ padding:5px;
+ padding-bottom:2.5%;
+ overflow-y: visible;
 }
 #info-icon{
-  padding-top: 0.1%;
-  margin-left: 0%;
+  float:left;
+  width: 2%;
+  margin-left: -0.5%;
 }
+
 /* *************** */
 /* -- INDEX -- */
 /* - hidden scrollbar on index */
@@ -213,6 +241,9 @@ input[type="image"]{
   padding-left:50px;
   padding-right: 20px;
   margin-bottom: -5px;
+}
+#main-logo-mobile{
+  display: none;
 }
 .navigation-box{
   display: flex;
@@ -266,43 +297,6 @@ h2{
   -webkit-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
   -moz-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
-}
-/* player index */
-#player-container-index{
- position:fixed;
- text-align:center;
- bottom:0;
- left:0;
- width:100%;
- background-color:#000000;
- height: 4%;
- padding:5px;
- padding-bottom:2.5%;
- overflow-y: visible;
-}
-input[type="image"]{
- float:left;
- height:1%;
-}
-#volumeon-icon-index{
-  float:left;
-  width: 2%;
-  padding: 0.1%;
-}
-#volumeoff-icon-index{
-  display: none;
-  width: 2%;
-  padding: 0.1%;
-}
-p#player-text{
-  font-family: 'MisterPixel', 'VG5000';
-  font-size: 1.25vw;
-  text-transform: uppercase;
-  font-weight: lighter;
-  color: #ccff33;
-  padding: 0.5%;
-  width: 100%;
-  height: 4%;
 }
 /* *************** */
 /* -- ABOUT -- */
@@ -808,8 +802,14 @@ li{
     height: 100%;
   }
   #main-logo{
+    display: none;
+  }
+  #main-logo-mobile{
+    display: block;
     position: fixed;
-    width: 400px;
+    width: 80%;
+    margin: 7%;
+    margin-top: 10%;
   }
   #about-icon{
     margin-bottom: -15%;
@@ -818,17 +818,17 @@ li{
     font-size: 4vw;
     padding-bottom: 10%;
   }
-  #player-container-index{
+  .player-container#main-player{
    height: 40px;
    padding:10px;
   }
-  #volumeon-icon-index{
+  #volumeon-icon{
     float:left;
     width:6%;
     margin: 5px;
     margin-top: -1px;
   }
-  #volumeoff-icon-index{
+  #volumeoff-icon{
     display: none;
     float:left;
     width:6%;
@@ -836,7 +836,7 @@ li{
     margin-top: -1px;
   }
   p#player-text{
-    font-size: 4vw;
+    font-size: 1.2em;
     padding: 0.5%;
     width: 100%;
     height: 4%;
@@ -931,8 +931,6 @@ li{
     padding: 10px;
   }
 /* SCHEDULE */
-.schedule-button{
-}
 .schedule{
  display: block;
  position: relative;

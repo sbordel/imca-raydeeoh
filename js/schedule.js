@@ -3,6 +3,8 @@ var url = "test.xlsx";
 var oReq = new XMLHttpRequest();
 oReq.open("GET", url, true);
 oReq.responseType = "arraybuffer";
+
+/* Variables */
 var worksheet, workbook, radioObject;
 let monData = [0, 9];
 let tuesData = [9, 18];

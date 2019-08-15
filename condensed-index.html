@@ -22,6 +22,7 @@
 <meta name="theme-color" content="#ffffff">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
+<script src="js/ux.js"></script>
 <script>
 function show(shown, hidden) {
   document.getElementById(shown).style.display='block';
@@ -29,11 +30,11 @@ function show(shown, hidden) {
   return false;
 }
 </script>
-<script src="js/player.js"></script>
 </head>
 <body>
 
   <div class="body-index" id="Page1">
+    <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
     <!-- LOGO -->
     <img id="main-logo" src="assets/vectorized/logo/full/imcaraydeeoh_logo.svg" alt="imca raydeeoh logo">
     <img id="main-logo-mobile" src="assets/vectorized/logo/full/imcaraydeeoh_logo.svg" alt="imca raydeeoh logo">
@@ -633,8 +634,6 @@ function show(shown, hidden) {
      </form>
      <footer></footer>
 </div>
-
-
 
 </body>
 </html>

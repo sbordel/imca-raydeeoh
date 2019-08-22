@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Browsing and playing music</title>
+
+<style type="text/css">
+    #menu {overflow:hidden;margin:0px;padding:0px;list-style-type:none;}
+    #menu > li {float:left;padding:5px;margin:5px;}
+
+</style>
+
+<script> src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="js/ux.js"></script>
+<script src="js/player.js"></script>
+
+<script type="text/javascript">
+
+// This function will dynamically load all the needed content 
+// url -> what to load; target -> where to place it on return
+
+function load_content(url, target){
+    xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.onreadystatechange = function () { 
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            target.innerHTML = xhr.responseText;
+        }
+    }
+    xhr.send();
+}
+
+// In a real situation you may not want to change default behavior for all the
+// links within a page - in that case, mark those link with a 'class-name' and loop 
+// them using getElementsByClassName('class-name')
+
+window.onload = function(){
+    var a = document.getElementsByTagName('A'), i;
+    load_content('index.html', document.getElementById('content'));
+    for(i = 0; i < a.length; i++){
+        (function(i){
+            a[i].onclick = function(){
+                load_content(a[i].href, document.getElementById('content'));
+                return false;
+            };
+        })(i);
+    }
+};
+
+</script>
+
+</head>
+<body>
+
+<ul id="menu">
+    <li><a href="ajax.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="schedule.html">Portfolio</a></li>
+    <li><a href="submission.html">Contact</a></li>
+</ul>
+
+<!-- this div holds all the dynamic content -->
+<div id=content></div>
+
+<!-- player -->
+<div class="player-container" id="main-player"><div>
+    <a  href="#void"><input id="volumeon-icon" type="image" src="assets/audio_player_files/volumeonbutton.png"></a>
+    <!--<a id="volumeoff-button" href="#void"><input type="image" src="assets/audio_player_files/volumeoffbutton.png" id="volumeoff-icon">--></a>
+    <p id="player-text">      (track 1)   -    unknown</p>
+    </div>
+
+</body>
+</html>

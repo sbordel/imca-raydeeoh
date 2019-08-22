@@ -54,37 +54,27 @@ $(document).ready(function(){
 }
 
 function monday(){
-  console.log(dayData + " " + monData + " :before");
   dayData = monData;
   fill();
-  console.log(dayData + " " + monData + " :after");
 }
 
 function tuesday(){
-  console.log(dayData + " " + tuesData + " :before");
   dayData = tuesData;
   fill();
-  console.log(dayData + " " + tuesData + " :after");
 }
 
 function wednesday(){
-  console.log(dayData + " " + wedData + " :before");
   dayData = wedData;
   fill();
-  console.log(dayData + " " + wedData + " :after");
 }
 
 function thursday(){
-  console.log(dayData + " " + thursData + " :before");
   dayData = thursData;
-  fill();
-  console.log(dayData + " " + thursData + " :after");
+  fill(); 
 }
 
 function friday(){
-  console.log(dayData + " " + friData + " :before");
   dayData = friData;
   fill();
-  console.log(dayData + " " + friData + " :after");
 }
 

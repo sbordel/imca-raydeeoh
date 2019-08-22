@@ -14,6 +14,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  height: 100%;
+  width:100%;
+}
 html {
   height: 100%;
 }
@@ -31,6 +36,7 @@ html {
   background-image: linear-gradient(to bottom , #ccccff , #99ffcc);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: none;
 }
 .body-schedule {
   height: 100%;
@@ -39,11 +45,13 @@ html {
   /*background-image: linear-gradient(to bottom , #99ffcc , #ff9966 , #ff9966 , #ff9966 , #ff9966 , #ff9966);*/
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: none;
 }
 .body-submission {
   background-color: #ccccff;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: none;
 }
 .body-archive {
   height: 100%;
@@ -544,7 +552,8 @@ table {
 }
 table#schedule-table {
   font-size: 1vw;
-  /*margin-top: 15.5%;*/
+  margin-top: 200%;
+  top:0;
   text-align:center;
 }
 td{
@@ -943,6 +952,7 @@ li{
  margin-top: 2%;
  z-index: -1;
 }
+
 .show-time {
   font-size: 3.5em;
   font-family: 'VG5000';

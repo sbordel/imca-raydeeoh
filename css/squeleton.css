@@ -54,6 +54,10 @@ html {
 .body-player{
   height: 100%;
   margin: 0;
+  background-color: #ffffff;
+  /*background-image: linear-gradient(to bottom , #ccff33 , #ccff99 ,  #ccff99 , #99ffcc , #99ffcc );
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
   text-align: center;
   overflow-y: hidden;
   padding-top:7%;
@@ -111,6 +115,7 @@ header{
   padding-bottom: 2px;
   padding-left: 4.5px;
   padding-right: 5px;
+  z-index: 4;
 }
 #return-button:hover{
   border: 0.5px black dotted;
@@ -840,6 +845,13 @@ li{
    height: 40px;
    padding:10px;
   }
+  .player-container#secondary-player{
+   bottom:0;
+   left:0;
+   height: 4%;
+   padding: 5px;
+   padding-bottom:6%;
+  }
   #volumeon-icon{
     float:left;
     width:6%;
@@ -851,6 +863,12 @@ li{
     float:left;
     width:6%;
     margin: 5px;
+    margin-top: -1px;
+  }
+  #info-icon{
+    float:left;
+    width:6%;
+    margin: -2px;
     margin-top: -1px;
   }
   p#player-text{
@@ -933,10 +951,18 @@ li{
     left: 40%;
     margin: 20px;
   }
-  [id^=modal] {
-    max-width: 90%;
-    max-height: 80%;
-    padding: 10px;
+
+[id^=modal] {
+      display: none;
+      position: absolute;);
+      max-height: 90%;
+      min-width: 90%;
+      margin:0;
+      z-index: 1;
+    }
+  }
+  #about-page-title .tooltip {
+    display: none;
   }
   h3{
     font-size: 1.7em;
@@ -944,8 +970,7 @@ li{
   .inner-modal{
     font-size: 1.25em;
     border: 0.15vw solid black;
-    min-height: 410px;
-    max-height: 30%;
+    max-height: 90%;
     padding: 10px;
   }
 /* SCHEDULE */
@@ -1004,6 +1029,9 @@ input[type=text]{
   font-size: 1.2em;
   border-radius: 17px;
   cursor: pointer;
+}
+#general-page-title .tooltip {
+  display: none;
 }
 /* SCHEDULE */
   .schedule-button{

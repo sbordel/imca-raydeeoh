@@ -52,6 +52,13 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.body-player{
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  overflow-y: hidden;
+  padding-top:7%;
+}
 header{
   position: fixed;
   width: 100%;
@@ -228,6 +235,17 @@ p#player-text{
   width: 2%;
   margin-left: -0.5%;
 }
+/* external player */
+.body-player p#player-text{
+  color: #0033ff;
+}
+.external-player{
+  padding: 2%;
+  text-align:center;
+}
+.body-player::-webkit-scrollbar { width: 0 !important }
+.body-player{ -ms-overflow-style: none; }
+.body-player{ overflow: -moz-scrollbars-none; }
 
 /* *************** */
 /* -- INDEX -- */

@@ -16,13 +16,13 @@
 		myaudio.muted = false;
 		status = false;
 		// console.log(status);
-		document.getElementById("volumeon-icon-index").src = "assets/audio_player_files/volumeonbutton.png";
+		document.getElementById("volumeon-icon").src = "assets/audio_player_files/volumeonbutton.png";
 
 		} else if (status === false){
 			myaudio.muted = true;
 			status = true;
 			// console.log(status);
-			document.getElementById("volumeon-icon-index").src = "assets/audio_player_files/volumeoffbutton.png";
+			document.getElementById("volumeon-icon").src = "assets/audio_player_files/volumeoffbutton.png";
 		}
 	}
  

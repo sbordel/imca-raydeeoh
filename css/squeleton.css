@@ -7,7 +7,7 @@
   src: url('../fonts/vg5000/fonts/VG5000-Regular.otf') format('otf'),
   url('../fonts/vg5000/fonts/webfonts/VG5000-Regular.ttf') format('ttf'),
   url('../fonts/vg5000/fonts/webfonts/VG5000-Regular.woff') format('woff'),
-  url('../fonts/vg5000/fonts/webfonts/VG5000-Regular.woff2') format('woff2'),;
+  url('../fonts/vg5000/fonts/webfonts/VG5000-Regular.woff2') format('woff2');
 }
 * {
   margin: 0;

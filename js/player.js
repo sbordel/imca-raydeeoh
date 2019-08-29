@@ -3,7 +3,6 @@
 	//global variables
 	let init = false;
 	let status = true;
-	var scheduleTime;
 
 
 	function play(){
@@ -37,6 +36,7 @@ var m = today.getMinutes();
 var s = today.getSeconds();
 var DOTW = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var day = DOTW[today.getDay()];
+var scheduleTime;
 
   m = checkTime(m);
   s = checkTime(s);
@@ -56,9 +56,11 @@ var day = DOTW[today.getDay()];
 	} else if(day == "Friday") {
     tempMath = 36 + (h - 10);
     scheduleTime = tempMath;
-	}
+	} else if(day == "Saturday" || "Sunday") {
+    scheduleTime = 99;
+	} 
 	
-	textBar();
+	textBar(scheduleTime);
 }
 
 function checkTime(i) {

@@ -223,9 +223,6 @@ p#player-text{
   -webkit-animation: player-text 5s linear infinite alternate;
   animation: player-text 5s linear infinite alternate;
 }
-#fixed-marquee{
-  position: fixed;
-}
 #player-text{
   display: block;
   margin-left: auto;
@@ -233,7 +230,32 @@ p#player-text{
   overflow: hidden;
   position: relative;
 }
-/* Move it (define the animation) */
+p#external-player-text{
+  font-family: 'MisterPixel', 'VG5000';
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #ccff33;
+  padding: 0.5%;
+  width: 80%;
+  text-align: left;
+  margin: 0;
+  overflow-y:scroll;
+  -moz-animation: external-player-text 5s linear infinite alternate;
+  -webkit-animation: external-player-text 5s linear infinite alternate;
+  animation: external-player-text 5s linear infinite alternate;
+}
+#external-player-text{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3%;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 20px;
+}
+/* player-text */
 @-moz-keyframes player-text {
 0%   { -moz-transform: translateX(21%); }
 100% { -moz-transform: translateX(0%); }
@@ -254,6 +276,35 @@ transform: translateX(21%);
 transform: translateX(0%);
 }
 }
+/* external-player-text */
+@-moz-keyframes external-player-text {
+0%   { -moz-transform: translateX(53%); }
+100% { -moz-transform: translateX(0%); }
+}
+@-webkit-keyframes external-player-text {
+0%   { -webkit-transform: translateX(53%); }
+100% { -webkit-transform: translateX(0%); }
+}
+@keyframes external-player-text {
+0%   {
+-moz-transform: translateX(53%); /* Firefox bug fix */
+-webkit-transform: translateX(53%); /* Firefox bug fix */
+transform: translateX(53%);
+}
+100% {
+-moz-transform: translateX(0%); /* Firefox bug fix */
+-webkit-transform: translateX(0%); /* Firefox bug fix */
+transform: translateX(0%);
+}
+}
+/* external player hidden scrollbar */
+.body-player::-webkit-scrollbar {
+    display: none;
+    background: transparent;
+}
+.body-player{ -ms-overflow-style: none; }
+.body-player{ overflow: -moz-scrollbars-none; }
+
 /* secondary player */
 .player-container#secondary-player{
  position:fixed;

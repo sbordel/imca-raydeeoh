@@ -237,23 +237,23 @@ p#external-player-text{
   font-weight: lighter;
   color: #ccff33;
   padding: 0.5%;
-  width: 80%;
   text-align: left;
   margin: 0;
   overflow-y:scroll;
   -moz-animation: external-player-text 5s linear infinite alternate;
   -webkit-animation: external-player-text 5s linear infinite alternate;
   animation: external-player-text 5s linear infinite alternate;
+  border: 0.5px solid yellow;
 }
 #external-player-text{
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-left: 3%;
-  overflow: hidden;
+  overflow-y: scroll;
   position: relative;
-  width: 80%;
-  height: 20px;
+  min-width: 60%;
+  height: 2%;
 }
 /* player-text */
 @-moz-keyframes player-text {

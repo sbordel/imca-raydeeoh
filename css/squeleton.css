@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: 'VG5000' ;
-  src: url('../fonts/vg5000/fonts/VG5000-Regular.otf') format('otf');
+  src: url('../fonts/vg5000/fonts/VG5000-Regular.otf');
 }
 * {
   margin: 0;

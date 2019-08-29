@@ -216,14 +216,43 @@ p#player-text{
   font-weight: lighter;
   color: #ccff33;
   padding: 0.5%;
-  width: 80%;
-  height: 4%;
+  max-width: 80%;
+  text-align: center;
+  margin: 0;
+  -moz-animation: player-text 5s linear infinite alternate;
+  -webkit-animation: player-text 5s linear infinite alternate;
+  animation: player-text 5s linear infinite alternate;
+}
+#fixed-marquee{
+  position: fixed;
 }
 #player-text{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 0.5px solid yellow;
+  overflow: hidden;
+  position: relative;
+}
+/* Move it (define the animation) */
+@-moz-keyframes player-text {
+0%   { -moz-transform: translateX(21%); }
+100% { -moz-transform: translateX(0%); }
+}
+@-webkit-keyframes player-text {
+0%   { -webkit-transform: translateX(21%); }
+100% { -webkit-transform: translateX(0%); }
+}
+@keyframes player-text {
+0%   {
+-moz-transform: translateX(21%); /* Firefox bug fix */
+-webkit-transform: translateX(21%); /* Firefox bug fix */
+transform: translateX(21%);
+}
+100% {
+-moz-transform: translateX(0%); /* Firefox bug fix */
+-webkit-transform: translateX(0%); /* Firefox bug fix */
+transform: translateX(0%);
+}
 }
 /* secondary player */
 .player-container#secondary-player{

@@ -133,7 +133,7 @@ header{
 }
 #clock{
   position: absolute;
-  font-family: 'VG5000';
+  font-family: 'VG5000', 'MisterPixel';
   font-size: 2vw;
   font-weight: lighter;
   color: #0033ff;
@@ -275,7 +275,7 @@ p#player-text{
   margin-top: 2%;
 }
 h2{
-  font-family: 'VG5000';
+  font-family: 'VG5000', 'MisterPixel';
   font-size: 2vw;
   font-weight: lighter;
   color: #0033ff;
@@ -324,7 +324,7 @@ h2{
 #about-page-title{
   position: relative;
   display: inline-block;
-  font-family: 'VG5000';
+  font-family: 'VG5000', 'MisterPixel';
   font-size: 4vw;
   font-weight: lighter;
   color: #000000;
@@ -338,7 +338,7 @@ h2{
   color: #000000;
 }
 .tooltip{
-  font-family: 'VG5000';
+  font-family: 'VG5000', 'MisterPixel';
   font-size: 1vw;
   font-weight: lighter;
   font-style: italic;
@@ -385,7 +385,7 @@ h2{
   right: 0;
 }
 .about-nav{
-  font-family: 'VG5000';
+  font-family: 'VG5000', 'MisterPixel';
   font-size: 1.5vw;
   font-weight: lighter;
   color: #0033ff;
@@ -572,7 +572,7 @@ td{
   /*background-color: white;*/
 }
 .show-time {
-  font-family: 'VG5000';
+  font-family: 'VG5000', 'MisterPixel';
   font-weight: lighter;
   background: #99ffcc;
   padding: 10px;
@@ -661,7 +661,7 @@ legend{
   /*border: 0.5px dotted #ff9966;*/
 }
 input{
-  font-family: 'VG5000';
+  font-family: 'VG5000', 'MisterPixel';
   font-size: 1.2vw;
   font-weight: lighter;
   text-align: center;
@@ -985,7 +985,7 @@ li{
 }
 .show-time {
   font-size: 3.5em;
-  font-family: 'VG5000';
+  font-family: 'VG5000', 'MisterPixel';
   font-weight: lighter;
   background: #99ffcc;
   padding: 10px;

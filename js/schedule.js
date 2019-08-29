@@ -13,6 +13,7 @@ let thursData = [27, 36];
 let friData = [36, 45];
 var dayData = [0, 0];
 var j=1;
+var storedTitles = [];
 
 oReq.onload = function(e) {
   var arraybuffer = oReq.response;
@@ -53,6 +54,13 @@ $(document).ready(function(){
 });
 }
 
+//Update information in the textBar via excel data, timed within player.js
+function textBar(){
+    $("#player-text").text(radioObject[scheduleTime].Artist + " - " + radioObject[scheduleTime].Show);
+    console.log("i am the textbar");
+  }
+
+//Variable updaters for time of the week
 function monday(){
   dayData = monData;
   fill();
@@ -77,4 +85,5 @@ function friday(){
   dayData = friData;
   fill();
 }
+
 

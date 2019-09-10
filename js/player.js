@@ -9,7 +9,7 @@
 		if (init === false){
 		myaudio.play(); 
 		init = true;
-		console.log("stream opened!");	
+		console.log("stream opened!");	1
 		}
 
 		if (status === true){

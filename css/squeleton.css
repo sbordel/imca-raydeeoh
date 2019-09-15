@@ -356,7 +356,7 @@ transform: translateX(0%);
 .body-player{ overflow: -moz-scrollbars-none; }
 
 /************************ -- INDEX -- ************************/
-/* - hidden scrollbar on index */
+/* hidden scrollbar on index */
 .body-index::-webkit-scrollbar { width: 0 !important }
 .body-index{ -ms-overflow-style: none; }
 .body-index{ overflow: -moz-scrollbars-none; }
@@ -676,7 +676,7 @@ td{
   /*background-color: white;*/
 }
 .show-time {
-  font-family: 'VG5000', 'MisterPixel';
+  font-family: 'VG5000';
   font-weight: lighter;
   background: #99ffcc;
   padding: 10px;
@@ -697,7 +697,6 @@ td.host-name {
 td.show-description {
    width:70%;
 }
-
 /************************ SUBMISSION ************************/
 #submission-page-link{
   text-decoration: none;
@@ -1052,7 +1051,7 @@ li{
     left: 40%;
     margin: 20px;
   }
-[id^=modal] {
+[id^=modal]{
       display: none;
       position: absolute;);
       max-height: 90%;
@@ -1060,7 +1059,6 @@ li{
       margin:0;
       z-index: 1;
     }
-  }
   #about-page-title .tooltip {
     display: none;
   }
@@ -1129,10 +1127,10 @@ input[type=text]{
   display: none;
 }
 /************************ MOBILE SCHEDULE ************************/
-  .schedule-button{
-    margin: 1% 5%;
-    padding: 1.5% 5%;
-  }
+.schedule-button{
+  margin: 1% 5%;
+  padding: 1.5% 5%;
+}
 /************************ MOBILE ARCHIVE BUTTON ************************/
   .archive-button{
     margin: 1% 5%;

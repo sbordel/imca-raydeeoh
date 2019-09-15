@@ -1,0 +1,6 @@
+> open terminal
+> type "cd " and paste your project folder
+> enter
+> type npx nodemon app.js
+> enter 127.0.0.1:3000 in browser
+> BOOM

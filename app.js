@@ -40,8 +40,8 @@ app.get("/about.html", function(req, res){
 app.get("/schedule.html", function(req, res){
   res.sendFile(__dirname + '/schedule.html');
   //when requesting this page automatically include this excel file
-  app.get('/test.xlsx',function(req,res){
-    res.sendFile(__dirname + '/test.xlsx'); 
+  app.get('/scheduleTemplate.xlsx',function(req,res){
+    res.sendFile(__dirname + '/schedule/scheduleTemplate.xlsx'); 
 });
   });
 

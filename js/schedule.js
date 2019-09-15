@@ -1,5 +1,5 @@
 /* set up XMLHttpRequest */
-var url = "test.xlsx";
+var url = "scheduleTemplate.xlsx";
 var oReq = new XMLHttpRequest();
 oReq.open("GET", url, true);
 oReq.responseType = "arraybuffer";

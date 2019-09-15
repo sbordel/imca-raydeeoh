@@ -150,9 +150,12 @@ header{
   width: 100%;
   margin-top: 1%;
 }
+#mobile-button-tab{
+  display:none;
+}
 button{
   font-family: 'MisterPixel', 'VG5000';
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   margin-top: 0.5%;
   background-color: #FFFFFF;
   border: 0.15vw solid black;
@@ -667,7 +670,6 @@ table {
   width: 100%;
 }
 table#schedule-table {
-  font-size: 1vw;
   /*margin-top: 15.5%;*/
   text-align:center;
 }
@@ -677,6 +679,7 @@ td{
 }
 .show-time {
   font-family: 'VG5000', 'MisterPixel';
+  font-size: 1.5vw;
   font-weight: lighter;
   background: #99ffcc;
   padding: 10px;
@@ -684,7 +687,7 @@ td{
 }
 .show-name, .host-name, .show-description{
   font-family: 'MisterPixel', 'VG5000';
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   font-weight: lighter;
   padding: 5px;
   height: 50px;
@@ -892,17 +895,26 @@ li{
     padding-right: 20px;
   }
   #button-tab{
-    position: sticky;
-    height: 20%;
-    margin-top: 2%;
+    display:none;
+  }
+  #mobile-button-tab{
+    display:inline;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    left:0%;
+    height: 10%;
+    margin-top: 15%;
+    border:0.5px solid black;
   }
   button{
-    font-size: 1.2em;
+    font-size: 1em;
+    padding: 0% 0%;
+    display: inline-block;
     border-radius: 17px;
-    cursor: pointer;
   }
   .header-schedule{
-    height: 15%;
+    height: 35%;
   }
   .header-submission{
     height: 18%;
@@ -1053,13 +1065,13 @@ li{
     margin: 20px;
   }
 [id^=modal]{
-      display: none;
-      position: absolute;);
-      max-height: 90%;
-      min-width: 90%;
-      margin:0;
-      z-index: 1;
-    }
+    display: none;
+    position: absolute;);
+    max-height: 90%;
+    min-width: 90%;
+    margin:0;
+    z-index: 1;
+  }
   #about-page-title .tooltip {
     display: none;
   }
@@ -1073,36 +1085,33 @@ li{
     padding: 10px;
   }
 /*********************** MOBILE SCHEDULE ************************/
+.body-schedule{
+   overflow-y:scroll;
+}
 .schedule{
- display: block;
- position: relative;
- width: 100%;
- height: 80%;
- top: 30%;
- bottom: 10%;
- padding-top:1%;
- margin-top: 2%;
- z-index: -1;
+   height: 100%;
+   padding-bottom: 5%;
+   overflow-x: hidden;
+   overflow-y:hidden;
 }
 .show-time {
-  font-size: 3.5em;
-  font-family: 'VG5000', 'MisterPixel';
-  font-weight: lighter;
-  background: #99ffcc;
-  padding: 10px;
+  font-size: 3.1vw;
+  padding: 5px;
+  width: 10%;
 }
 .show-name, .host-name, .show-description{
-  font-size: 3.5em;
+  font-size: 3.4vw;
   padding: 5px;
+  height: 20px;
 }
 td.show-name{
-  height: 50%;
+   width:20%;
 }
 td.host-name {
-  height: 50%;
+   width:10%;
 }
 td.show-description {
-  height: 50%;
+   width:40%;
 }
 /************************ MOBILE SUBMISSION ************************/
 #form{

@@ -57,7 +57,7 @@ $(document).ready(function(){
 //Update information in the textBar via excel data, timed within player.js
 function textBar(timeData){
   if (timeData == 99){
-    $("#external-player-text").text("OFF AIR");
+    $("#external-player-text").text("off air");
   } else{
     $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
     console.log("i am the textbar");
@@ -82,12 +82,10 @@ function wednesday(){
 
 function thursday(){
   dayData = thursData;
-  fill(); 
+  fill();
 }
 
 function friday(){
   dayData = friData;
   fill();
 }
-
-

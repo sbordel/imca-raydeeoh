@@ -68,6 +68,7 @@ $(document).ready(function(){
 function textBar(timeData){
 
     $("#external-player-text").text("OFF AIR");
+    $("player-text").text("OFF AIR");
 
   }
 

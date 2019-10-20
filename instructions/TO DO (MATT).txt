@@ -1,6 +1,5 @@
 SERVER
 ~~~~~~~~~~
-mp3 Upload > or just links?
 index submission in app.js (remove tag)
 ssl certificate (port issues?)
 nodemailer

@@ -52,10 +52,10 @@
   <br>
 <div class="form-section">
   <label for="pronouns">pronouns :</label><br>
-  <input id="gnc" type="radio" name="pronoun">they/them<br>
-  <input id="female" type="radio" name="pronoun">she/her<br>
-  <input id="male" type="radio" name="pronoun">he/him<br>
-  <input id="other" type="radio" name="pronoun">other<br>
+  <input id="gnc" type="radio" name="pronoun" value="<%= qs.gnc %>">they/them<br>
+  <input id="female" type="radio" name="pronoun" value="<%= qs.female %>">she/her<br>
+  <input id="male" type="radio" name="pronoun" value="<%= qs.male %>">he/him<br>
+  <input id="other" type="radio" name="pronoun" value="<%= qs.other %>">other<br>
     <br>
   <label for="o-pronoun">(if "other" selected):</label><br>
   <input id="o-pronoun" type="text" name="pronoun">
@@ -63,7 +63,7 @@
   <br>
 <div class="form-section">
   <label for="email">email :</label><br>
-  <input id="email" type="text" name="email">
+  <input id="email" type="text" name="email" value="<%= qs.email %>">
   <span class="field-needed">*</span>
 </div>
   <br>

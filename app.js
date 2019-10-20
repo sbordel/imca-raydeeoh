@@ -1,8 +1,13 @@
+//nodemailer auth
+require('dotenv').config();
+
 //REQUIRE
 var fs = require('fs');
 var express = require('express');
 var bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 
+// //audio
 // var icy = require('icy');
 // var lame = require('lame');
 // var Speaker = require('speaker');
@@ -53,22 +58,80 @@ app.get("/player.html", function(req, res){
   res.sendFile(__dirname + '/player.html');
   });
 
-//send a view template for user submission data
+//render a view template for user submission data
 app.get("/submission.html", function(req, res){
   res.render('submission', {qs: req.query});
   });
-
-app.post("/submission.html", urlencodedParser, function(req, res){
-  //console.log(req.body);
-  res.render('submission', {qs: req.query}); 
-  fs.mkdirSync('./submissions/' + req.body.lastname + req.body.firstname);
-  fs.writeFileSync('./submissions/' + req.body.lastname + req.body.firstname + "/info.JSON", JSON.stringify(req.body, null, "\t"));
-});
 
 //temporary routing
 app.get("/submissions", function(req, res){
   res.sendFile(__dirname + '/submissions/index.html');
   });
+
+//POST
+//post user data to server
+app.post("/submission.html", urlencodedParser, function(req, res){
+  //rerender submission view on refresh
+  res.render('submission', {qs: req.query}); 
+  //make new directory with users first and last name
+  fs.mkdirSync('./submissions/' + req.body.lastname + req.body.firstname);
+  //write the JSON file to the new directory
+  fs.writeFileSync('./submissions/' + req.body.lastname + req.body.firstname + "/info.JSON", JSON.stringify(req.body, null, "\t"));
+
+
+//NODEMAILER
+// create reusable transporter object using the default SMTP transport
+let transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth:{
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD
+  }
+});
+
+let mailoptions = {
+from: 'imcaraydeeoh@gmail.com',
+to: 'matt.halpenny@gmail.com',
+subject: 'New User Submission',
+text: JSON.stringify(req.body, null, "\t") + '\n \n \n \n sent by imcabot2000 👻'
+}
+
+transporter.sendMail(mailoptions, function(err, data){
+if(err){
+  console.log('oopsie: ', err);
+}else{
+  console.log("yipee");
+}
+});
+
+
+//NODEMAILER2APPLICANT
+// create reusable transporter object using the default SMTP transport
+let transporter2 = nodemailer.createTransport({
+service: 'gmail',
+auth:{
+user: process.env.EMAIL,
+pass: process.env.PASSWORD
+}
+});
+
+let mailoptions2 = {
+from: 'imcaraydeeoh@gmail.com',
+to: req.body.firstname + req.body.lastname + '@gmail.com',
+subject: 'IMCA Raydeeoh has recieved your application', // Subject line
+text: 'thank you!!! \n \n \n \n sent by imcabot2000 👻'
+}
+
+transporter2.sendMail(mailoptions2, function(err, data){
+if(err){
+console.log('oopsie: ', err);
+}else{
+console.log("yipee");
+}
+}); 
+//POST });
+});
+
 
 //OMNIPLAYER
 

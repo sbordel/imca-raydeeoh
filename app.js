@@ -3,6 +3,10 @@ var fs = require('fs');
 var express = require('express');
 var bodyParser = require('body-parser');
 
+// var icy = require('icy');
+// var lame = require('lame');
+// var Speaker = require('speaker');
+
 //launch express function
 var app = express();
 
@@ -12,8 +16,8 @@ app.set('view engine', "ejs");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 //opening a listening port
-app.listen(3000);
-console.log('listening on port 3000');
+app.listen(80);
+console.log('listening on port 80');
 
 //use ~these~ directories when serving an html file
 //automatically sends contents to the viewer as the html will not load them when served by node
@@ -66,4 +70,31 @@ app.get("/submissions", function(req, res){
   res.sendFile(__dirname + '/submissions/index.html');
   });
 
+//OMNIPLAYER
 
+// //FUNCTIONAL 
+// // URL to a known ICY stream
+// var url = 'http://rhizotron.net:8080/listen.mp3';
+
+// icy.get(url, function (res) {
+ 
+//   // log the HTTP response headers
+//   console.error(res.headers);
+ 
+//   // // log any "metadata" events that happen
+//   // res.on('metadata', function (metadata) {
+//   //   var parsed = icy.parse(metadata);
+//   //   console.error(parsed);
+//   // });
+ 
+//   // Let's play the music (assuming MP3 data).
+//   // lame decodes and Speaker sends to speakers!
+//   res.pipe(new lame.Decoder())
+//      .pipe(new Speaker());
+//      console.log("connected?");
+//      setTimeout(function Off(){
+//       // res.emit('end');
+//       // res.cork();
+//       // res.off();
+//      }, 1000);
+// });

@@ -117,7 +117,7 @@ pass: process.env.PASSWORD
 
 let mailoptions2 = {
 from: 'imcaraydeeoh@gmail.com',
-to: req.body.firstname + req.body.lastname + '@gmail.com',
+to: req.body.email,
 subject: 'IMCA Raydeeoh has recieved your application', // Subject line
 text: 'thank you!!! \n \n \n \n sent by imcabot2000 👻'
 }

@@ -37,6 +37,7 @@
 <div id="form">
 <form action="/action_page.php" method="post">
 
+<!-- GENERAL INFORMATION SECTION-->
 <div class="form-section">
     <legend>general information</legend><br>
   <label for="f-name">first name :</label><br>
@@ -79,14 +80,39 @@
   <span class="field-needed">*</span>
   </div>
   <br>
-
 <div class="form-section">
-      <br><legend>show application</legend><br>
-    <label for="artist-name"></label>host/artist/collective name :<br>
+  <label for="artist-name">host/artist/collective name :</label><br>
   <input id="artist-name" type="text" name="artistname">
   <span class="field-needed">*</span>
 </div>
   <br>
+<div class="form-section">
+  <label for="bio">short bio (50 words max) :</label><br>
+  <textarea name="bio"></textarea>
+  <span class="field-needed">*</span>
+</div>
+  <br>
+  <div class="form-section">
+    <label for="web-link">link (personal website, mixcloud, facebook, instagram, etc.):</label><br>
+    <input id="web-link" type="text" name="link">
+  </div>
+  <br>
+  <div class="form-section">
+    <label for="submission-kind">Are you applying to submit a monthly show or to submit a sound piece?</label><span class="field-needed">*</span><br>
+    <input type="radio" name="kind-1" value="kind1">monthly show proposal<br>
+    <input type="radio" name="kind-2" value="kind2">sound piece<br>
+  </div>
+<br>
+<br>
+<!-- -->
+
+<!-- SECTION FOR A RADIO SHOW -->
+<div class="form-section">
+      <br><legend>Application for a RADIO SHOW</legend><br>
+    <p>This section is reserved for the students wishing to propose a radio show!</p>
+      <br>
+    <p>If you only wish to send us a sound piece, see the section below.</p>
+  <br><br>
 <div class="form-section">
   <label for="show-title">show title (can be tentative) :</label><br>
   <input id="show-title" type="text" name="showtitle">
@@ -100,19 +126,8 @@
 </div>
   <br>
 <div class="form-section">
-  <label for="bio">short bio (50 words max) :</label><br>
-  <textarea name="bio"></textarea>
-  <span class="field-needed">*</span>
-</div>
-  <br>
-<div class="form-section">
-  <label for="web-link">link (personal website, mixcloud, facebook, instagram, etc.):</label><br>
-  <input id="web-link" type="text" name="link">
-</div>
-  <br>
-<div class="form-section">
   <fieldset class="project-type" name="category">
-  <label for="category">project category :</label>  <span class="field-needed">*</span><br>
+  <label for="category">show category :</label>  <span class="field-needed">*</span><br>
   <input type="radio" name="soundart" value="soundart">sound art<br>
   <input type="radio" name="fieldrecording" value="fieldrecording"> field recording<br>
   <input type="radio" name="music" value="music">music (DIY or self-produced)<br>
@@ -277,11 +292,72 @@
       <option value="1800PM">06:00 PM</option>
    </select><span class="field-needed"> *</span></div>
      </div>
+     <br>
+     <br>
+<!-- -->
+
+<!-- SECTION FOR SOUND PIECE -->
+<div class="form-section">
+      <br><legend>Application for a SOUND PIECE</legend><br>
+    <p>This section is reserved for the students wishing to send a sound piece! This submission could be included in an hourly mix of various tracks, aired weekly.</p>
+    <br>
+    <p>We ask that the sound pieces be a 320 kbps MP3 file with a duration of either 5, 15, 30 or 60 minutes.</p>
+    <br>
+    <p>If you only wish to send us a show application, see the section above.</p>
+     <br><br>
+     <div class="form-section">
+       <label for="show-title">title of the piece :</label><br>
+       <input id="show-title" type="text" name="showtitle">
+       <span class="field-needed">*</span>
+     </div>
+       <br>
+     <div class="form-section">
+       <label for="description">description of the piece (50-100 words max):</label><br>
+       <textarea name="description"></textarea>
+       <span class="field-needed">*</span>
+     </div>
+       <br>
+     <fieldset class="project-duration" name="category">
+       <label for="category">duration of the piece :</label>  <span class="field-needed">*</span><br>
+       <input type="radio" name="duration-1" value="5minutes">5 minutes<br>
+       <input type="radio" name="duration-2" value="15minutes">15 minutes<br>
+       <input type="radio" name="duration-3" value="30minutes">30 minutes<br>
+       <input type="radio" name="duration-4" value="60minutes">60 minutes<br>
+       </fieldset>
+       <br>
+      <fieldset class="project-type" name="category">
+      <label for="category">show category :</label>  <span class="field-needed">*</span><br>
+      <input type="radio" name="soundart" value="soundart">sound art<br>
+      <input type="radio" name="fieldrecording" value="fieldrecording"> field recording<br>
+      <input type="radio" name="music" value="music">music (DIY or self-produced)<br>
+      <input type="radio" name="performance" value="performance">performance or live experimentation<br>
+      <input type="radio" name="musicconcrete" value="musicconcrete">music concrète<br>
+      <input type="radio" name="podcast" value="podcast">podcast or talk show<br>
+      <input type="radio" name="other" value="other">other<br>
+      </fieldset>
+      <br>
+      <label for="other-category">(if "other" selected):</label><br>
+      <input id="other-category" type="text" name="othercategory">
+      </div>
+      <br>
+      <div class="form-section">
+        <label for="link-kind">How will you send us your sound piece?</label><br>
+        <input type="radio" name="kind-1" value="kind1">by WeTransfer at imcaraydeeohsubmission@gmail.com<br>
+        <input type="radio" name="kind-2" value="kind2">by adding a link to your track in the following question<br>
+      </div>
+<br>
+<div class="form-section">
+  <label for="submission-link">Add a downloadable link to your track, if checked above (e.g Google Drive)</label><br>
+  <input id="show-title" type="text" name="showtitle">
+  <span class="field-needed">*</span>
+</div>
+<!-- -->
+
    <br>
    <br>
    <br>
    <div class="form-section">
-     <input id="confirm" type="checkbox" name="confirmed" value="confirmed">I have read and respect the submission rules, values and policies stated in <a href="docs/IMCA-RAYDEEOH-handbook.pdf">the IMCA RAYDEEOH Handbook </a>
+     <input id="confirm" type="checkbox" name="confirmed" value="confirmed">I have read and respect the submission rules, values and policies stated in <a href="#">the IMCA RAYDEEOH Handbook </a>
      <span class="field-needed">*</span><span class="field-needed">*</span>
   </div></div>
   <br>

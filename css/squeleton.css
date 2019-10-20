@@ -723,6 +723,9 @@ td.show-description {
 #general-page-title:hover .tooltip {
   visibility: visible;
 }
+#submission-section-description{
+font-family: 'VG5000', 'MisterPixel';
+}
 #form{
   display: block;
   text-align:left;

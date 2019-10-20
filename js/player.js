@@ -1,5 +1,5 @@
 	//open stream from VPS
-	var myaudio = new Audio('http://rhizotron.net:80/listen.mp3');
+	var myaudio = new Audio('http://rhizotron.net:8080/listen.mp3');
 	//global variables
 	let init = false;
 	let status = true;
@@ -9,7 +9,7 @@
 		if (init === false){
 		myaudio.play(); 
 		init = true;
-		console.log("stream opened!");	1
+		console.log("stream opened!");	
 		}
 
 		if (status === true){

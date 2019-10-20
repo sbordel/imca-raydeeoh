@@ -1,3 +1,4 @@
 {
-  "php.validate.run": "onType"
+  "php.validate.run": "onType",
+  "liveServer.settings.port": 5501
 }

@@ -1,0 +1,11 @@
+SERVER
+~~~~~~~~~~
+Secure with nginx
+Upload files
+mp3 Upload
+test directories
+reroute dns
+ftp link for depot
+
+index submission in app.js (remove tag)
+fix mkdir function for server

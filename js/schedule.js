@@ -55,13 +55,21 @@ $(document).ready(function(){
 }
 
 //Update information in the textBar via excel data, timed within player.js
+// function textBar(timeData){
+//   if (timeData == 99){
+//     $("#external-player-text").text("OFF AIR");
+//   } else{
+//     $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
+//     console.log("i am the textbar");
+//   }
+//   }
+
+//tempory version of above function to display off air until were running
 function textBar(timeData){
-  if (timeData == 99){
+
     $("#external-player-text").text("OFF AIR");
-  } else{
-    $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
-    console.log("i am the textbar");
-  }
+    $("player-text").text("OFF AIR");
+
   }
 
 //Variable updaters for time of the week

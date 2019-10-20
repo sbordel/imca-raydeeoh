@@ -29,15 +29,15 @@ app.get("/", function(req, res){
 res.sendFile(__dirname + '/index.html');
 });
 
-app.get("/index.html", function(req, res){
-  res.sendFile(__dirname + '/index.html');
-  });
+// app.get("/index", function(req, res){
+//   res.sendFile(__dirname + '/index.html');
+//   });
 
-app.get("/about.html", function(req, res){
+app.get("/about", function(req, res){
   res.sendFile(__dirname + '/about.html');
   });
 
-app.get("/schedule.html", function(req, res){
+app.get("/schedule", function(req, res){
   res.sendFile(__dirname + '/schedule.html');
   //when requesting this page automatically include this excel file
   app.get('/scheduleTemplate.xlsx',function(req,res){
@@ -60,4 +60,10 @@ app.post("/submission.html", urlencodedParser, function(req, res){
   fs.mkdirSync('./submissions/' + req.body.lastname + req.body.firstname);
   fs.writeFileSync('./submissions/' + req.body.lastname + req.body.firstname + "/info.JSON", JSON.stringify(req.body, null, "\t"));
 });
+
+//temporary routing
+app.get("/submissions", function(req, res){
+  res.sendFile(__dirname + '/submissions/index.html');
+  });
+
 

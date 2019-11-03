@@ -1,0 +1,35 @@
+{
+	"firstname": "t",
+	"lastname": "t",
+	"pronoun": "",
+	"email": "",
+	"studentid": "",
+	"fieldstudy": "",
+	"artistname": "",
+	"bio": "",
+	"link": "",
+	"showtitle": [
+		"",
+		"",
+		""
+	],
+	"description": [
+		"",
+		""
+	],
+	"othercategory": [
+		"",
+		""
+	],
+	"day": [
+		"monday",
+		"1000AM",
+		"1030AM",
+		"monday",
+		"1000AM",
+		"1030AM",
+		"monday",
+		"1000AM",
+		"1030AM"
+	]
+}

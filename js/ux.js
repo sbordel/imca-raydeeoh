@@ -10,6 +10,7 @@ var s = today.getSeconds();
   document.getElementById('clock').innerHTML =
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
+  console.log('hi');
 
 }
 function checkTime(i) {

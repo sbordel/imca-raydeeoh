@@ -1,17 +1,14 @@
 //nodemailer auth
 require('dotenv').config();
 
-//REQUIRE
+//~~~ REQUIRE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 var fs = require('fs');
 var express = require('express');
 var bodyParser = require('body-parser');
+var mkdirp = require('mkdirp');
 const nodemailer = require('nodemailer');
 
-// //audio
-// var icy = require('icy');
-// var lame = require('lame');
-// var Speaker = require('speaker');
-
+//~~~ SETUP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //launch express function
 var app = express();
 
@@ -24,6 +21,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.listen(80);
 console.log('listening on port 80');
 
+//~~~ USE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //use ~these~ directories when serving an html file
 //automatically sends contents to the viewer as the html will not load them when served by node
 app.use("/css",  express.static(__dirname + '/css'));
@@ -32,15 +30,11 @@ app.use("/assets",  express.static(__dirname + '/assets'));
 app.use("/fonts",  express.static(__dirname + '/fonts'));
 app.use("/lib",  express.static(__dirname + '/lib'));
 
-//GETS
+//~~~ GET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ß~~~~~~~~~~~~~~~~~
 //upon navigating the site send corresponding html pages to client
 app.get("/", function(req, res){
 res.sendFile(__dirname + '/index.html');
 });
-
-// app.get("/index", function(req, res){
-//   res.sendFile(__dirname + '/index.html');
-//   });
 
 app.get("/about", function(req, res){
   res.sendFile(__dirname + '/about.html');
@@ -68,18 +62,25 @@ app.get("/submissions", function(req, res){
   res.sendFile(__dirname + '/submissions/index.html');
   });
 
-//POST
+//~~~ POST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //post user data to server
 app.post("/submission.html", urlencodedParser, function(req, res){
   //rerender submission view on refresh
   res.render('submission', {qs: req.query}); 
-  //make new directory with users first and last name
-  fs.mkdirSync('./submissions/' + req.body.lastname + req.body.firstname);
+
+  mkdirp(('./submissions/' + req.body.lastname + req.body.firstname), function(err) { 
+
   //write the JSON file to the new directory
   fs.writeFileSync('./submissions/' + req.body.lastname + req.body.firstname + "/info.JSON", JSON.stringify(req.body, null, "\t"));
+   
+    if(err){
+        //write the JSON file to the new directory
+      fs.writeFileSync('./submissions/' + req.body.lastname + req.body.firstname + "/info.JSON", JSON.stringify(req.body, null, "\t"));
+    }
+});
 
 
-//NODEMAILER
+//~~~ NODEMAILER (TO IMCA) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -89,6 +90,7 @@ let transporter = nodemailer.createTransport({
   }
 });
 
+//
 let mailoptions = {
 from: 'imcaraydeeoh@gmail.com',
 to: 'matt.halpenny@gmail.com',
@@ -105,7 +107,7 @@ if(err){
 });
 
 
-//NODEMAILER2APPLICANT
+//~~~ NODEMAILER (TO APP) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // create reusable transporter object using the default SMTP transport
 let transporter2 = nodemailer.createTransport({
 service: 'gmail',
@@ -132,32 +134,4 @@ console.log("yipee");
 //POST });
 });
 
-
-//OMNIPLAYER
-
-// //FUNCTIONAL 
-// // URL to a known ICY stream
-// var url = 'http://rhizotron.net:8080/listen.mp3';
-
-// icy.get(url, function (res) {
- 
-//   // log the HTTP response headers
-//   console.error(res.headers);
- 
-//   // // log any "metadata" events that happen
-//   // res.on('metadata', function (metadata) {
-//   //   var parsed = icy.parse(metadata);
-//   //   console.error(parsed);
-//   // });
- 
-//   // Let's play the music (assuming MP3 data).
-//   // lame decodes and Speaker sends to speakers!
-//   res.pipe(new lame.Decoder())
-//      .pipe(new Speaker());
-//      console.log("connected?");
-//      setTimeout(function Off(){
-//       // res.emit('end');
-//       // res.cork();
-//       // res.off();
-//      }, 1000);
-// });
+//~~~ LA FIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

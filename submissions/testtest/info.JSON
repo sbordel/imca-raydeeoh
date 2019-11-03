@@ -2,15 +2,25 @@
 	"firstname": "test",
 	"lastname": "test",
 	"pronoun": "",
-	"email": "",
+	"email": "test@test.com",
 	"studentid": "",
 	"fieldstudy": "",
 	"artistname": "",
-	"showtitle": "",
-	"description": "",
 	"bio": "",
 	"link": "",
-	"othercategory": "",
+	"showtitle": [
+		"",
+		"",
+		""
+	],
+	"description": [
+		"",
+		""
+	],
+	"othercategory": [
+		"",
+		""
+	],
 	"day": [
 		"monday",
 		"1000AM",

@@ -803,8 +803,27 @@ span.error, .field-needed{
 span.timeslot-span{
   font-size: 0.5vw;
 }
-#submission-button{
+.submission-button{
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'MisterPixel', 'VG5000';
+  font-size: 1.4vw;
+  margin-top: 0.5%;
+  background-color: grey;
+  border: 0.15vw black solid;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.8% 4%;
+  /*padding: 10px 50px;*/
+  border-radius: 17px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.submission-class{
+  z-index: 1;
+  display: none;
   margin-left: auto;
   margin-right: auto;
   font-family: 'MisterPixel', 'VG5000';
@@ -819,13 +838,19 @@ span.timeslot-span{
   border-radius: 17px;
   cursor: pointer;
 }
-#submission-button:hover{
+
+.submit-class:hover{
   background-color: #ffffff;
-  color: #0000ff;
+  color: #0033ff;
 }
-#submission-button:active{
+.submission-button:active{
   border: 0.15vw black dotted;
 }
+
+.submission-class:active{
+  border: 0.15vw black dotted;
+}
+
 footer{
   padding-bottom: 5%;
 }

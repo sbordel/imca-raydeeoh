@@ -63,6 +63,17 @@ $(function(){
   $("#monday-list").hide();
 });
 });
+// SUBMISSION: BUTTON SWITCH
+$(function(){
+  $("#radioshow-button").click(function(){
+  $("#radioshow-section").show();
+  $("#soundpiece-section").hide();
+  });
+  $("#soundpiece-button").click(function(){
+  $("#soundpiece-section").show();
+  $("#radioshow-section").hide();
+  });
+});
 // ARCHIVE: BUTTON SWITCH
 $(function(){
   $("#show-button").click(function(){

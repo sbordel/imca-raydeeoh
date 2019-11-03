@@ -49,10 +49,10 @@ $(document).ready(function(){
   if (j >= 10){
     j=1;
   }
-  // console.log(j);
 }
 });
 }
+//UNCOMMENT ON LAUNCH
 
 //Update information in the textBar via excel data, timed within player.js
 // function textBar(timeData){

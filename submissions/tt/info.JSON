@@ -2,7 +2,7 @@
 	"firstname": "t",
 	"lastname": "t",
 	"pronoun": "",
-	"email": "",
+	"email": "t@t.com",
 	"studentid": "",
 	"fieldstudy": "",
 	"artistname": "",
@@ -31,5 +31,6 @@
 		"monday",
 		"1000AM",
 		"1030AM"
-	]
+	],
+	"confirmed": ""
 }

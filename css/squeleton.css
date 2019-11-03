@@ -378,6 +378,36 @@ transform: translateX(0%);
 #main-logo-mobile{
   display: none;
 }
+#logo-underconstruciton{
+  width: 100%;
+}
+[id^=modal6] {
+  display: none;
+  position: fixed;
+  font-family: 'MisterPixel', 'VG5000';
+  border: 0.15vw solid black;
+  background-color: #ffffff;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-height: 40%;
+  width: 80%;
+  max-height: 70%;
+  padding: 10px;
+  z-index: 1;
+}
+.inner-modal-6{
+  display: block;
+  color: #0000ff;
+  font-size: 2.4vh;
+  line-height: 35px;
+  border: 0.15vw solid black;
+  min-height: 230px;
+  max-height: 10%;
+  overflow-y: hidden;
+  padding: 10px;
+}
 .navigation-box{
   display: flex;
   display: -webkit-box;
@@ -600,8 +630,18 @@ h4{
   display: block;
   }
 #modal5:target {
-    display: block;
-    }
+  display: block;
+  }
+.socialmedia-icons-bar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.socialmedia-icons{
+  width: 15%;
+  margin: 5px;
+}
 h3{
     font-size: 3vh;
     font-weight: lighter;

@@ -382,7 +382,7 @@ transform: translateX(0%);
   width: 100%;
 }
 [id^=modal6] {
-  display: none;
+  display: block;
   position: fixed;
   font-family: 'MisterPixel', 'VG5000';
   border: 0.15vw solid black;

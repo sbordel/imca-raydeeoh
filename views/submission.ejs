@@ -25,7 +25,6 @@
 <script type="text/javascript" src="js/ux.js"></script>
 <script type="text/javascript" src="lib/jquery.min.js"></script>
 <script src="js/player.js"></script>
-<script src="js/form.js"></script>
 
 <script>
 
@@ -335,64 +334,6 @@ $(document).ready(function() {
      <br>
      <br>
 <!-- -->
-
-<!-- SECTION FOR SOUND PIECE -->
-<div class="form-section">
-      <br><legend>Application for a SOUND PIECE</legend><br>
-    <p>This section is reserved for the students wishing to send a sound piece! This submission could be included in an hourly mix of various tracks, aired weekly.</p>
-    <br>
-    <p>We ask that the sound pieces be a 320 kbps MP3 file with a duration of either 5, 15, 30 or 60 minutes.</p>
-    <br>
-    <p>If you only wish to send us a show application, see the section above.</p>
-     <br><br>
-     <div class="form-section">
-       <label for="show-title">title of the piece :</label><br>
-       <input id="show-title" type="text" name="showtitle" value="<%= qs.soundTitle %>">
-       <span class="field-needed">*</span>
-     </div>
-       <br>
-     <div class="form-section">
-       <label for="description">description of the piece (50-100 words max):</label><br>
-       <textarea name="description" value="<%= qs.soundDescription %>"></textarea>
-       <span class="field-needed">*</span>
-     </div>
-       <br>
-     <fieldset class="project-duration" name="category">
-       <label for="category">duration of the piece :</label>  <span class="field-needed">*</span><br>
-       <input type="radio" name="duration-1" value="<%= qs.duration5 %>">5 minutes<br>
-       <input type="radio" name="duration-2"  value="<%= qs.duration10 %>">15 minutes<br>
-       <input type="radio" name="duration-3"  value="<%= qs.duration30 %>">30 minutes<br>
-       <input type="radio" name="duration-4"  value="<%= qs.duration60 %>">60 minutes<br>
-       </fieldset>
-       <br>
-      <fieldset class="project-type" name="category">
-      <label for="category">show category :</label>  <span class="field-needed">*</span><br>
-      <input type="radio" name="soundart" value="<%= qs.sound1 %>">sound art<br>
-      <input type="radio" name="fieldrecording" value="<%= qs.sound2 %>"> field recording<br>
-      <input type="radio" name="music" value="<%= qs.sound3 %>">music (DIY or self-produced)<br>
-      <input type="radio" name="performance" value="<%= qs.sound4 %>">performance or live experimentation<br>
-      <input type="radio" name="musicconcrete" value="<%= qs.sound5 %>">music concrète<br>
-      <input type="radio" name="podcast" value="<%= qs.sound6 %>">podcast or talk show<br>
-      <input type="radio" name="other" value="<%= qs.sound7 %>">other<br>
-      </fieldset>
-      <br>
-      <label for="other-category">(if "other" selected):</label><br>
-      <input id="other-category" type="text" name="othercategory" value="<%= qs.sound8 %>">
-      </div>
-      <br>
-      <div class="form-section">
-        <label for="link-kind">How will you send us your sound piece?</label><br>
-        <input type="radio" name="kind-1" value="<%= qs.soundWT %>">by WeTransfer at imcaraydeeohsubmission@gmail.com<br>
-        <input type="radio" name="kind-2" value="<%= qs.soundLink %>">by adding a link to your track in the following question<br>
-      </div>
-<br>
-<div class="form-section">
-  <label for="submission-link">Add a downloadable link to your track, if checked above (e.g Google Drive)</label><br>
-  <input id="show-title" type="text" name="showtitle" value="<%= qs.soundTitle %>">
-  <span class="field-needed">*</span>
-</div>
-<!-- -->
-
    <br>
    <br>
    <br>

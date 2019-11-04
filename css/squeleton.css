@@ -1242,6 +1242,13 @@ td.show-description {
    width:40%;
 }
 /************************ MOBILE SUBMISSION ************************/
+.body-submission #button-tab{
+  display: block;
+}
+.sub-index-button{
+  margin: 5px;
+  padding: 10px;
+}
 #form{
  padding-top: 55px;
  font-size: 1.25em;

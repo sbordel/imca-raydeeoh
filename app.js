@@ -52,7 +52,7 @@ app.get("/player.html", function(req, res){
   res.sendFile(__dirname + '/player.html');
   });
 
-app.get("/submission", function(req, res){
+app.get("/submissions", function(req, res){
   res.sendFile(__dirname + '/submission-index.html');
   });
 
@@ -65,10 +65,6 @@ app.get("/sound", function(req, res){
   res.render('sound', {qs: req.query});
   });
 
-//temporary routing
-app.get("/submissions", function(req, res){
-  res.sendFile(__dirname + '/submissions/index.html');
-  });
 
 //~~~ POST (SHOW) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //post user data to server

@@ -121,8 +121,8 @@ let mailoptions2 = {
 from: 'imcaraydeeoh@gmail.com',
 to: req.body.email,
 subject: 'IMCA Raydeeoh has recieved your application', // Subject line
-text: 'thank you!!! \n \n \n \n sent by imcabot2000 👻'
-}
+text: 'thank you!!! if your work is selected youll hear back from us soon! \n \n \n \n sent by imcabot2000 👻'
+};
 
 transporter2.sendMail(mailoptions2, function(err, data){
 if(err){

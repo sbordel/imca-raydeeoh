@@ -381,7 +381,7 @@ transform: translateX(0%);
 #logo-underconstruciton{
   width: 100%;
 }
-[id^=modal6] {
+#modal6{
   display: block;
   position: fixed;
   font-family: 'MisterPixel', 'VG5000';

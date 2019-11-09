@@ -1,0 +1,31 @@
+{
+	"firstname": "Matthew",
+	"lastname": "Halpenny",
+	"pronoun": [
+		"they",
+		""
+	],
+	"email": "matt.halpenny@gmail.com",
+	"studentid": "324342",
+	"fieldstudy": "",
+	"artistname": "",
+	"bio": "",
+	"link": "",
+	"submission-kind": "sound piece",
+	"showtitle": "",
+	"description": "",
+	"show category": "sound art",
+	"othercategory": "",
+	"day": [
+		"monday",
+		"1000AM",
+		"1030AM",
+		"monday",
+		"1000AM",
+		"1030AM",
+		"monday",
+		"1000AM",
+		"1030AM"
+	],
+	"confirmed": "yes"
+}

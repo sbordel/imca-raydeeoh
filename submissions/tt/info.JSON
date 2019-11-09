@@ -1,26 +1,19 @@
 {
 	"firstname": "t",
 	"lastname": "t",
-	"pronoun": "",
-	"email": "t@t.com",
+	"pronoun": [
+		"she",
+		""
+	],
+	"email": "matt.halpenny@gmail.com",
 	"studentid": "",
 	"fieldstudy": "",
 	"artistname": "",
 	"bio": "",
 	"link": "",
-	"showtitle": [
-		"",
-		"",
-		""
-	],
-	"description": [
-		"",
-		""
-	],
-	"othercategory": [
-		"",
-		""
-	],
+	"showtitle": "",
+	"description": "",
+	"othercategory": "",
 	"day": [
 		"monday",
 		"1000AM",

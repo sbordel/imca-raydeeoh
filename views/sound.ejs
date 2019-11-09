@@ -66,7 +66,7 @@ $(document).ready(function() {
   <div id="clock"></div>
 </header>
 <div id="form">
-<form id="contact-form" method="POST" action='/submission.html' onsubmit="return validateForm()">
+<form id="contact-form" method="POST" action='/sound' onsubmit="return validateForm()">
 <!-- onsubmit="return validateMyForm();" -->
   <div class="form-section">
       <legend>★ Application for a SOUND PIECE ★</legend>
@@ -92,10 +92,10 @@ $(document).ready(function() {
 <br>
 <div class="form-section">
   <label for="pronouns">pronouns :</label><br>
-  <input id="gnc" type="radio" name="pronoun" value="<%= qs.pro1 %>">they/them<br>
-  <input id="female" type="radio" name="pronoun" value="<%= qs.pro2 %>">she/her<br>
-  <input id="male" type="radio" name="pronoun" value="<%= qs.pro3 %>">he/him<br>
-  <input id="other" type="radio" name="pronoun" value="<%= qs.pro4 %>">other<br>
+  <input id="gnc" type="radio" name="pronoun" value="they">they/them<br>
+  <input id="female" type="radio" name="pronoun" value="she">she/her<br>
+  <input id="male" type="radio" name="pronoun" value="he">he/him<br>
+  <input id="other" type="radio" name="pronoun" value="other">other<br>
     <br>
   <label for="o-pronoun">(if "other" selected):</label><br>
   <input id="o-pronoun" type="text" name="pronoun" value="<%= qs.pro5 %>">
@@ -138,8 +138,8 @@ $(document).ready(function() {
   <br>
   <div class="form-section">
     <label for="submission-kind">Are you applying to submit a monthly show or to submit a sound piece?</label><span class="field-needed">*</span><br>
-    <input type="radio" name="kind-1" value="<%= qs.sub1 %>">monthly show proposal<br>
-    <input type="radio" name="kind-2" value="<%= qs.sub2 %>">sound piece<br>
+    <input type="radio" name="kind-1" value="show">monthly show proposal<br>
+    <input type="radio" name="kind-2" value="sound piece">sound piece<br>
   </div>
 <br>
 <br>
@@ -160,21 +160,21 @@ $(document).ready(function() {
        <br>
      <fieldset class="project-duration" name="category">
        <label for="category">duration of the piece :</label>  <span class="field-needed">*</span><br>
-       <input type="radio" name="duration-1" value="<%= qs.duration5 %>">5 minutes<br>
-       <input type="radio" name="duration-2"  value="<%= qs.duration10 %>">15 minutes<br>
-       <input type="radio" name="duration-3"  value="<%= qs.duration30 %>">30 minutes<br>
-       <input type="radio" name="duration-4"  value="<%= qs.duration60 %>">60 minutes<br>
+       <input type="radio" name="duration-1" value="5 minutes">5 minutes<br>
+       <input type="radio" name="duration-2"  value="10 minutes">15 minutes<br>
+       <input type="radio" name="duration-3"  value="30 minutes">30 minutes<br>
+       <input type="radio" name="duration-4"  value="60 minutes">60 minutes<br>
        </fieldset>
        <br>
       <fieldset class="project-type" name="category">
       <label for="category">show category :</label>  <span class="field-needed">*</span><br>
-      <input type="radio" name="soundart" value="<%= qs.sound1 %>">sound art<br>
-      <input type="radio" name="fieldrecording" value="<%= qs.sound2 %>"> field recording<br>
-      <input type="radio" name="music" value="<%= qs.sound3 %>">music (DIY or self-produced)<br>
-      <input type="radio" name="performance" value="<%= qs.sound4 %>">performance or live experimentation<br>
-      <input type="radio" name="musicconcrete" value="<%= qs.sound5 %>">music concrète<br>
-      <input type="radio" name="podcast" value="<%= qs.sound6 %>">podcast or talk show<br>
-      <input type="radio" name="other" value="<%= qs.sound7 %>">other<br>
+      <input type="radio" name="soundart" value="sound art">sound art<br>
+      <input type="radio" name="fieldrecording" value="field recording"> field recording<br>
+      <input type="radio" name="music"  value="music (DIY or self-produced)">music (DIY or self-produced)<br>
+      <input type="radio" name="performance"  value="performance or live experimentation">performance or live experimentation<br>
+      <input type="radio" name="musicconcrete"  value="music concrète">music concrète<br>
+      <input type="radio" name="podcast"  value="podcast or talk show">podcast or talk show<br>
+      <input type="radio" name="other"  value="other">other<br>
       </fieldset>
       <br>
       <label for="other-category">(if "other" selected):</label><br>
@@ -198,7 +198,7 @@ $(document).ready(function() {
    <br>
    <br>
    <div class="form-section">
-     <input id="confirm" type="checkbox" name="confirmed" value="<%= qs.confirm %>">I have read and respect the submission rules, values and policies stated in <a href="#">the IMCA RAYDEEOH Handbook </a>
+     <input id="confirm" type="checkbox" name="confirmed" value="yes">I have read and respect the submission rules, values and policies stated in <a href="#">the IMCA RAYDEEOH Handbook </a>
      <span class="field-needed">*</span><span class="field-needed">*</span>
   </div></div>
   <br>

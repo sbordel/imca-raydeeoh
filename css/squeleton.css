@@ -846,11 +846,10 @@ form{
   padding-top:3%;
   z-index: -1;
   justify-content: left;
-  margin-top: 15%;
+  margin-top: 10%;
   width: 90%;
   padding-top: 10vh;
 }
-
 .form-section{
   margin: 2.5px;
 }
@@ -1267,7 +1266,10 @@ td.show-description {
 }
 #form{
  padding-top: 55px;
- font-size: 1.25em;
+}
+#sudoForm{
+  padding-top: 25%;
+  font-size: 1.25em;
 }
 legend{
   font-size: 1.25em;

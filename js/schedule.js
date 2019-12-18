@@ -1,5 +1,5 @@
 /* set up XMLHttpRequest */
-var url = "scheduleTemplate.xlsx";
+var url = "schedule.xlsx";
 var oReq = new XMLHttpRequest();
 oReq.open("GET", url, true);
 oReq.responseType = "arraybuffer";
@@ -55,6 +55,7 @@ $(document).ready(function(){
 //Updates textbar information
 //timeData is a single value corresponding to a row in the excel schedule
 function textBar(timeData){
+  console.log("textbar populate")
   if (timeData == 99){
     $("#external-player-text").text("OFF AIR");
     $("#player-text").text("OFF AIR");  

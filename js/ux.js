@@ -10,22 +10,14 @@ var s = today.getSeconds();
   document.getElementById('clock').innerHTML =
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
-  // console.log('hi');
 
 }
+
 function checkTime(i) {
   if (i < 10) {i = "0" + i};
   return i;
 }
 
-// PLAYER
-function change() {
-   var img1 = "../assets/audio_player_files/volumeonbutton.png",
-       img2 = "../assets/audio_player_files/volumeoffbutton.png";
-   var imgElement = document.getElementById('volumeon-button');
-
-   imgElement.src = (imgElement.src === img1)? img2 : img1;
-};
 // SCHEDULE: BUTTON SWITCH
 $(function(){
   $("#monday-button").click(function(){

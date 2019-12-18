@@ -1,70 +1,72 @@
 	//open stream from VPS
 	var myaudio = new Audio('http://rhizotron.net:8080/listen.mp3');
-	//global variables
+	//determines if audio has been initialized
 	let init = false;
-	let status = true;
+	//streaming status
+	let muted = true;
 
-
-	function play(){
-		if (init === false){
-		myaudio.play(); 
-		init = true;
-		console.log("stream opened!");	
+	//function for index/player play button
+	function play() {
+		if (init === false) {
+			myaudio.play();
+			init = true;
+			console.log("stream opened");
 		}
 
-		if (status === true){
-		myaudio.muted = false;
-		status = false;
-		// console.log(status);
-		document.getElementById("external-volume-icon").src = "assets/audio_player_files/volumeonbutton-2.png";
+		if (muted === true) {
+			myaudio.muted = false;
+			muted = false;
+			//update to playing icon
+			document.getElementById("external-volume-icon").src = "assets/audio_player_files/volumeonbutton-2.png";
 
-		} else if (status === false){
+		} else if (muted === false) {
 			myaudio.muted = true;
-			status = true;
-			// console.log(status);
+			muted = true;
+			//update to muted icon
 			document.getElementById("external-volume-icon").src = "assets/audio_player_files/volumeoffbutton-2.png";
 		}
 	}
 
-// Player specific time and date. Does not update a clock, pulls clock information to update the text bar.
-// Works in sync with schedule.js 
+	// Player specific time and date. Does not update a clock, pulls clock information to update the text bar.
+	// Works in sync with schedule.js 
+	function startTime() {
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = today.getSeconds();
+		var DOTW = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		var day = DOTW[today.getDay()];
+		//index to determine whats playing in regards to the schedule
+		var scheduleTime;
 
-function startTime() {
-var today = new Date();
-var h = today.getHours();
-var m = today.getMinutes();
-var s = today.getSeconds();
-var DOTW = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var day = DOTW[today.getDay()];
-var scheduleTime;
+		//queries time (located in ux.js)
+		m = checkTime(m);
+		s = checkTime(s);
 
-  m = checkTime(m);
-  s = checkTime(s);
+		//check dotw, calculate what row of schedule to check for data
+		if (day == "Monday") {
+			tempMath = (h - 10);
+			scheduleTime = tempMath;
+		} else if (day == "Tuesday") {
+			tempMath = 8 + (h - 10);
+			scheduleTime = tempMath;
+		} else if (day == "Wednesday") {
+			tempMath = 16 + (h - 10);
+			scheduleTime = tempMath;
+		} else if (day == "Thursday") {
+			tempMath = 24 + (h - 10);
+			scheduleTime = tempMath;
+		} else if (day == "Friday") {
+			tempMath = 32 + (h - 10);
+			scheduleTime = tempMath;
+		} else if (day == "Saturday" || "Sunday") {
+			scheduleTime = 99;
+		} else if (h >= 17) {
+			scheduleTime = 99;
+		}
 
-	if(day == "Monday") {
-    tempMath = (h - 10);
-    scheduleTime = tempMath;
-	} else if(day == "Tuesday") {
-    tempMath = 9 + (h - 10);
-    scheduleTime = tempMath;
-	}else if(day == "Wednesday") {
-    tempMath = 18 + (h - 10);
-		scheduleTime = tempMath;
-	}else if(day == "Thursday") {
-    tempMath = 27 + (h - 10);
-    scheduleTime = tempMath;
-	} else if(day == "Friday") {
-    tempMath = 36 + (h - 10);
-    scheduleTime = tempMath;
-	} else if(day == "Saturday" || "Sunday") {
-    scheduleTime = 99;
-	} 
+		//update text in both player sections (schedule.js)
+		textBar(scheduleTime);
+	}
+
 	
-	textBar(scheduleTime);
-}
-
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};
-  return i;
-}
- 

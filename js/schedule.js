@@ -6,15 +6,16 @@ oReq.responseType = "arraybuffer";
 
 /* Variables */
 var worksheet, workbook, radioObject;
-let monData = [0, 9];
-let tuesData = [9, 18];
-let wedData = [18, 27];
-let thursData = [27, 36];
-let friData = [36, 45];
+//dotw data (hours + days) corresponds to excel rows 
+let monData = [0, 8];
+let tuesData = [8, 16];
+let wedData = [16, 24];
+let thursData = [24, 32];
+let friData = [32, 40];
 var dayData = [0, 0];
-var j=1;
-var storedTitles = [];
 
+
+//Onload, grab data from the schedule excel file
 oReq.onload = function(e) {
   var arraybuffer = oReq.response;
 
@@ -38,79 +39,48 @@ oReq.onload = function(e) {
 
 oReq.send();
 
+ /* the fill function replaces info within the schedule's HTML table */
 function fill(){
- /* jQuery function to search and replace text within schedule table */
+  var j=1;
 $(document).ready(function(){
+  //populates schedule row data for i, j will keep track of the interations and HTML rows
   for(i=dayData[0];i<dayData[1];i++){
   $(".show-name", "#row"+(j)).text(radioObject[i].Show);
   $(".host-name", "#row"+(j)).text(radioObject[i].Artist);
   $(".show-description", "#row"+(j)).text(radioObject[i].Description);
   ++j;
-  if (j >= 10){
-    j=1;
-  }
-}
-});
-}
-<<<<<<< HEAD
+}});}
 
-=======
-//UNCOMMENT ON LAUNCH
->>>>>>> d9402735e34f5638bf066fa9ff42b3a06e2d7cb8
 
-//Update information in the textBar via excel data, timed within player.js
+//Updates textbar information
+//timeData is a single value corresponding to a row in the excel schedule
 function textBar(timeData){
   if (timeData == 99){
     $("#external-player-text").text("OFF AIR");
-<<<<<<< HEAD
-    $("#player-text").text("OFF AIR");
-    
+    $("#player-text").text("OFF AIR");  
   } else{
     $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
     $("player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
-=======
-  } else{
-    $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
->>>>>>> d9402735e34f5638bf066fa9ff42b3a06e2d7cb8
-    console.log("i am the textbar");
-  }
-  }
+  }}
 
-<<<<<<< HEAD
-  $( document ).ready(function() {
-    monday();
-});
-=======
-//tempory version of above function to display off air until were running
-function textBar(timeData){
 
-    $("#external-player-text").text("OFF AIR");
-    $("player-text").text("OFF AIR");
-
-  }
->>>>>>> d9402735e34f5638bf066fa9ff42b3a06e2d7cb8
-
-//Variable updaters for time of the week
+//Day functions for schedule buttons
 function monday(){
   dayData = monData;
   fill();
 }
-
 function tuesday(){
   dayData = tuesData;
   fill();
 }
-
 function wednesday(){
   dayData = wedData;
   fill();
 }
-
 function thursday(){
   dayData = thursData;
   fill(); 
 }
-
 function friday(){
   dayData = friData;
   fill();

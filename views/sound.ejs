@@ -22,10 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
-<script type="text/javascript" src="js/ux.js"></script>
 <script type="text/javascript" src="lib/jquery.min.js"></script>
-<script src="js/player.js"></script>
-<script src="js/form.js"></script>
+<script type="text/javascript" src="js/ux.js"></script>
 
 <script>
 
@@ -189,7 +187,7 @@ $(document).ready(function() {
 <br>
 <div class="form-section">
   <label for="submission-link">Add a downloadable link to your track, if checked above (e.g Google Drive)</label><br>
-  <input id="show-title" type="text" name="showtitle" value="<%= qs.soundTitle %>">
+  <input id="show-title2" type="text" name="showtitle2" value="<%= qs.soundTitle %>">
   <span class="field-needed">*</span>
 </div>
 <!-- -->
@@ -207,11 +205,5 @@ $(document).ready(function() {
 </form>
 <footer></footer>
 
-<div class="player-container" id="main-player"><div>
-    <a href="javascript:void(0)" onclick="play()"><input id="volumeon-icon" type="image" src="assets/audio_player_files/volumeonbutton.png"></a>
-    <!--<a id="volumeoff-button" href="#void"><input type="image" src="assets/audio_player_files/volumeoffbutton.png" id="volumeoff-icon">--></a>
-    <!-- <p id="player-text">(track 1)   -    unknown</p> -->
-    <p id="player-text">OFF AIR</p>
-    </div>
 </body>
 </html>

@@ -95,6 +95,7 @@ header{
   height: 32%;
   /*height: 32%;*/
   /*height: 220px;*/
+  background-color: #99ffcc;
   /*background-image: linear-gradient(to bottom , #99ffcc , #99ffcc , #ff9966);*/
   background-repeat: no-repeat;
   z-index: 0;
@@ -309,6 +310,50 @@ input[type="image"]{
   margin: 2%;
   z-index: 1;
 }
+/* secondary player (in-page player for about, schedule and submission pages) */
+.player-container#secondary-player{
+ position:fixed;
+ text-align:left;
+ bottom:0;
+ left:0;
+ width:100%;
+ background-color: none;
+ height: 4%;
+ padding:5px;
+ padding-bottom:2%;
+ margin-bottom: 0.1%;
+ overflow-y: visible;
+}
+#sec-volumeon-icon{
+  float:left;
+  width: 2.1%;
+  padding: 0.1%;
+  margin-left: 0.25%;
+}
+#sec-info-icon{
+  float:left;
+  width: 2.1%;
+  padding: 0.1%;
+}
+#info-button .tooltip {
+  visibility: hidden;
+  background-color: #000000;
+  color: #ccff33;
+  border: 0.5px black solid;
+  width:20%;
+  height: 80px;
+  padding: 5px 0;
+  padding-top: 1%;
+  text-align: center;
+  /* tool tip position */
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: 6%;
+}
+#info-button:hover .tooltip {
+  visibility: visible;
+}
 /* player-text */
 @-moz-keyframes player-text {
 0%   { -moz-transform: translateX(21%); }
@@ -330,7 +375,7 @@ transform: translateX(21%);
 transform: translateX(0%);
 }
 }
-/* external-player-text */
+/* external player text */
 @-moz-keyframes external-player-text {
 0%   { -moz-transform: translateX(53%); }
 100% { -moz-transform: translateX(0%); }
@@ -359,24 +404,6 @@ transform: translateX(0%);
 .body-player{ -ms-overflow-style: none; }
 .body-player{ overflow: -moz-scrollbars-none; }
 
-/* secondary player */
-.player-container#secondary-player{
- position:fixed;
- text-align:center;
- bottom:0;
- left:0;
- width:100%;
- background-color: none;
- height: 4%;
- padding:5px;
- padding-bottom:2.5%;
- overflow-y: visible;
-}
-#info-icon{
-  float:left;
-  width: 2%;
-  margin-left: -0.5%;
-}
 /* external player */
 .body-player p#player-text{
   color: #0033ff;

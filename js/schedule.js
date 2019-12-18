@@ -67,6 +67,9 @@ function textBar(timeData){
   }
   }
 
+  $( document ).ready(function() {
+    monday();
+});
 
 //Variable updaters for time of the week
 function monday(){

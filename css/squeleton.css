@@ -18,11 +18,20 @@ html {
 .body-index {
   height: 100%;
   margin: 0;
-  background-image: linear-gradient(to bottom , #ff9966 , #ff9966 , #ccff33);
+  background-image: linear-gradient(to bottom , #ffffff , #ccff33);
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: block;
 }
+/**** ORIGINAL SCHEDULE COLOR ****/
+/*.body-index {
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(to bottom , #ff9966 , #ff9966 , #ccff33);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: block;
+}*/
 .body-about {
   height: 100%;
   margin: 0;
@@ -33,11 +42,19 @@ html {
 .body-schedule {
   height: 100%;
   margin: 0;
-  background-color: #ff9966;
+  background-color: /*#ff9966*/ #99ffcc;
   /*background-image: linear-gradient(to bottom , #99ffcc , #ff9966 , #ff9966 , #ff9966 , #ff9966 , #ff9966);*/
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/**** ORIGINAL SCHEDULE COLOR ****/
+/*.body-schedule {
+  height: 100%;
+  margin: 0;
+  background-color: #ff9966;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}*/
 .body-submission {
   height: 100%;
   margin: 0;
@@ -77,7 +94,7 @@ header{
   height: 32%;
   /*height: 32%;*/
   /*height: 220px;*/
-  background-image: linear-gradient(to bottom , #99ffcc , #99ffcc , #ff9966);
+  /*background-image: linear-gradient(to bottom , #99ffcc , #99ffcc , #ff9966);*/
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -735,7 +752,7 @@ h3{
 table {
  border: 1px solid transparent;
  border-collapse: separate;
-  width: 100%;
+ width: 100%;
 }
 table#schedule-table {
   /*margin-top: 15.5%;*/
@@ -743,13 +760,12 @@ table#schedule-table {
 }
 td{
   border: 1px solid black;
-  /*background-color: white;*/
 }
 .show-time {
   font-family: 'VG5000', 'MisterPixel';
   font-size: 1.5vw;
   font-weight: lighter;
-  background: #99ffcc;
+  background: /*#99ffcc*/ #ccff33;
   padding: 10px;
   width:10%;
 }
@@ -760,8 +776,21 @@ td{
   padding: 5px;
   height: 50px;
 }
+.show-random-sounds{
+  font-family: 'VG5000', 'MisterPixel';
+  font-size: 1.5vw;
+  font-weight: lighter;
+  text-transform: lowercase;
+  padding: 5px;
+  height: 50px;
+}
 td.show-name{
    width:30%;
+}
+td.show-random-sounds{
+   width:30%;
+   background-color: #d3d3d3;
+   border: 1px solid none;
 }
 td.host-name {
    width:30%;

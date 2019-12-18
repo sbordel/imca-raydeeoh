@@ -34,10 +34,16 @@ app.use("/lib",  express.static(__dirname + '/lib'));
 //upon navigating the site send corresponding html pages to client
 app.get("/", function(req, res){
 res.sendFile(__dirname + '/index.html');
+app.get('/scheduleTemplate.xlsx',function(req,res){
+  res.sendFile(__dirname + '/schedule/scheduleTemplate.xlsx'); 
+});
 });
 
 app.get("/about", function(req, res){
   res.sendFile(__dirname + '/about.html');
+  app.get('/scheduleTemplate.xlsx',function(req,res){
+    res.sendFile(__dirname + '/schedule/scheduleTemplate.xlsx'); 
+  });
   });
 
 app.get("/schedule", function(req, res){
@@ -54,6 +60,9 @@ app.get("/player.html", function(req, res){
 
 app.get("/submissions", function(req, res){
   res.sendFile(__dirname + '/submission-index.html');
+  app.get('/scheduleTemplate.xlsx',function(req,res){
+    res.sendFile(__dirname + '/schedule/scheduleTemplate.xlsx'); 
+  });
   });
 
 //render a view template for user submission data

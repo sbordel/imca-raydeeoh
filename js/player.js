@@ -76,6 +76,8 @@ var scheduleTime;
 	} 
 	
 	textBar(scheduleTime);
+	console.log(scheduleTime);
+	console.log("sending time to player")
 }
 
 function checkTime(i) {

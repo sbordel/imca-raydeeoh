@@ -564,7 +564,7 @@ h2{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  margin-top: 7%;
+  margin-top: 10%;
 }
 .about-header-icon{
   display: none;
@@ -574,7 +574,7 @@ h2{
   position: fixed;
   width: 90%;
   height: 55%;
-  margin-top: 8%;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -687,6 +687,9 @@ h4{
 #modal5:target {
   display: block;
   }
+#modal7:target {
+    display: block;
+    }
 .socialmedia-icons-bar{
   position: relative;
   display: flex;

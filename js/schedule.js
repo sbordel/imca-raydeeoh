@@ -52,18 +52,35 @@ $(document).ready(function(){
 }
 });
 }
+<<<<<<< HEAD
+
+=======
 //UNCOMMENT ON LAUNCH
+>>>>>>> d9402735e34f5638bf066fa9ff42b3a06e2d7cb8
 
 //Update information in the textBar via excel data, timed within player.js
 function textBar(timeData){
   if (timeData == 99){
     $("#external-player-text").text("OFF AIR");
+<<<<<<< HEAD
+    $("#player-text").text("OFF AIR");
+    
   } else{
     $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
+    $("player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
+=======
+  } else{
+    $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
+>>>>>>> d9402735e34f5638bf066fa9ff42b3a06e2d7cb8
     console.log("i am the textbar");
   }
   }
 
+<<<<<<< HEAD
+  $( document ).ready(function() {
+    monday();
+});
+=======
 //tempory version of above function to display off air until were running
 function textBar(timeData){
 
@@ -71,6 +88,7 @@ function textBar(timeData){
     $("player-text").text("OFF AIR");
 
   }
+>>>>>>> d9402735e34f5638bf066fa9ff42b3a06e2d7cb8
 
 //Variable updaters for time of the week
 function monday(){

@@ -1,45 +1,30 @@
 	//open stream from VPS
-	// var myaudio = new Audio('http://rhizotron.net:8080/listen.mp3');
-	// //global variables
-	// let init = false;
-	// let status = true;
+	var myaudio = new Audio('http://rhizotron.net:8080/listen.mp3');
+	//global variables
+	let init = false;
+	let status = true;
 
 
 	function play(){
-		// if (init === false){
-		// myaudio.play(); 
-		// init = true;
-		// console.log("stream opened!");	
-		// }
+		if (init === false){
+		myaudio.play(); 
+		init = true;
+		console.log("stream opened!");	
+		}
 
-		// if (status === true){
-		// myaudio.muted = false;
-		// status = false;
-		// // console.log(status);
-		// document.getElementById("volumeon-icon").src = "assets/audio_player_files/volumeonbutton.png";
+		if (status === true){
+		myaudio.muted = false;
+		status = false;
+		// console.log(status);
+		document.getElementById("external-volume-icon").src = "assets/audio_player_files/volumeonbutton-2.png";
 
-		// } else if (status === false){
-		// 	myaudio.muted = true;
-		// 	status = true;
-		// 	// console.log(status);
-		// 	document.getElementById("volumeon-icon").src = "assets/audio_player_files/volumeoffbutton.png";
-		// }
-
-	// 	$('#volumeon-icon').on('click', function(){
-
-	// 		$('audio,video').each(function(){
-	// 			 $(this).volume = 0.0;
-	// 		});
-	
-	// });
+		} else if (status === false){
+			myaudio.muted = true;
+			status = true;
+			// console.log(status);
+			document.getElementById("external-volume-icon").src = "assets/audio_player_files/volumeoffbutton-2.png";
+		}
 	}
-
-	// setTimeout(function fauxPlay(){
-	// 	// if (init === true){
-	// 	myaudio.play(); 
-	// 	status = false;
-	// 	// }
-	// }, 1);
 
 // Player specific time and date. Does not update a clock, pulls clock information to update the text bar.
 // Works in sync with schedule.js 
@@ -76,8 +61,6 @@ var scheduleTime;
 	} 
 	
 	textBar(scheduleTime);
-	console.log(scheduleTime);
-	console.log("sending time to player")
 }
 
 function checkTime(i) {

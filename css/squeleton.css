@@ -18,7 +18,8 @@ html {
 .body-index {
   height: 100%;
   margin: 0;
-  background-image: linear-gradient(to bottom , #ffffff , #ccff33);
+  background-color: #ffffff;
+  /*background-image: linear-gradient(to bottom , #ffffff , #ccff33);*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: block;
@@ -395,9 +396,9 @@ transform: translateX(0%);
 .body-index{ overflow: -moz-scrollbars-none; }
 
 #main-logo{
-  width: 40%;
+  width: 42%;
   padding-top:70px;
-  padding-left:50px;
+  padding-left:80px;
   padding-right: 20px;
   margin-bottom: -5px;
 }
@@ -451,6 +452,7 @@ h2{
 }
 .icon-box{
   text-align: center;
+  margin-top: 1%;
   width: 20%;
   height: 20%;
 }

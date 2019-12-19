@@ -62,9 +62,11 @@ function textBar(timeData){
   if (timeData === 99){
     $("#external-player-text").text("OFF AIR");
     $("#player-text").text("OFF AIR");  
+    $("#player-modal").text("OFF AIR");  
   } else{
     $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
     $("#player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
+    $("#player-modal").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
   }}
 
 

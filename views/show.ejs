@@ -22,10 +22,11 @@
 <meta name="theme-color" content="#ffffff">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
-<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script src="lib/xlsx.full.min.js"></script>
+<script src="lib/jquery.min.js"></script>
 <script type="text/javascript" src="js/ux.js"></script>
-
-
+<script type="text/javascript" src="js/schedule.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
 <script>
 
 function validateForm() {
@@ -339,5 +340,11 @@ $(document).ready(function() {
 </form>
 <footer></footer>
 
+<!-- SECONDARY PLAYER -->
+<div class="player-container" id="secondary-player">
+  <div id="volumeon-button"><img id="sec-volumeon-icon" src="assets/audio_player_files/volumeonbutton-2.png" alt="volume on button" title="volume on button"></div>
+  <!--<a  href="#void"><input id="info-icon" type="image" src="assets/audio_player_files/infobutton-2.png"></a>-->
+  <div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip" id='player-modal'>Artist Name - Track Name</span></div>
+  </div>
 </body>
 </html>

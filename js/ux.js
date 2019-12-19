@@ -2,18 +2,68 @@
 $(function () {
   $("#monday-button").click(function () {
     monday();
+    $("#monday-button").css('background-color', 'black');
+		$("#monday-button").css('color', 'white');
+    $("#tuesday-button").css('background-color', 'white');
+		$("#tuesday-button").css('color', 'black');
+    $("#wednesday-button").css('background-color', 'white');
+		$("#wednesday-button").css('color', 'black');
+    $("#thursday-button").css('background-color', 'white');
+    $("#thursday-button").css('color', 'black');
+    $("#friday-button").css('background-color', 'white');
+		$("#friday-button").css('color', 'black');
   });
   $("#tuesday-button").click(function () {
     tuesday();
+    $("#monday-button").css('background-color', 'white');
+		$("#monday-button").css('color', 'black');
+    $("#tuesday-button").css('background-color', 'black');
+		$("#tuesday-button").css('color', 'white');
+    $("#wednesday-button").css('background-color', 'white');
+		$("#wednesday-button").css('color', 'black');
+    $("#thursday-button").css('background-color', 'white');
+    $("#thursday-button").css('color', 'black');
+    $("#friday-button").css('background-color', 'white');
+		$("#friday-button").css('color', 'black');
   });
   $("#wednesday-button").click(function () {
     wednesday();
+    $("#monday-button").css('background-color', 'white');
+		$("#monday-button").css('color', 'black');
+    $("#tuesday-button").css('background-color', 'white');
+		$("#tuesday-button").css('color', 'black');
+    $("#wednesday-button").css('background-color', 'black');
+		$("#wednesday-button").css('color', 'white');
+    $("#thursday-button").css('background-color', 'white');
+    $("#thursday-button").css('color', 'black');
+    $("#friday-button").css('background-color', 'white');
+		$("#friday-button").css('color', 'black');
   });
   $("#thursday-button").click(function () {
     thursday();
+    $("#monday-button").css('background-color', 'white');
+		$("#monday-button").css('color', 'black');
+    $("#tuesday-button").css('background-color', 'white');
+		$("#tuesday-button").css('color', 'black');
+    $("#wednesday-button").css('background-color', 'white');
+		$("#wednesday-button").css('color', 'black');
+    $("#thursday-button").css('background-color', 'black');
+    $("#thursday-button").css('color', 'white');
+    $("#friday-button").css('background-color', 'white');
+		$("#friday-button").css('color', 'black');
   });
   $("#friday-button").click(function () {
     friday();
+    $("#monday-button").css('background-color', 'white');
+		$("#monday-button").css('color', 'black');
+    $("#tuesday-button").css('background-color', 'white');
+		$("#tuesday-button").css('color', 'black');
+    $("#wednesday-button").css('background-color', 'white');
+		$("#wednesday-button").css('color', 'black');
+    $("#thursday-button").css('background-color', 'white');
+    $("#thursday-button").css('color', 'black');
+    $("#friday-button").css('background-color', 'black');
+		$("#friday-button").css('color', 'white');
   });
 });
 // SUBMISSION: BUTTON SWITCH

@@ -295,6 +295,7 @@ input[type="image"]{
   float:left;
   width: 2%;
   padding: 0.1%;
+  outline: none;
 }
 #volumeoff-icon{
   display: none;
@@ -309,6 +310,7 @@ input[type="image"]{
   height: 25px;
   margin: 2%;
   z-index: 1;
+  outline: none;
 }
 /* secondary player (in-page player for about, schedule and submission pages) */
 .player-container#secondary-player{
@@ -769,6 +771,7 @@ h3{
   /*margin: 2px 10px;*/
   padding: 0.8% 4%;
   /*padding: 10px 50px;*/
+  outline: none;
 }
 .schedule{
  display: block;
@@ -975,6 +978,7 @@ span.timeslot-span{
   border-radius: 17px;
   cursor: pointer;
   z-index: 3;
+  outline: none;
 }
 
 .submission-class{

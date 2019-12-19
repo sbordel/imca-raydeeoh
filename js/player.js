@@ -46,12 +46,15 @@
 		if (dayInit == false){
 		if (day == "Monday") {
 			monday();
+			$("#monday-button").css('color', 'black');
 		} else if (day == "Tuesday") {
 			tuesday();
 		} else if (day == "Wednesday") {
 			wednesday();
 		} else if (day == "Thursday") {
 			thursday();
+			$("#thursday-button").css('background-color', 'black');
+			$("#thursday-button").css('color', 'white');
 		} else if (day == "Friday") {
 			friday();
 		} else if (day == "Saturday" || "Sunday") {

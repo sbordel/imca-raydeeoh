@@ -44,23 +44,18 @@ function fill(){
   var j=1;
 $(document).ready(function(){
   //populates schedule row data for i, j will keep track of the interations and HTML rows
-  console.log(dayData);
-  console.log(j);
   for(i=dayData[0];i<dayData[1];i++){
   $(".show-name", "#row"+(j)).text(radioObject[i].Show);
   $(".host-name", "#row"+(j)).text(radioObject[i].Artist);
   $(".show-description", "#row"+(j)).text(radioObject[i].Description);
   ++j;
-  // if (j > 8){
-  //   j =1;
-  // }
 }});}
 
 
 //Updates textbar information
 //timeData is a single value corresponding to a row in the excel schedule
 function textBar(timeData){
-  console.log("textbar populated")
+  // console.log("textbar populated")
   if (timeData === 99){
     $("#external-player-text").text("OFF AIR");
     $("#player-text").text("OFF AIR");  

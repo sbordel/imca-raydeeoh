@@ -1,10 +1,5 @@
-	//open stream from VPS
-	var myaudio = new Audio('http://rhizotron.net:8080/listen.mp3');
-	//determines if audio has been initialized
-	let init = false;
-	//streaming status
-	let muted = true;
-
+	let dayInit = false;
+	
 	//function for index/player play button
 	function play() {
 		if (init === false) {
@@ -43,35 +38,60 @@
 		m = checkTime(m);
 		s = checkTime(s);
 
+		document.getElementById('clock').innerHTML =
+		h + ":" + m + ":" + s;
+	  	var t = setTimeout(startTime, 500);
+
+		//check dotw, fill schedule (only runs once per load)
+		if (dayInit == false){
+		if (day == "Monday") {
+			monday();
+		} else if (day == "Tuesday") {
+			tuesday();
+		} else if (day == "Wednesday") {
+			wednesday();
+		} else if (day == "Thursday") {
+			thursday();
+		} else if (day == "Friday") {
+			friday();
+		} else if (day == "Saturday" || "Sunday") {
+			scheduleTime = 99;
+		} 
+		dayInit = true;
+	}
+
 		//check dotw, calculate what row of schedule to check for data
 		if (day == "Monday") {
 			tempMath = (h - 10);
 			scheduleTime = tempMath;
-			monday();
 		} else if (day == "Tuesday") {
 			tempMath = 8 + (h - 10);
 			scheduleTime = tempMath;
-			tuesday();
 		} else if (day == "Wednesday") {
 			tempMath = 16 + (h - 10);
 			scheduleTime = tempMath;
-			wednesday();
 		} else if (day == "Thursday") {
 			tempMath = 24 + (h - 10);
 			scheduleTime = tempMath;
-			thursday();
 		} else if (day == "Friday") {
 			tempMath = 32 + (h - 10);
 			scheduleTime = tempMath;
-			friday();
-		} else if (day == "Saturday" || "Sunday") {
-			scheduleTime = 99;
-		} else if (h >= 17) {
-			scheduleTime = 99;
+		} 
+
+		//if its after 6 or before 10, go off air
+		if (h >= 18 || h < 10) {
+		scheduleTime = 99;
 		}
 
 		//update text in both player sections (schedule.js)
 		textBar(scheduleTime);
 	}
+
+	function checkTime(i) {
+		if (i < 10) {
+		  i = "0" + i
+		};
+		return i;
+	  }
 
 	

@@ -47,18 +47,23 @@
 		if (day == "Monday") {
 			tempMath = (h - 10);
 			scheduleTime = tempMath;
+			monday();
 		} else if (day == "Tuesday") {
 			tempMath = 8 + (h - 10);
 			scheduleTime = tempMath;
+			tuesday();
 		} else if (day == "Wednesday") {
 			tempMath = 16 + (h - 10);
 			scheduleTime = tempMath;
+			wednesday();
 		} else if (day == "Thursday") {
 			tempMath = 24 + (h - 10);
 			scheduleTime = tempMath;
+			thursday();
 		} else if (day == "Friday") {
 			tempMath = 32 + (h - 10);
 			scheduleTime = tempMath;
+			friday();
 		} else if (day == "Saturday" || "Sunday") {
 			scheduleTime = 99;
 		} else if (h >= 17) {

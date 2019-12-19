@@ -1,5 +1,5 @@
 /* set up XMLHttpRequest */
-var url = "schedule.xlsx";
+var url = "scheduleSheet/schedule.xlsx";
 var oReq = new XMLHttpRequest();
 oReq.open("GET", url, true);
 oReq.responseType = "arraybuffer";
@@ -49,19 +49,22 @@ $(document).ready(function(){
   $(".host-name", "#row"+(j)).text(radioObject[i].Artist);
   $(".show-description", "#row"+(j)).text(radioObject[i].Description);
   ++j;
+  if (j > 8){
+    j =1;
+  }
 }});}
 
 
 //Updates textbar information
 //timeData is a single value corresponding to a row in the excel schedule
 function textBar(timeData){
-  console.log("textbar populate")
-  if (timeData == 99){
+  console.log("textbar populated")
+  if (timeData === 99){
     $("#external-player-text").text("OFF AIR");
     $("#player-text").text("OFF AIR");  
   } else{
     $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
-    $("player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
+    $("#player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
   }}
 
 

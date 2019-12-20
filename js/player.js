@@ -46,17 +46,24 @@
 		if (dayInit == false){
 		if (day == "Monday") {
 			monday();
-			$("#monday-button").css('color', 'black');
+			$("#monday-button").css('background-color', 'black');
+			$("#monday-button").css('color', 'white');
 		} else if (day == "Tuesday") {
 			tuesday();
+			$("#tuesday-button").css('background-color', 'black');
+			$("#tuesday-button").css('color', 'white');
 		} else if (day == "Wednesday") {
 			wednesday();
+			$("#wednesday-button").css('background-color', 'black');
+			$("#wednesday-button").css('color', 'white');
 		} else if (day == "Thursday") {
 			thursday();
 			$("#thursday-button").css('background-color', 'black');
 			$("#thursday-button").css('color', 'white');
 		} else if (day == "Friday") {
 			friday();
+			$("#friday-button").css('background-color', 'black');
+			$("#friday-button").css('color', 'white');
 		} else if (day == "Saturday" || "Sunday") {
 			scheduleTime = 99;
 		} 

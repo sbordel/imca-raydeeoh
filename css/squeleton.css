@@ -288,6 +288,7 @@ p#external-player-text{
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 input[type="image"]{
  float:left;
@@ -298,6 +299,7 @@ input[type="image"]{
   width: 2%;
   padding: 0.1%;
   outline: none;
+  margin-left: 1%;
 }
 #volumeoff-icon{
   display: none;

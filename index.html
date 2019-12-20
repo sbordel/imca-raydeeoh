@@ -22,24 +22,24 @@
 <meta name="theme-color" content="#ffffff">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
-<script src="js/player.js"></script>
-<script type="text/javascript" src="lib/jquery.min.js"></script>
-<!-- <script type="text/javascript">
-function modal(){
-	$('#modal6').hide();
-}
-</script> -->
+<script src="lib/xlsx.full.min.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/ux.js"></script>
+<script type="text/javascript" src="js/schedule.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+
 </head>
 <body class="body-index" onload="startTime()">
-
+<div id="clock"></div>
 <!-- LOGO -->
-<img id="main-logo" src="assets/vectorized/logo/full/imcaraydeeoh_logo.svg" alt="imca raydeeoh logo">
-<img id="main-logo-mobile" src="assets/vectorized/logo/full/imcaraydeeoh_logo.svg" alt="imca raydeeoh logo">
-<!-- 
-<div id="modal6">
-	<h3>!!!</h3>
-<a class="close" href="#" onclick='modal()'>&times;</a>
-<span class="inner-modal-6">Our website is under construction! Please be patient with it :~)<img src="assets/png/logo_underconstruction.png" id="logo-underconstruciton" alt="imca raydeeoh logo in construction mode" title="imca raydeeoh logo in construction mode"></span></div> -->
+<img id="main-logo" src="assets/vectorized/logo/full/imcaraydeeoh_logo_v2.png" alt="imca raydeeoh logo">
+<img id="main-logo-mobile" src="assets/vectorized/logo/full/imcaraydeeoh_logo_v2.png" alt="imca raydeeoh logo">
+
+<!-- ORIGINAL LOGO -->
+<!--<img id="main-logo" src="assets/vectorized/logo/full/imcaraydeeoh_logo.svg" alt="imca raydeeoh logo">
+<img id="main-logo-mobile" src="assets/vectorized/logo/full/imcaraydeeoh_logo.svg" alt="imca raydeeoh logo">-->
+
+
 
 <div class="navigation-box">
 <!-- about icon -->
@@ -94,13 +94,9 @@ function modal(){
 </div>
 
 <div class="player-container" id="main-player"><div>
-	<a href="javascript:void(0)" onclick="window.open('player.html',
-	'newWin','resizable=no,width=440,height=400')"><input id="volumeon-icon" type="image" src="assets/audio_player_files/volumeonbutton.png"></a>
-
-<!-- <a href="javascript:void(0)" onclick="play()"><input id="volumeon-icon" type="image" src="assets/audio_player_files/volumeonbutton.png"></a> -->
-<!--<a id="volumeoff-button" href="#void"><input type="image" src="assets/audio_player_files/volumeoffbutton.png" id="volumeoff-icon">--></a>
-<!-- <p id="player-text">(track 1)   -    unknown</p> -->
-<p id="player-text">Boioioing! - Ale(OS)</p>
+	<a href="javascript:void(0)" onclick="window.open('player',
+	'newWin','resizable=no,width=440,height=400')"><input id="volumeon-icon" type="image" src="assets/audio_player_files/playbutton.png"></a>
+<p id="player-text"></p>
 </div>
 
 </body>

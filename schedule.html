@@ -22,10 +22,11 @@
 <meta name="theme-color" content="#ffffff">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
-<script type="text/javascript" src="js/ux.js"></script>
 <script src="lib/xlsx.full.min.js"></script>
 <script src="lib/jquery.min.js"></script>
-<script src="js/schedule.js"></script>
+<script type="text/javascript" src="js/ux.js"></script>
+<script type="text/javascript" src="js/schedule.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
 </head>
 <body class="body-schedule" onload="startTime()">
 
@@ -57,7 +58,7 @@
       <tbody class="list">
 
         <tr class="block-row" id='row1'>
-        <td class="show-time">10:00:00 AM</td>
+        <td class="show-time">10AM/11AM</td>
         <td><table>
         <tbody class="list">
         <tr>
@@ -67,7 +68,7 @@
         </td></tr></tbody></table></td></td></tr>
 
         <tr class="block-row" id='row2'>
-        <td class="show-time">11:00:00 AM</td>
+        <td class="show-time">11AM/12PM</td>
         <td><table>
         <tbody class="list">
         <tr>
@@ -77,7 +78,7 @@
         </td></tr></tbody></table></td></td></tr>
 
         <tr class="block-row" id='row3'>
-        <td class="show-time">12:00:00 PM</td>
+        <td class="show-time">12PM/1PM</td>
         <td><table>
         <tbody class="list">
         <tr>
@@ -87,17 +88,18 @@
         </td></tr></tbody></table></td></td></tr>
 
         <tr class="block-row"  id='row4'>
-        <td class="show-time">01:00:00 PM</td>
+        <td class="show-time">1PM/2PM</td>
         <td><table>
         <tbody class="list">
         <tr>
-        <td class="show-name">☆</td>
+        <td class="show-random-sounds">☆☆☆randomized sound pieces☆☆☆</td>
+        <!--<td class="show-name">☆</td>
         <td class="host-name">☆</td>
-        <td class="show-description">☆
-        </td></tr></tbody></table></td></td></tr>
+        <td class="show-description">☆</td>-->
+        </tr></tbody></table></td></td></tr>
 
         <tr class="block-row" id='row5'>
-        <td class="show-time">02:00:00 PM</td>
+        <td class="show-time">2PM/3PM</td>
         <td><table>
         <tbody class="list">
         <tr>
@@ -107,7 +109,7 @@
         </td></tr></tbody></table></td></td></tr>
 
         <tr class="block-row" id='row6'>
-        <td class="show-time">03:00:00 PM</td>
+        <td class="show-time">3PM/4PM</td>
         <td><table>
         <tbody class="list">
         <tr>
@@ -117,7 +119,7 @@
         </td></tr></tbody></table></td></td></tr>
 
         <tr class="block-row" id='row7'>
-        <td class="show-time">04:00:00 PM</td>
+        <td class="show-time">4PM/5PM</td>
         <td><table>
         <tbody class="list">
         <tr>
@@ -127,7 +129,7 @@
         </td></tr></tbody></table></td></td></tr>
 
         <tr class="block-row"  id='row8'>
-        <td class="show-time">05:00:00 PM</td>
+        <td class="show-time">5PM/6PM</td>
         <td><table>
         <tbody class="list">
         <tr>
@@ -136,21 +138,14 @@
         <td class="show-description">☆
         </td></tr></tbody></table></td></td></tr>
 
-        <!--<tr class="block-row" id='row9'>
-        <td class="show-time">06:00:00 PM</td>
-        <td><table>
-        <tbody class="list">
-        <tr>
-        <td class="show-name">☆</td>
-        <td class="host-name">☆</td>
-        <td class="show-description">☆
-        </td></tr></tbody></table></td></td></tr>-->
 </tbody></ul></table></p></div>
-<div class="player-container" id="main-player"><div>
-    <a href="javascript:void(0)" onclick="play()"><input id="volumeon-icon" type="image" src="assets/audio_player_files/volumeonbutton.png"></a>
-    <!--<a id="volumeoff-button" href="#void"><input type="image" src="assets/audio_player_files/volumeoffbutton.png" id="volumeoff-icon">--></a>
-    <!-- <p id="player-text">(track 1)   -    unknown</p> -->
-    <p id="player-text">OFF AIR</p>
-    </div>
+
+<!-- SECONDARY PLAYER -->
+<div class="player-container" id="secondary-player">
+<div id="volumeon-button"><img id="sec-volumeon-icon" src="assets/audio_player_files/volumeonbutton-2.png" alt="volume on button" title="volume on button"></div>
+<!--<a  href="#void"><input id="info-icon" type="image" src="assets/audio_player_files/infobutton-2.png"></a>-->
+<div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip" id='player-modal'>Artist Name - Track Name</span></div>
+</div>
+
 </body>
 </html>

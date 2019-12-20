@@ -22,11 +22,11 @@
 <meta name="theme-color" content="#ffffff">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
+<script src="lib/xlsx.full.min.js"></script>
+<script src="lib/jquery.min.js"></script>
 <script type="text/javascript" src="js/ux.js"></script>
-<script type="text/javascript" src="lib/jquery.min.js"></script>
-<script src="js/player.js"></script>
-<script src="js/form.js"></script>
-
+<script type="text/javascript" src="js/schedule.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
 <script>
 
 function validateForm() {
@@ -189,7 +189,7 @@ $(document).ready(function() {
 <br>
 <div class="form-section">
   <label for="submission-link">Add a downloadable link to your track, if checked above (e.g Google Drive)</label><br>
-  <input id="show-title" type="text" name="showtitle" value="<%= qs.soundTitle %>">
+  <input id="show-title2" type="text" name="showtitle2" value="<%= qs.soundTitle %>">
   <span class="field-needed">*</span>
 </div>
 <!-- -->
@@ -205,13 +205,14 @@ $(document).ready(function() {
   <input type="button" value="submit" class="submission-button"  onclick="alert('Please read the submission rules :  )')">
   <input type="submit" value="submit" class="submission-class" />
 </form>
+
+<!-- SECONDARY PLAYER -->
+<div class="player-container" id="secondary-player">
+  <div id="volumeon-button"><img id="sec-volumeon-icon" src="assets/audio_player_files/volumeonbutton-2.png" alt="volume on button" title="volume on button"></div>
+  <!--<a  href="#void"><input id="info-icon" type="image" src="assets/audio_player_files/infobutton-2.png"></a>-->
+  <div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip" id='player-modal'>Artist Name - Track Name</span></div>
+  </div>
 <footer></footer>
 
-<div class="player-container" id="main-player"><div>
-    <a href="javascript:void(0)" onclick="play()"><input id="volumeon-icon" type="image" src="assets/audio_player_files/volumeonbutton.png"></a>
-    <!--<a id="volumeoff-button" href="#void"><input type="image" src="assets/audio_player_files/volumeoffbutton.png" id="volumeoff-icon">--></a>
-    <!-- <p id="player-text">(track 1)   -    unknown</p> -->
-    <p id="player-text">OFF AIR</p>
-    </div>
 </body>
 </html>

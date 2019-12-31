@@ -24,15 +24,6 @@ html {
   background-attachment: fixed;
   display: block;
 }
-/**** ORIGINAL SCHEDULE COLOR ****/
-/*.body-index {
-  height: 100%;
-  margin: 0;
-  background-image: linear-gradient(to bottom , #ff9966 , #ff9966 , #ccff33);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: block;
-}*/
 .body-about {
   height: 100%;
   margin: 0;
@@ -43,19 +34,11 @@ html {
 .body-schedule {
   height: 100%;
   margin: 0;
-  background-color: /*#ff9966*/ #99ffcc;
-  /*background-image: linear-gradient(to bottom , #99ffcc , #ff9966 , #ff9966 , #ff9966 , #ff9966 , #ff9966);*/
+  /*background-image: linear-gradient(to bottom , #99ffcc , #99ffcc , #ccff33 , #ccff33 , #ccff33 , #ccff33 , #ccff33 , #ccff33);*/
+  background-color: #ccff33;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-/**** ORIGINAL SCHEDULE COLOR ****/
-/*.body-schedule {
-  height: 100%;
-  margin: 0;
-  background-color: #ff9966;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}*/
 .body-submission {
   height: 100%;
   margin: 0;
@@ -63,13 +46,6 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: auto;
-}
-.body-archive {
-  height: 100%;
-  margin: 0;
-  background-image: linear-gradient(to bottom , #ccff33 , #ccff99 ,  #ccff99 , #99ffcc , #99ffcc );
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .body-player{
   height: 100%;
@@ -87,16 +63,14 @@ header{
   width: 100%;
   height: 25%;
   top: 0;
-  padding-top: 40px;
+  padding-top: 45px;
   padding-right: 50px;
   padding-left: 50px;
 }
 .header-schedule{
-  height: 32%;
   /*height: 32%;*/
-  /*height: 220px;*/
-  background-color: #99ffcc;
-  /*background-image: linear-gradient(to bottom , #99ffcc , #99ffcc , #ff9966);*/
+  height: calc(180px + 2vw);
+  background-image: linear-gradient(to bottom , #99ffcc , #99ffcc  , #ccff33);
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -288,7 +262,6 @@ p#external-player-text{
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
- 
 }
 input[type="image"]{
  float:left;
@@ -317,6 +290,7 @@ input[type="image"]{
   z-index: 1;
   outline: none;
 }
+
 /* secondary player (in-page player for about, schedule and submission pages) */
 .player-container#secondary-player{
  position:fixed;
@@ -772,44 +746,61 @@ h3{
   }
 
 /************************ -- SCHEDULE-- ************************/
-.schedule-button{
-  margin: 0.2% 0.7%;
-  /*margin: 2px 10px;*/
-  padding: 0.8% 4%;
-  /*padding: 10px 50px;*/
-  outline: none;
+.mobile-button-tab{
+  text-align: center;
+  display: none;
+}
+.mobile-schedule-button{
+  background-color: #ffffff;
+  border: 1.5px solid black;
+  color: #000000;
+  padding: 13px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2%;
+  cursor: pointer;
 }
 .schedule{
  display: block;
- position: relative;
+ position: fixed;
  width: 100%;
- height: 60%;
- top: 30%;
- bottom: 10%;
- padding-top:1%;
- margin-top: 2%;
+ padding: 5px;
+ height: 65%;
+ top: 25%;
+ margin-top: 6vh;
  z-index: -1;
+ overflow-y: hidden;
 }
 table {
  border: 1px solid transparent;
  border-collapse: separate;
  width: 100%;
 }
-table#schedule-table {
-  /*margin-top: 15.5%;*/
+table.schedule-table {
   text-align:center;
+  position:relative;
+  overflow: scroll;
+}
+tbody{
+  background-color: #ffffff;
 }
 td{
   border: 1px solid black;
+}
+.block-row {
 }
 .show-time {
   font-family: 'VG5000', 'MisterPixel';
   font-size: 1.5vw;
   font-weight: lighter;
-  background: /*#99ffcc*/ #ccff33;
+  background: #99ffcc;
   padding: 10px;
   width:10%;
+  height: 20%;
 }
+/*desktop view*/
 .show-name, .host-name, .show-description{
   font-family: 'MisterPixel', 'VG5000';
   font-size: 1.5vw;
@@ -817,27 +808,29 @@ td{
   padding: 5px;
   height: 50px;
 }
-.show-random-sounds{
-  font-family: 'VG5000', 'MisterPixel';
-  font-size: 1.5vw;
-  font-weight: lighter;
-  text-transform: lowercase;
-  padding: 5px;
-  height: 50px;
-}
 td.show-name{
-   width:30%;
-}
-td.show-random-sounds{
-   width:30%;
-   background-color: #d3d3d3;
-   border: 1px solid none;
+  width:30%;
 }
 td.host-name {
-   width:30%;
+  width:30%;
 }
 td.show-description {
-   width:70%;
+  width:70%;
+}
+td.show-host-name,.show-name,.host-name,.show-description{
+  background-color: #ccff33;
+}
+td.show-random{
+  font-family: 'VG5000', 'MisterPixel';
+  font-size: 1.5vw;
+  padding: 5px;
+  width:30%;
+  background-color: #d3d3d3;
+  border: 1px solid none;
+}
+/*mobile view*/
+td.show-host-name{
+  display: none;
 }
 /************************ SUBMISSION ************************/
 .sub-index-button{
@@ -944,12 +937,12 @@ input{
 }
 input[type=text]{
   border: 0.1vw black solid;
-  background-image: linear-gradient(to bottom , #ccccff , #ff9966);
+  background-image: linear-gradient(to bottom , #ccccff , #99ffcc);
   height: 5%;
 }
 textarea{
   border: 0.1vw black solid;
-  background-image: linear-gradient(to bottom , #ccccff , #ff9966);
+  background-image: linear-gradient(to bottom , #ccccff , #99ffcc);
   width: 40%;
   height: 100px;
   margin-top: 5px;
@@ -981,13 +974,11 @@ span.timeslot-span{
   color: #ffffff;
   text-decoration: none;
   padding: 0.8% 4%;
-  /*padding: 10px 50px;*/
   border-radius: 17px;
   cursor: pointer;
   z-index: 3;
   outline: none;
 }
-
 .submission-class{
   z-index: 1;
   display: none;
@@ -1005,7 +996,6 @@ span.timeslot-span{
   border-radius: 17px;
   cursor: pointer;
 }
-
 .submit-class:hover{
   background-color: #ffffff;
   color: #0033ff;
@@ -1013,63 +1003,27 @@ span.timeslot-span{
 .submission-button:active{
   border: 0.15vw black dotted;
 }
-
 .submission-class:active{
   border: 0.15vw black dotted;
 }
-
 footer{
   padding-bottom: 5%;
 }
 
-/************************ ARCHIVE ************************/
-.archive-button{
-  margin: 0.2% 4%;
-  /*margin: 2px 10px;*/
-}
-#list-section{
-  padding-top:10px;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-}
-.archive-list{
-  display: block;
-  position: relative;
-  width: 54%;
-  padding: 5px;
-  padding-bottom: 10%;
-  margin-top: 27%;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 100%;
-  text-align:left;
-  z-index: -2;
-}
-#show-list{
-  display: none;
-}
-#artist-list{
-  display: none;
-}
-#category-list{
-  display: none;
-}
-ul{
-  list-style: circle inside none;
-}
-li{
-  font-family: 'MisterPixel', 'VG5000';
-  font-size: 1.3vw;
-  color: #000000;
-  line-height: 150%;
-}
 /* ****************************** */
 /*************************** MOBILE DEVICE VERSION ***************************/
-@media screen and (max-width: 800px), screen and (max-width: 800px and max-height: 500px){
+@media screen and (max-width: 800px)/*, screen and (max-width: 800px and max-height: 500px)*/{
+  .header-about{
+  }
+  .header-schedule{
+    height: 225px;
+    background-image: linear-gradient(to bottom , #99ffcc , #99ffcc  , #ccff33);
+  }
+  .header-submission{
+  }
   #general-page-title{
     margin-left: 7%;
-    font-size: 7vw;
+    font-size: 10vw;
   }
   #return-button{
     font-size: 6vw;
@@ -1100,15 +1054,6 @@ li{
   text-align: center;
   width: 100%;
   }
-  /*#mobile-button-tab{
-    display:inline;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    left:0%;
-    height: 10%;
-    margin-top: 15%;
-  }*/
   button{
     font-size: 1em;
     padding: 0% 0%;
@@ -1116,19 +1061,7 @@ li{
     border-radius: 17px;
     margin: 0;
   }
-  .header-about{
-    /*background-image: #ccccff;
-    z-index: 4;*/
-  }
-  .header-schedule{
-    height: 35%;
-  }
-  .header-submission{
-    height: 18%;
-  }
-  .header-archive{
-    height: 15%;
-  }
+
 /************************ MOBILE INDEX ************************/
   .navigation-box{
     display: block;
@@ -1303,30 +1236,53 @@ li{
 .schedule::-webkit-scrollbar-track-piece { background: transparent;  }
 .schedule::-webkit-scrollbar-corner { background: transparent; }
 
-.schedule{
-   height: 100%;
-   margin-bottom: 1%;
-   overflow-x: hidden;
-   overflow-y:visible;
+.mobile-button-tab{
+  display: block;
 }
-.show-time {
+.schedule{
+   position: fixed;
+   height: 60vh;
+   /*top: 30vh;*/
+   overflow-y: hidden;
+}
+.schedule-table{
+  height: 50vh;
+}
+td{
+ height: 50px;
+}
+td.show-time {
   font-size: 3.1vw;
   padding: 5px;
-  width: 10%;
+  width: 15%;
+  margin: 5px;
 }
-.show-name, .host-name, .show-description{
+td.show-host-name{
+  display: inline-block;
   font-size: 3.4vw;
   padding: 5px;
-  height: 20px;
+  width:100%;
 }
-td.show-name{
-   width:20%;
+td.show-random{
+  font-family: 'VG5000', 'MisterPixel';
+  font-size: 20px;
+  padding: 7px;
+  width:40%;
+  text-transform: lowercase;
+  background-color: #d3d3d3;
 }
-td.host-name {
-   width:10%;
+td.show-name, .host-name, .show-description{
+  display: none;
 }
-td.show-description {
-   width:40%;
+#show-name{
+  font-family: 'MisterPixel','VG5000';
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+#host-name{
+  font-family: 'MisterPixel','VG5000';
+  font-size: 20px;
 }
 /************************ MOBILE SUBMISSION ************************/
 .body-submission #button-tab{
@@ -1361,41 +1317,9 @@ input[type=text]{
 #general-page-title .tooltip {
   display: none;
 }
-/************************ MOBILE SCHEDULE ************************/
-.schedule-button{
-  margin: 1% 5%;
-  padding: 1.5% 5%;
-}
-/************************ MOBILE ARCHIVE BUTTON ************************/
-  .archive-button{
-    margin: 1% 5%;
-    padding: 1.5% 5%;
-  }
-  .archive-list{
-    padding-top: 55px;
-    margin-top: 30%;
-    height: 65%;
-    width: 71%;
-  }
-  li{
-    font-size: 2.5vw;
-  }
-}
 @media screen and (max-height: 500px){
   /************************ MOBILE INDEX ************************/
   .navigation-box{
     margin-top: -10px;
-  }
-  .header-about{
-    height: 125px;
-  }
-  .header-schedule{
-    height: 210px;
-  }
-  .header-submission{
-    height: 125px;
-  }
-  .header-archive{
-    height: 210px;
   }
 }

@@ -497,6 +497,40 @@ h2{
   -moz-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
 }
+.green-dots{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 40%;
+  bottom: 37%;
+  z-index: -3;
+}
+#green-dot-1{
+  position: absolute;
+  width: 20%;
+  top: 8%;
+  left: 9%;
+}
+#green-dot-2{
+  position: absolute;
+  width: 20%;
+  top: 19%;
+  left: 34%;
+}
+#green-dot-3{
+  position: absolute;
+  width: 20%;
+  top: 2%;
+  right: 32%;
+}
+#green-dot-4{
+  position: absolute;
+  width: 20%;
+  top: 23%;
+  right: 11%;
+}
 
 /*********************** -- ABOUT -- ***********************/
 #about-page-title{

@@ -151,6 +151,13 @@ header{
   padding-top: 10px;
   padding-right: 30px;
 }
+.body-index #clock{
+  font-family: 'VG5000', 'MisterPixel';
+  font-size: 1.25vw;
+  color: #ccff33;
+  padding-right: 1%;
+  max-width: 80%;
+}
 #button-tab{
   position: sticky;
   text-align: center;
@@ -404,8 +411,8 @@ transform: translateX(0%);
 .body-index{ overflow: -moz-scrollbars-none; }
 
 #main-logo{
-  width: 42%;
-  padding-top:70px;
+  width: 40%;
+  padding-top:50px;
   padding-left:80px;
   padding-right: 20px;
   margin-bottom: -5px;
@@ -460,13 +467,16 @@ h2{
 }
 .icon-box{
   text-align: center;
-  margin-top: 1%;
+  margin-top: -2%;
   width: 20%;
   height: 20%;
 }
 #about-icon{
-  width: 78%;
-  margin-bottom: -4%;
+  /*width: 78%;
+  margin-bottom: -4%; -- icon size for og design*/
+  width: 118%;
+  margin-bottom: -30%;
+  margin-left: -6%;
 }
 #about-icon:hover{
   -webkit-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
@@ -474,7 +484,9 @@ h2{
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
 }
 #archive-icon{
-  width: 74%;
+  /*width: 74%; -- icon size for og design*/
+  width: 108%;
+  margin-bottom: -20%;
 }
 #archive-icon:hover{
   -webkit-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
@@ -482,7 +494,9 @@ h2{
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
 }
 #submission-icon{
-  width: 74%;
+  /*width: 74%; -- icon size for og design*/
+  width: 108%;
+  margin-bottom: -20%;
 }
 #submission-icon:hover{
   -webkit-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
@@ -490,46 +504,14 @@ h2{
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
 }
 #schedule-icon{
-  width: 74%;
+  /*width: 74%; -- icon size for og design*/
+  width: 108%;
+  margin-bottom: -20%;
 }
 #schedule-icon:hover{
   -webkit-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
   -moz-filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.5));
-}
-.green-dots{
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  height: 40%;
-  bottom: 37%;
-  z-index: -3;
-}
-#green-dot-1{
-  position: absolute;
-  width: 20%;
-  top: 8%;
-  left: 9%;
-}
-#green-dot-2{
-  position: absolute;
-  width: 20%;
-  top: 19%;
-  left: 34%;
-}
-#green-dot-3{
-  position: absolute;
-  width: 20%;
-  top: 2%;
-  right: 32%;
-}
-#green-dot-4{
-  position: absolute;
-  width: 20%;
-  top: 23%;
-  right: 11%;
 }
 
 /*********************** -- ABOUT -- ***********************/
@@ -778,7 +760,9 @@ h3{
     text-decoration: none;
     cursor: pointer;
   }
-
+  .body-about #header-icon{
+    opacity: 0;
+  }
 /************************ -- SCHEDULE-- ************************/
 .mobile-button-tab{
   text-align: center;
@@ -1179,6 +1163,9 @@ footer{
   }
  .about-header-icon{
    display: block;
+  }
+  .body-about #header-icon{
+    opacity: 1;
   }
  .sub-navigation-box-2{
    display:block;

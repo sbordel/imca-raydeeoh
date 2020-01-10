@@ -22,18 +22,18 @@
 <meta name="theme-color" content="#ffffff">
 <title> IMCA RAYDEEOH! </title>
 <link rel="stylesheet" type="text/css" href="css/squeleton.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<script src="lib/xlsx.full.min.js"></script>
+<script src="lib/jquery.min.js"></script>
 <script type="text/javascript" src="js/ux.js"></script>
-<script src="js/player.js"></script>
-
+<script type="text/javascript" src="js/schedule.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
 </head>
-<body class="body-about">
+<body class="body-about" onload="startTime()">
 
 <header class="header-about">
 <h1 id="about-page-title"><a id="about-page-link" href="https://drive.google.com/file/d/1MblDhl9tOMFPumNnQ8n4aAHu5Ufd-tOV/view?usp=sharing" target="_blank">what is IMCA RAYDEEOH?</a><span class="tooltip">click here for the imca raydeeoh handbook</span></h1>
 <a id="return-button" href="/">⤶</a>
-<img id="header-icon" class="about-header-icon" src="assets/vectorized/icons/full/about_full.svg" alt="about icon">
+<img id="header-icon" src="assets/vectorized/icons/full/about_full.svg" alt="about icon">
   <div id="clock"></div>
   <img id="second-logo" src="assets/vectorized/logo/full/imagelogo_full.svg" alt="imca raydeeoh logo">
 </header>
@@ -112,6 +112,8 @@ Alex Pruneau: Financial Signing Officer
   <h3>CREDITS</h3>
 <a class="close" href="#">&times;</a>
 <span class="inner-modal">
+  <br><br>
+  ***
   <br><br>
 </span></div>
 
@@ -210,9 +212,9 @@ Alex Pruneau: Financial Signing Officer
 
 <!-- SECONDARY PLAYER -->
 <div class="player-container" id="secondary-player">
-<div id="volumeon-button"><img id="sec-volumeon-icon" src="assets/audio_player_files/volumeonbutton-2.png" alt="volume on button" title="volume on button"></div>
-<!--<a  href="#void"><input id="info-icon" type="image" src="assets/audio_player_files/infobutton-2.png"></a>-->
-<div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip">Artist Name - Track Name</span></div>
+  <div id="volumeon-button"><img id="sec-volumeon-icon" src="assets/audio_player_files/volumeonbutton-2.png" alt="volume on button" title="volume on button"></div>
+  <!--<a  href="#void"><input id="info-icon" type="image" src="assets/audio_player_files/infobutton-2.png"></a>-->
+  <div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip" id='player-modal'></span></div>
 </div>
 
 </body>

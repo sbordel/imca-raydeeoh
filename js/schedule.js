@@ -1,12 +1,12 @@
 /* set up XMLHttpRequest */
-var url = "schedule.xlsx";
+var url = "scheduleSheet/schedule.xlsx";
 var oReq = new XMLHttpRequest();
 oReq.open("GET", url, true);
 oReq.responseType = "arraybuffer";
 
 /* Variables */
 var worksheet, workbook, radioObject;
-//dotw data (hours + days) corresponds to excel rows 
+//dotw data (hours + days) corresponds to excel rows
 let monData = [0, 8];
 let tuesData = [8, 16];
 let wedData = [16, 24];
@@ -51,17 +51,20 @@ $(document).ready(function(){
   ++j;
 }});}
 
+// ********** mobile max-width: 800px **********
 
 //Updates textbar information
 //timeData is a single value corresponding to a row in the excel schedule
 function textBar(timeData){
-  console.log("textbar populate")
-  if (timeData == 99){
+  // console.log("textbar populated")
+  if (timeData === 99){
     $("#external-player-text").text("OFF AIR");
-    $("#player-text").text("OFF AIR");  
+    $("#player-text").text("OFF AIR");
+    $("#player-modal").text("OFF AIR");
   } else{
     $("#external-player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
-    $("player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
+    $("#player-text").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
+    $("#player-modal").text(radioObject[timeData].Artist + " - " + radioObject[timeData].Show);
   }}
 
 
@@ -80,11 +83,9 @@ function wednesday(){
 }
 function thursday(){
   dayData = thursData;
-  fill(); 
+  fill();
 }
 function friday(){
   dayData = friData;
   fill();
 }
-
-

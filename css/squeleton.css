@@ -155,7 +155,7 @@ header{
 }
 button{
   font-family: 'MisterPixel', 'VG5000';
-  font-size: 2.5vmin /*1.5vw*/;
+  font-size: 3vmin /*1.5vw*/;
   margin-top: 0.5%;
   background-color: #FFFFFF;
   border: 0.15vw solid black;
@@ -772,33 +772,31 @@ h3{
   cursor: pointer;
 }
 .schedule{
- display: block;
- position: fixed;
- height: 65%;
- top: 25%;
- width: 100%;
- padding: 5px;
- margin-top: 6vh;
- z-index: -1;
- overflow-y: hidden;
+   display: block;
+   position: relative;
+   height: 100%;
+   top: 25%;
+   width: 100%;
+   padding: 5px;
+   margin-top: 10vh;
+   z-index: -1;
 }
 table {
-width: 100%;
- border: 1px solid transparent;
- border-collapse: separate;
+  width: 100%;
+  border: 1px solid transparent;
+  border-collapse: separate;
 }
 table.schedule-table {
   position:relative;
   text-align:center;
-  overflow: scroll;
+  overflow-y: scroll;
+  margin-bottom: 10vh;
 }
 tbody{
   background-color: #ffffff;
 }
 td{
   border: 1px solid black;
-}
-.block-row {
 }
 .show-time {
   background: #99ffcc;
@@ -809,6 +807,17 @@ td{
   height: 20%;
   padding: 10px;
 }
+/***** OFFLINE - TIME SLOTS *****/
+#row1{
+display: none;
+}
+#row2{
+display: none;
+}
+#row3{
+display: none;
+}
+
 /*desktop view*/
 .show-name, .host-name, .show-description{
   font-family: 'MisterPixel', 'VG5000';
@@ -871,6 +880,24 @@ td.show-host-name{
 #submission-section-description{
 font-family: 'VG5000', 'MisterPixel';
 }
+#sudoForm{
+  display: block;
+  font-family: 'MisterPixel', 'VG5000';
+  font-size: 1.4vw;
+  font-weight: lighter;
+  text-align:left;
+  color: #000000;
+  width: 90%;
+  padding: 5px;
+  padding-bottom: 10%;
+  padding-top: 27vh;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+.form-section{
+  margin: 2px;
+}
 #form{
   display: block;
   text-align:left;
@@ -892,33 +919,8 @@ font-family: 'VG5000', 'MisterPixel';
 
 form{
   justify-content: left;
-  margin-top: 15%;
+  padding-top: 20vh;
   width: 90%;
-  padding-top: 10vh;
-}
-
-#sudoForm{
-  display: block;
-  text-align:left;
-  font-family: 'MisterPixel', 'VG5000';
-  font-size: 1.3vw;
-  font-weight: lighter;
-  color: #000000;
-  width: 54%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  /*bottom: 10%;*/
-  padding-bottom: 10%;
-  padding-top:3%;
-  z-index: -1;
-  justify-content: left;
-  margin-top: 10%;
-  width: 90%;
-  padding-top: 10vh;
-}
-.form-section{
-  margin: 2.5px;
 }
 fieldset{
   border: none;
@@ -1133,6 +1135,15 @@ footer{
     padding-bottom: 10%;
   }
 /************************ MOBILE ABOUT ************************/
+.header-about{
+  position: fixed;
+  background-image: linear-gradient(to bottom , #ccccff , #ccccff , #ccccff , #ccccff , #99ffcc00);
+  top:0;
+  left:0;
+  width:100%;
+  height:32vmax;
+  z-index: 1;
+}
   #about-page-title{
     font-size: 5.9vmax;
     text-align: left;
@@ -1156,7 +1167,8 @@ footer{
    position: absolute;
    width: 100%;
    height: 65%;
-   margin-top: 40%;
+   margin-top: 30%;
+   padding-bottom: 100px;
   }
   .about-icons{
    width: 100%;
@@ -1242,11 +1254,12 @@ footer{
 .schedule{
    position: fixed;
    height: 60vh;
-   /*top: 30vh;*/
+   margin-top: 15vh;
    overflow-y: hidden;
 }
 .schedule-table{
   height: 50vh;
+  margin-bottom: 20vh;
 }
 td{
  height: 50px;
@@ -1288,6 +1301,7 @@ td.show-name, .host-name, .show-description{
 /************************ MOBILE SUBMISSION ************************/
 .body-submission #button-tab{
   display: block;
+  margin-top: -5%;
 }
 .sub-index-button{
   font-size: 20px;
@@ -1321,6 +1335,7 @@ input[type=text]{
   display: none;
 }
 @media screen and (max-height: 500px){
+
   /************************ MOBILE INDEX ************************/
   .navigation-box{
     margin-top: -10vh;

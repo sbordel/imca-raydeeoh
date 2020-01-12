@@ -772,25 +772,25 @@ h3{
   cursor: pointer;
 }
 .schedule{
- display: block;
- position: fixed;
- height: 65%;
- top: 25%;
- width: 100%;
- padding: 5px;
- margin-top: 6vh;
- z-index: -1;
- overflow-y: hidden;
+   display: block;
+   position: relative;
+   height: 100%;
+   top: 25%;
+   width: 100%;
+   padding: 5px;
+   margin-top: 10vh;
+   z-index: -1;
 }
 table {
-width: 100%;
- border: 1px solid transparent;
- border-collapse: separate;
+  width: 100%;
+  border: 1px solid transparent;
+  border-collapse: separate;
 }
 table.schedule-table {
   position:relative;
   text-align:center;
-  overflow: scroll;
+  overflow-y: scroll;
+  margin-bottom: 10vh;
 }
 tbody{
   background-color: #ffffff;
@@ -807,7 +807,7 @@ td{
   height: 20%;
   padding: 10px;
 }
-/* OFFLINE TIME SLOTS */
+/***** OFFLINE - TIME SLOTS *****/
 #row1{
 display: none;
 }
@@ -817,6 +817,7 @@ display: none;
 #row3{
 display: none;
 }
+
 /*desktop view*/
 .show-name, .host-name, .show-description{
   font-family: 'MisterPixel', 'VG5000';
@@ -1250,11 +1251,12 @@ footer{
 .schedule{
    position: fixed;
    height: 60vh;
-   /*top: 30vh;*/
+   margin-top: 15vh;
    overflow-y: hidden;
 }
 .schedule-table{
   height: 50vh;
+  margin-bottom: 20vh;
 }
 td{
  height: 50px;

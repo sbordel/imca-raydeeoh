@@ -798,8 +798,6 @@ tbody{
 td{
   border: 1px solid black;
 }
-.block-row {
-}
 .show-time {
   background: #99ffcc;
   font-family: 'VG5000', 'MisterPixel';
@@ -808,6 +806,16 @@ td{
   width:10%;
   height: 20%;
   padding: 10px;
+}
+/* OFFLINE TIME SLOTS */
+#row1{
+display: none;
+}
+#row2{
+display: none;
+}
+#row3{
+display: none;
 }
 /*desktop view*/
 .show-name, .host-name, .show-description{

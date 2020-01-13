@@ -1,6 +1,0 @@
-SERVER
-~~~~~~~~~~
-index submission in app.js (remove tag)
-ssl certificate (port issues?)
-nodemailer
-unified player

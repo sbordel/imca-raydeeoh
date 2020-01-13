@@ -1,6 +1,7 @@
 > open terminal
 > type "cd " and paste your project folder
 > enter
-> type npx nodemon app.js
-> enter 127.0.0.1:3000 in browser
+> type sudo npx nodemon app.js
+> enter
+> go to 0.0.0.0:80 in browser
 > BOOM

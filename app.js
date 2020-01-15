@@ -35,29 +35,30 @@ var stream;
 // URL to a known ICY stream
 var url = 'http://rhizotron.net:8080/listen.mp3';
 
-app.post('/mute', function (request, response) {
-  response.send("Click Recorded");
+// connect to the remote stream
+icy.get(url, function (res) {
 
-  if (muted) {
-    // connect to the remote stream
-    icy.get(url, function (res) {
+  // log the HTTP response headers
+  console.error(res.headers);
 
-      // log the HTTP response headers
-      console.error(res.headers);
+  var ms = new MuteStream();
+  res.pipe(ms);
+  ms.mute();
 
-      // var ms = new MuteStream();
-      // res.pipe(ms);
-      // ms.mute();
+  ms.pipe(new lame.Decoder())
+    .pipe(new Speaker());
 
-      stream = res.pipe(new lame.Decoder())
-        .pipe(new Speaker());
+  app.post('/mute', function (request, response) {
+    response.send("Click Recorded");
+
+    if (muted) {
+      ms.unmute();
       muted = false;
-
-    });
-  } else {
-    stream.end();
-    muted = true;
-  }
+    } else {
+      ms.mute();
+      muted = true;
+    }
+  });
 });
 
 // Let's play the music (assuming MP3 data).

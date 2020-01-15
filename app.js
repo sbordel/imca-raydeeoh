@@ -7,6 +7,11 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mkdirp = require('mkdirp');
 const nodemailer = require('nodemailer');
+var icy = require('icy');
+var lame = require('lame');
+var Speaker = require('speaker');
+var MuteStream = require('mute-stream');
+var events = require('events');
 
 //~~~ SETUP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //launch express function
@@ -20,6 +25,44 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 //opening a listening port
 app.listen(80);
 console.log('listening on port 80');
+
+//~~~ STREAM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+var muted = true;
+
+// URL to a known ICY stream
+var url = 'http://rhizotron.net:8080/listen.mp3';
+
+// connect to the remote stream
+icy.get(url, function (res) {
+
+  // log the HTTP response headers
+  console.error(res.headers);
+
+  // var ms = new MuteStream();
+  // res.pipe(ms);
+  // ms.mute();
+
+  app.post('/mute', function(request, response){
+
+    response.send("Click Recorded");
+    if (muted){
+      var toggle = res.pipe();
+      toggle.pipe(new lame.Decoder())
+      .pipe(new Speaker());
+      muted = false;
+    } else{
+      // res.off();
+      muted = true;
+    }
+  });
+
+  // Let's play the music (assuming MP3 data).
+  // lame decodes and Speaker sends to speakers!
+    // res.pipe(new lame.Decoder())
+    //  .pipe(new Speaker());
+});
+
+
 
 //~~~ USE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //use ~these~ directories when serving an html file

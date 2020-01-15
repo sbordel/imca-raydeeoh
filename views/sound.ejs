@@ -212,6 +212,15 @@ $(document).ready(function() {
   <!--<a  href="#void"><input id="info-icon" type="image" src="assets/audio_player_files/infobutton-2.png"></a>-->
   <div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip" id='player-modal'>Artist Name - Track Name</span></div>
   </div>
+  <script>
+    const pulseButton = document.getElementById("volumeon-icon")
+    
+    pulseButton.addEventListener('click', function() {
+      fetch('/mute', {method: 'POST'})
+        .then(response => response.text())
+        .then(text => console.log(text))
+    });
+    </script>
 <footer></footer>
 
 </body>

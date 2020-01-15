@@ -63,5 +63,15 @@
 <div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip" id='player-modal'></span></div>
 </div>
 
+<script>
+  const pulseButton = document.getElementById("volumeon-icon")
+  
+  pulseButton.addEventListener('click', function() {
+    fetch('/mute', {method: 'POST'})
+      .then(response => response.text())
+      .then(text => console.log(text))
+  });
+  </script>
+
 </body>
 </html>

@@ -145,8 +145,7 @@
 
 <!-- MAIN PLAYER -->
 <div class="player-container" id="main-player"><div>
-	<a href="javascript:void(0)" onclick="window.open('player',
-	'newWin','resizable=no,width=440,height=400')"><input id="volumeon-icon" type="image" src="assets/audio_player_files/playbutton.png"></a>
+<input id="volumeon-icon" type="image" src="assets/audio_player_files/playbutton.png"></a>
 <p id="player-text"></p>
 </div>
 
@@ -156,6 +155,16 @@
 <!--<a  href="#void"><input id="info-icon" type="image" src="assets/audio_player_files/infobutton-2.png"></a>-->
 <div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip" id='player-modal'>Artist Name - Track Name</span></div>
 </div>
+
+<script>
+  const pulseButton = document.getElementById("volumeon-icon")
+  
+  pulseButton.addEventListener('click', function() {
+    fetch('/mute', {method: 'POST'})
+      .then(response => response.text())
+      .then(text => console.log(text))
+  });
+  </script>
 
 </body>
 </html>

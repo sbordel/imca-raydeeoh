@@ -29,10 +29,10 @@ app.listen(80);
 console.log('listening on port 80');
 
 //~~~ STREAM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//variable to monitor stream status
 var muted = true;
-var stream;
 
-// URL to a known ICY stream
+// URL to stream
 var url = 'http://rhizotron.net:8080/listen.mp3';
 
 // connect to the remote stream
@@ -41,16 +41,27 @@ icy.get(url, function (res) {
   // log the HTTP response headers
   console.error(res.headers);
 
+  //create a speaker object for browser, right now were running high quality stereo mp3
+  let speaker = new Speaker({
+    channels: 2,
+    bitDepth: 16,
+    sampleRate: 44100
+  });
+
+  //Create a mute-stream for pausing the pipe
   var ms = new MuteStream();
+  //create a new pipe with the response, assign it to mute stream
   res.pipe(ms);
+  //mute the stream upon launch
   ms.mute();
-
+  //send the stream to a decoder and out the created speaker
   ms.pipe(new lame.Decoder())
-    .pipe(new Speaker());
+    .pipe(speaker);
 
+    //POST monitoring for incoming data from the client
+    //when clicking play/pause they will toggle muting
   app.post('/mute', function (request, response) {
-    response.send("Click Recorded");
-
+    // response.send("Click Recorded");
     if (muted) {
       ms.unmute();
       muted = false;
@@ -60,13 +71,6 @@ icy.get(url, function (res) {
     }
   });
 });
-
-// Let's play the music (assuming MP3 data).
-// lame decodes and Speaker sends to speakers!
-// res.pipe(new lame.Decoder())
-//  .pipe(new Speaker());
-
-
 
 //~~~ USE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //use ~these~ directories when serving an html file
@@ -84,16 +88,17 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+// app.get("/about", function (req, res) {
+//   res.sendFile(__dirname + '/about.html');
+// });
 app.get("/about", function (req, res) {
-  res.sendFile(__dirname + '/about.html');
+  res.render('about', {
+    qs: req.query
+  });
 });
 
 app.get("/schedule", function (req, res) {
   res.sendFile(__dirname + '/schedule.html');
-  //when requesting this page automatically include this excel file
-  //   app.get('/schedule.xlsx',function(req,res){
-  //     res.sendFile(__dirname + '/scheduleSheet/schedule.xlsx'); 
-  // });
 });
 
 app.get("/player", function (req, res) {

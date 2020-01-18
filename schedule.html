@@ -34,7 +34,7 @@
 <h1 id="general-page-title">schedule</h1>
 <a id="return-button" href="/">⤶</a>
 <img id="header-icon" src="assets/vectorized/icons/full/schedule_full.svg" alt="schedule icon">
-
+  <div id="clock"></div>
 <div id="button-tab">
   <button class="schedule-button" id="monday-button" onclick="monday()">monday</button>
   <button class="schedule-button" id="tuesday-button" onclick="tuesday()">tuesday</button>
@@ -143,13 +143,19 @@
 
 </tbody></ul></table></p></div>
 
-<!-- PLAYER -->
+<!-- MAIN PLAYER -->
 <div class="player-container" id="main-player"><div>
 	<a href="javascript:void(0)" onclick="window.open('player',
 	'newWin','resizable=no,width=440,height=400')"><input id="volumeon-icon" type="image" src="assets/audio_player_files/playbutton.png"></a>
-<p id="player-text"></p><div id="clock"></div>
+<p id="player-text"></p>
 </div>
 
+<!-- SECONDARY PLAYER -->
+<div class="player-container" id="secondary-player schedule">
+<div id="volumeon-button"><img id="sec-volumeon-icon" src="assets/audio_player_files/volumeonbutton-2.png" alt="volume on button" title="volume on button"></div>
+<!--<a  href="#void"><input id="info-icon" type="image" src="assets/audio_player_files/infobutton-2.png"></a>-->
+<div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip" id='player-modal'>Artist Name - Track Name</span></div>
+</div>
 
 </body>
 </html>

@@ -34,6 +34,7 @@
   <h1 id="general-page-title"><a id="submission-page-link" href="https://forms.gle/5QAsbtbDfeoSKaBGA" target="_blank">submission</a><span class="tooltip">click here for a document version of this page</span></h1>
 <a id="return-button" href="/">⤶</a>
 <img id="header-icon" src="assets/vectorized/icons/full/submission_full.svg" alt="submission icon">
+  <div id="clock"></div>
 </header>
 
 <div id="sudoForm">
@@ -55,11 +56,11 @@
     </div>
 </div>
 
-<!-- PLAYER -->
-<div class="player-container" id="main-player"><div>
-	<a href="javascript:void(0)" onclick="window.open('player',
-	'newWin','resizable=no,width=440,height=400')"><input id="volumeon-icon" type="image" src="assets/audio_player_files/playbutton.png"></a>
-<p id="player-text"></p><div id="clock"></div>
+<!-- SECONDARY PLAYER -->
+<div class="player-container" id="secondary-player">
+<div id="volumeon-button"><img id="sec-volumeon-icon" src="assets/audio_player_files/volumeonbutton-2.png" alt="volume on button" title="volume on button"></div>
+<!--<a  href="#void"><input id="info-icon" type="image" src="assets/audio_player_files/infobutton-2.png"></a>-->
+<div id="info-button"><img id="sec-info-icon" src="assets/audio_player_files/infobutton-2.png" alt="info button" title="info button"><span class="tooltip" id='player-modal'></span></div>
 </div>
 
 </body>

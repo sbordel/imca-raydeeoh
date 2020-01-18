@@ -1073,7 +1073,7 @@ footer{
       margin-top: -1px;
     }
     p#player-text{ /* not sure if this is doing anything ? */
-      font-size: 2vmax;
+      font-size: 3vmax;
       padding: 0.5%;
       width: 100%;
       height: 4%;

@@ -143,7 +143,8 @@ header{
   padding: 0.5%;
   z-index: -1;
 }
-#clock{
+/* -- old clock -- */
+/*#clock{
   position: absolute;
   font-family: 'VG5000', 'MisterPixel';
   font-size: 2vw;
@@ -155,13 +156,20 @@ header{
   margin-right: 5px;
   padding-top: 8px;
   padding-right: 30px;
-}
-.body-index #clock{
+}*/
+#clock{
+  position: absolute;
   font-family: 'VG5000', 'MisterPixel';
   font-size: 1.25vw;
   color: #ccff33;
   padding-right: 1%;
   max-width: 80%;
+  top:0;
+  right:0;
+  margin-top: 0px;
+  margin-right: 5px;
+  padding-top: 8px;
+  padding-right: 30px;
 }
 #button-tab{
   position: sticky;
@@ -608,7 +616,7 @@ h2{
 #mission-icon-box{
  position: absolute;
  width: 100%;
- top: 69%;
+ top: 71%;
  left: 19%;
 }
 #mission-icon:hover{
@@ -619,8 +627,8 @@ h2{
 #mandate-icon-box{
   position: absolute;
   width: 100%;
-  top: 11%;
-  left: 31%;
+  top: 33%;
+  left: 28.5%;
 }
 #mandate-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);
@@ -630,8 +638,8 @@ h2{
 #values-icon-box{
   position: absolute;
   width: 100%;
-  top: 8%;
-  left: 47%;
+  top: 13%;
+  left: 38%;
 }
 #values-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);
@@ -641,10 +649,21 @@ h2{
 #policies-icon-box{
   position: absolute;
   width: 100%;
-  top: 19%;
-  left: 61%;
+  top: 14%;
+  left: 50%;
 }
 #policies-icon:hover{
+  filter:drop-shadow(0px 0px 15px #ccff33);
+  -webkit-filter: drop-shadow(0px 0px 15px #ccff33);
+  -moz-filter: drop-shadow(0px 0px 15px #ccff33);
+}
+#credits-icon-box{
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 60%;
+}
+#credits-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);
   -webkit-filter: drop-shadow(0px 0px 15px #ccff33);
   -moz-filter: drop-shadow(0px 0px 15px #ccff33);
@@ -652,8 +671,8 @@ h2{
 #contact-icon-box{
   position: absolute;
   width: 100%;
-  top: 75%;
-  left: 70%;
+  top: 86%;
+  left: 68%;
 }
 #contact-icon:hover{
   filter:drop-shadow(0px 0px 15px #ccff33);
@@ -1230,6 +1249,14 @@ footer{
     top: auto;
     left: 40%;
     margin: 20px;
+  }
+  #credits-icon-box{
+    display: block;
+    position: relative;
+    top: auto;
+    left: 40%;
+    margin: 20px;
+    text-align: center;
   }
   #contact-icon-box{
     display: block;

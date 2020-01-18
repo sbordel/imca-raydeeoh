@@ -34,10 +34,10 @@ oReq.onload = function (e) {
   /* Get worksheet */
   worksheet = workbook.Sheets[first_sheet_name];
 
-  /* Display and save worksheet as usable JSON data */
-  console.log(XLSX.utils.sheet_to_json(worksheet, {
-    raw: true
-  }));
+  // /* Display and save worksheet as usable JSON data */
+  // console.log(XLSX.utils.sheet_to_json(worksheet, {
+  //   raw: true
+  // }));
   radioObject = XLSX.utils.sheet_to_json(worksheet, {
     raw: true
   });

@@ -31,7 +31,7 @@ app.use("/fonts",  express.static(__dirname + '/fonts'));
 app.use("/lib",  express.static(__dirname + '/lib'));
 app.use("/scheduleSheet",  express.static(__dirname + '/scheduleSheet'));
 
-//~~~ GET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ß~~~~~~~~~~~~~~~~~
+//~~~ GET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //upon navigating the site send corresponding html pages to client
 app.get("/", function(req, res){
 res.sendFile(__dirname + '/index.html');
@@ -43,10 +43,6 @@ app.get("/about", function(req, res){
 
 app.get("/schedule", function(req, res){
   res.sendFile(__dirname + '/schedule.html');
-  //when requesting this page automatically include this excel file
-//   app.get('/schedule.xlsx',function(req,res){
-//     res.sendFile(__dirname + '/scheduleSheet/schedule.xlsx'); 
-// });
   });
 
 app.get("/player", function(req, res){

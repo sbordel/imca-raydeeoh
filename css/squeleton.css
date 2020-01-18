@@ -168,6 +168,9 @@ button:hover{
 button:active{
  border: 0.15vw white dotted;
 }
+button:focus, input:focus, textarea:focus, select:focus{
+  outline: none;
+}
 /* scrollbar */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: transparent; }

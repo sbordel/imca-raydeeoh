@@ -59,7 +59,7 @@ p#player-text{
   text-align: center;
   text-decoration: none;
   margin: 0;
-  bottom: -1px;
+  bottom: 0px;
   -moz-animation: player-text 5s linear infinite alternate;
   -webkit-animation: player-text 5s linear infinite alternate;
   animation: player-text 5s linear infinite alternate;
@@ -76,6 +76,24 @@ p#player-text{
   z-index: 1;
   outline: none;
 }
+
+#external-player-logo{
+  width:85%;
+  max-height:80%;
+  top:0px;
+  left:5%;
+  position: fixed;
+  padding:0;
+  margin:0;
+}
+
+.body-player{
+  top:0;
+  left:0;
+  position: fixed;
+}
+
+
 </style>
 </head>
 <body class="body-player" onload="startTime()">

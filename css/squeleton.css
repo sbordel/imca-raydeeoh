@@ -79,6 +79,24 @@ header{
   background-image: linear-gradient(to bottom , #ccff33 , #ccff33 , #ccff99);
   z-index: 0;
 }
+
+#monday-button{
+  outline:none;
+}
+#tuesday-button{
+  outline:none;
+}
+#wednesday-button{
+  outline:none;
+}
+#thursday-button{
+  outline:none;
+}
+#friday-button{
+  outline:none;
+}
+
+
 #general-page-title{
   position: relative;
   display: inline-block;
@@ -108,12 +126,13 @@ header{
   outline: none;
 }
 #return-button:hover{
-  border: 0.5px black dotted;
+  border: none;
   padding-top: 0.5px;
   padding-bottom: 1.5px;
   padding-left: 4px;
   padding-right: 4.5px;
   cursor: pointer;
+  outline: none;
 }
 #header-icon{
   position: absolute;
@@ -149,6 +168,7 @@ header{
   text-align: center;
   width: 100%;
   margin-top: 1%;
+  outline: none;
 }
 #mobile-button-tab{
   display:none;
@@ -760,6 +780,10 @@ h3{
   text-align: center;
   display: none;
 }
+.schedule-button:active{
+  border: none;
+  outline:none;
+}
 .mobile-schedule-button{
   display: inline-block;
   color: #000000;
@@ -771,6 +795,7 @@ h3{
   margin: 4px 2%;
   border: 1.5px solid black;
   cursor: pointer;
+  outline: none;
 }
 .schedule{
    display: block;

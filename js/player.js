@@ -12,13 +12,13 @@
 			myaudio.muted = false;
 			muted = false;
 			//update to playing icon
-			document.getElementById("external-volume-icon").src = "assets/audio_player_files/volumeonbutton-2.png";
+			document.getElementById("external-volume-icon").src = "assets/audio_player_files/volumeonbutton-2.svg";
 
 		} else if (muted === false) {
 			myaudio.muted = true;
 			muted = true;
 			//update to muted icon
-			document.getElementById("external-volume-icon").src = "assets/audio_player_files/volumeoffbutton-2.png";
+			document.getElementById("external-volume-icon").src = "assets/audio_player_files/volumeoffbutton-2.svg";
 		}
 	}
 

@@ -125,13 +125,14 @@ header {
   outline: none;
 }
 
-#return-button:hover {
-  border: 0.5px black dotted;
-  padding-top: 0.5px;
-  padding-bottom: 1.5px;
-  padding-left: 4px;
-  padding-right: 4.5px;
-  cursor: pointer;
+#return-button:hover{
+border: none;
+padding-top: 0.5px;
+padding-bottom: 1.5px;
+padding-left: 4px;
+padding-right: 4.5px;
+cursor: pointer;
+outline: none;
 }
 
 #header-icon {
@@ -172,6 +173,24 @@ header {
   width: 100%;
   margin-top: 1%;
 }
+
+#monday-button{
+  outline:none;
+}
+#tuesday-button{
+  outline:none;
+}
+#wednesday-button{
+  outline:none;
+}
+#thursday-button{
+  outline:none;
+}
+#friday-button{
+  outline:none;
+}
+
+
 
 #mobile-button-tab {
   display: none;

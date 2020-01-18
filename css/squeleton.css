@@ -167,7 +167,8 @@ button:hover{
   background-color: #000000;
 }
 button:active{
- border: 0.15vw white dotted;
+ border: none;
+ outline:none;
 }
 /* scrollbar */
 ::-webkit-scrollbar { width: 10px; }
@@ -1249,19 +1250,19 @@ footer{
 .schedule::-webkit-scrollbar-track-piece { background: transparent;  }
 .schedule::-webkit-scrollbar-corner { background: transparent; }
 
-#monday-button{
+#monday-button:active{
   outline:none;
 }
-#tuesday-button{
+#tuesday-button:active{
   outline:none;
 }
-#wednesday-button{
+#wednesday-button:active{
   outline:none;
 }
-#thursday-button{
+#thursday-button:active{
   outline:none;
 }
-#friday-button{
+#friday-button:active{
   outline:none;
 }
 .mobile-button-tab{
@@ -1269,6 +1270,12 @@ footer{
   text-align: center;
   display: block;
 }
+.schedule-button{
+outline: none;
+}
+.schedule-button:active{
+  outline: none;
+  }
 .mobile-schedule-button{
   display: inline-block;
   color: #000000;

@@ -1267,7 +1267,7 @@ footer{
   display: inline-block;
   color: #000000;
   background-color: #ffffff;
-  font-size: 20px/*4vw*/;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   padding: 11px 20px;
@@ -1276,7 +1276,6 @@ footer{
   cursor: pointer;
 }
 .schedule{
-   /* position: relative;*/
    position: fixed;
    height: 60vh;
    margin-top: 11vh;

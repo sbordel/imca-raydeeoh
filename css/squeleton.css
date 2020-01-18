@@ -109,6 +109,7 @@ header{
 }
 #return-button:hover{
   border: 0.5px black dotted;
+  border: none;
   padding-top: 0.5px;
   padding-bottom: 1.5px;
   padding-left: 4px;
@@ -166,7 +167,8 @@ button:hover{
   background-color: #000000;
 }
 button:active{
- border: 0.15vw white dotted;
+ border: none;
+ outline:none;
 }
 button:focus, input:focus, textarea:focus, select:focus{
   outline: none;
@@ -1251,11 +1253,32 @@ footer{
 .schedule::-webkit-scrollbar-track-piece { background: transparent;  }
 .schedule::-webkit-scrollbar-corner { background: transparent; }
 
+#monday-button{
+  outline:none;
+}
+#tuesday-button{
+  outline:none;
+}
+#wednesday-button{
+  outline:none;
+}
+#thursday-button{
+  outline:none;
+}
+#friday-button{
+  outline:none;
+}
 .mobile-button-tab{
   margin-top: 4vh;
   text-align: center;
   display: block;
 }
+.schedule-button{
+outline: none;
+}
+.schedule-button:active{
+  outline: none;
+  }
 .mobile-schedule-button{
   display: inline-block;
   color: #000000;

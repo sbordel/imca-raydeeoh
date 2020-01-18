@@ -28,17 +28,69 @@
 <script type="text/javascript" src="js/schedule.js"></script>
 <script type="text/javascript" src="js/stream.js"></script>
 <script type="text/javascript" src="js/player.js"></script>
+<style>
+.player-container#main-player {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  height: 8%;
+  padding: 5px;
+  padding-bottom: 2.5%;
+  overflow-y: visible;
+}
+p#player-text{
+  font-family: 'MisterPixel', 'VG5000';
+  font-size: 3.25vw;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #ccff33;
+  padding: 0.5%;
+  max-width: 80%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  bottom: 4px;
+  -moz-animation: player-text 5s linear infinite alternate;
+  -webkit-animation: player-text 5s linear infinite alternate;
+  animation: player-text 5s linear infinite alternate;
+}
+
+
+#external-volume-icon {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  width: 4%;
+  max-height: 4%;
+  margin: 0%;
+  z-index: 1;
+  outline: none;
+}
+</style>
 </head>
 <body class="body-player" onload="startTime()">
   <div id="clock"></div>
-  <div class="external-player" style="text-align: center;"><img id="external-player-logo" alt="imca raydeeoh logo" title="imca raydeeoh logo" src="assets/vectorized/logo/full/imagelogo_full.svg"></div>
+  <div class="external-player" style="text-align: center;"><img id="external-player-logo" alt="imca raydeeoh logo" title="imca raydeeoh logo" src="assets/vectorized/logo/full/splayer.svg"></div>
 
+
+  <!-- 
   <a href="#void"><input id="external-volume-icon" type="image" src="assets/audio_player_files/volumeoffbutton-2.png" onclick ="play()"></a>
 
-<div class="external-player-container" id="main-player">
+<div class="external-player-container" id="main-player"> -->
   <!--<a id="volumeoff-button" href="#void"><input type="image" src="assets/audio_player_files/volumeoffbutton.png" id="volumeoff-icon">-->
-<p id="external-player-text"></p>
-  </div>
+<!-- <p id="external-player-text"></p>
+  </div> -->
 
+  <!-- MAIN PLAYER -->
+<div class="player-container" id="main-player"><div>
+	<a href="#void" id=svgBox><image id="external-volume-icon" type="image" src="assets/audio_player_files/volumeoff.svg" onclick ="play()"></a>
+<p id="player-text" ></p>
+</div>
+<script>
+  
+</script>
 </body>
 </html>

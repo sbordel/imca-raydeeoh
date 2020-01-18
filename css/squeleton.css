@@ -108,14 +108,13 @@ header{
   outline: none;
 }
 #return-button:hover{
-  border: none;
+  border: 0.5px black dotted;
   padding-top: 0.5px;
   padding-bottom: 1.5px;
   padding-left: 4px;
   padding-right: 4.5px;
   cursor: pointer;
-  outline: none;
-  }
+}
 #header-icon{
   position: absolute;
   width: 8%;
@@ -127,20 +126,6 @@ header{
   margin-right: 4%;
   z-index: -1;
 }
-/* -- old clock -- */
-/*#clock{
-  position: absolute;
-  font-family: 'VG5000', 'MisterPixel';
-  font-size: 2vw;
-  font-weight: lighter;
-  color: #0033ff;
-  top:0;
-  right:0;
-  margin-top: 0px;
-  margin-right: 5px;
-  padding-top: 8px;
-  padding-right: 30px;
-}*/
 #clock{
   position: absolute;
   font-family: 'VG5000', 'MisterPixel';
@@ -788,21 +773,6 @@ h3{
    margin-top: 10vh;
    z-index: -1;
 }
-#monday-button{
-  outline:none;
-}
-#tuesday-button{
-  outline:none;
-}
-#wednesday-button{
-  outline:none;
-}
-#thursday-button{
-  outline:none;
-}
-#friday-button{
-  outline:none;
-}
 table {
   width: 100%;
   border: 1px solid transparent;
@@ -862,11 +832,15 @@ td.show-host-name,.show-name,.host-name,.show-description{
 }
 td.show-random{
   font-family: 'VG5000', 'MisterPixel';
-  font-size: 1.3vw;
-  padding: 5px;
+  font-size: 1.4vw;
+  padding: 15px;
   width:30%;
   background-color: #d3d3d3;
   border: 1px solid none;
+}
+#squiggle{
+font-family: 'MisterPixel', 'VG5000';
+font-size: 1.6vw;
 }
 /*mobile view*/
 td.show-host-name{
@@ -1319,7 +1293,7 @@ td.show-host-name{
 td.show-random{
   font-family: 'VG5000', 'MisterPixel';
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   width:40%;
   background-color: #d3d3d3;
   padding: 7px;
@@ -1337,6 +1311,11 @@ td.show-name, .host-name, .show-description{
 #host-name{
   font-family: 'MisterPixel','VG5000';
   font-size: 20px;
+}
+#squiggle{
+font-family: 'MisterPixel', 'VG5000';
+font-size: 20px;
+font-weight: normal;
 }
 /************************ MOBILE SUBMISSION ************************/
 .body-submission #button-tab{

@@ -1250,19 +1250,19 @@ footer{
 .schedule::-webkit-scrollbar-track-piece { background: transparent;  }
 .schedule::-webkit-scrollbar-corner { background: transparent; }
 
-#monday-button:active{
+#monday-button{
   outline:none;
 }
-#tuesday-button:active{
+#tuesday-button{
   outline:none;
 }
-#wednesday-button:active{
+#wednesday-button{
   outline:none;
 }
-#thursday-button:active{
+#thursday-button{
   outline:none;
 }
-#friday-button:active{
+#friday-button{
   outline:none;
 }
 .mobile-button-tab{

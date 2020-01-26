@@ -18,8 +18,14 @@ app.set('view engine', "ejs");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 //opening a listening port
-app.listen(80);
-console.log('listening on port 80');
+// app.listen(80);
+// console.log('listening on port 80');
+
+//opening a listening port (windows dev)
+app.listen(8080);
+console.log('listening on port 8080');
+
+
 
 //~~~ USE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //use ~these~ directories when serving an html file

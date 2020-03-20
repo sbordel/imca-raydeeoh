@@ -769,15 +769,39 @@ h3{
 /************************ -- SCHEDULE-- ************************/
 
 /* BEDROOM STREAM SCHEDULE SHTUFF ************************   -------- */
-
-.bedroom-stream-title
-
-.bedroom-stream-schedule
-
-.bedroom-stream-time
-
-.bedroom-stream-show
-
+.bedroom-stream-body{
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+#bedroom-stream-title{
+  position: fixed;
+  margin-top: -2%;
+  width: 40%;
+}
+.bedroom-stream-schedule{
+  position: fixed;
+  font-size: 1.4vw;
+  padding-top: 11%;
+  line-height: 2.3vw;
+}
+#bedroom-stream-time{
+  font-family: 'VG5000', 'MisterPixel';
+  color: #0033ff;
+  white-space: none;
+}
+#bedroom-stream-show{
+  font-family: 'MisterPixel', 'VG5000';
+  color: #000000;
+}
+#bedroom-stream-logo{
+  position: fixed;
+  width: 30%;
+  margin-right: 5%;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 5%;
+  z-index: -1;
+}
 /*********/
 
 .mobile-button-tab{
@@ -1258,10 +1282,25 @@ footer{
 .body-schedule{
    overflow-y:scroll;
 }
-.header-schedule{
+/*********************** BEDROOM STREAM SHIT **************************************************************/
+#bedroom-stream-title{
+  margin-top: 5%;
+  width: 55%;
+}
+.bedroom-stream-schedule{
+  padding-top: 27%;
+  line-height: 25px;
+}
+#bedroom-stream-logo{
+visibility: hidden;
+}
+/*********************** TO CHANGE AFTER BEDROOM BLABLABLA ******************************************  ------ /
+/*.header-schedule{
   height: 220px;
   background-image: linear-gradient(to bottom , #99ffcc , #99ffcc  , #ccff33);
-}
+}*/
+
+/***********************  ********************  ******************************************  ------ /
 /* scrollbar */
 .body-schedule::-webkit-scrollbar-track { background: transparent; }
 .schedule::-webkit-scrollbar-thumb { background: transparent; }

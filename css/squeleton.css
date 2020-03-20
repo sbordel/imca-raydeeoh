@@ -1290,6 +1290,8 @@ footer{
 .bedroom-stream-schedule{
   padding-top: 27%;
   line-height: 25px;
+  font-size: 15px;
+  margin: 5px;
 }
 #bedroom-stream-logo{
 visibility: hidden;

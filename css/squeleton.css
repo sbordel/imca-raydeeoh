@@ -804,8 +804,9 @@ td{
   height: 20%;
   padding: 10px;
 }
-/***** OFFLINE - TIME SLOTS *****/
-#row1{
+/***** THEESE ARE USUALLY OFFLINE - TIME SLOTS **************************************************************************************************************/
+
+/*#row1{
 display: none;
 }
 #row2{
@@ -813,7 +814,8 @@ display: none;
 }
 #row3{
 display: none;
-}
+}/*
+
 
 /*desktop view*/
 .show-name, .host-name, .show-description{

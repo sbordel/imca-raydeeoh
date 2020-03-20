@@ -31,10 +31,11 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.body-schedule {
+.body-schedule {  /*  to CHANGE AFTER BEDROOM STREAM *****************************************  ----- */
   height: 100%;
   margin: 0;
-  background-color: #ccff33;
+/*   background-color: #ccff33;*/
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -63,11 +64,12 @@ header{
   padding-right: 50px;
   padding-left: 50px;
 }
-.header-schedule{
-  height: calc(180px + 2vw);
+.header-schedule{   /*  to UNCOMMENT AFTER BEDROOM STREAM **********************************   ------- */
+
+    /*   height: calc(180px + 2vw);
   background-image: linear-gradient(to bottom , #99ffcc , #99ffcc  , #ccff33);
   background-repeat: no-repeat;
-  z-index: 0;
+  z-index: 0;*/
 }
 .header-submission{
   height: 22%;
@@ -765,6 +767,19 @@ h3{
     opacity: 0;
   }
 /************************ -- SCHEDULE-- ************************/
+
+/* BEDROOM STREAM SCHEDULE SHTUFF ************************   -------- */
+
+.bedroom-stream-title
+
+.bedroom-stream-schedule
+
+.bedroom-stream-time
+
+.bedroom-stream-show
+
+/*********/
+
 .mobile-button-tab{
   display: none;
 }

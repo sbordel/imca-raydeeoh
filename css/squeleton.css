@@ -31,11 +31,10 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.body-schedule {  /*  to CHANGE AFTER BEDROOM STREAM *****************************************  ----- */
+.body-schedule {
   height: 100%;
   margin: 0;
-/*   background-color: #ccff33;*/
-  background-color: #FFFFFF;
+  background-color: #ccff33;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -64,12 +63,12 @@ header{
   padding-right: 50px;
   padding-left: 50px;
 }
-.header-schedule{   /*  to UNCOMMENT AFTER BEDROOM STREAM **********************************   ------- */
+.header-schedule{
 
-    /*   height: calc(180px + 2vw);
+  height: calc(180px + 2vw);
   background-image: linear-gradient(to bottom , #99ffcc , #99ffcc  , #ccff33);
   background-repeat: no-repeat;
-  z-index: 0;*/
+  z-index: 0;
 }
 .header-submission{
   height: 22%;
@@ -768,7 +767,7 @@ h3{
   }
 /************************ -- SCHEDULE-- ************************/
 
-/* BEDROOM STREAM SCHEDULE SHTUFF ************************   -------- */
+/* BEDROOM STREAM SCHEDULE SHTUFF ************************   --------
 .bedroom-stream-body{
   margin-left: 5%;
   margin-bottom: 5%;
@@ -801,8 +800,7 @@ h3{
   bottom: 0;
   margin-bottom: 5%;
   z-index: -1;
-}
-/*********/
+}*/
 
 .mobile-button-tab{
   display: none;
@@ -843,9 +841,9 @@ td{
   height: 20%;
   padding: 10px;
 }
-/***** THEESE ARE USUALLY OFFLINE - TIME SLOTS **************************************************************************************************************/
+/***** *******  TIME SLOTS   ******* ********/
 
-/*#row1{
+#row1{
 display: none;
 }
 #row2{
@@ -853,7 +851,7 @@ display: none;
 }
 #row3{
 display: none;
-}/*
+}
 
 
 /*desktop view*/
@@ -1282,7 +1280,8 @@ footer{
 .body-schedule{
    overflow-y:scroll;
 }
-/*********************** BEDROOM STREAM SHIT **************************************************************/
+/*********************** BEDROOM STREAM SHIT *********************************
+
 #bedroom-stream-title{
   margin-top: 5%;
   width: 55%;
@@ -1295,12 +1294,12 @@ footer{
 }
 #bedroom-stream-logo{
 visibility: hidden;
-}
-/*********************** TO CHANGE AFTER BEDROOM BLABLABLA ******************************************  ------ /
-/*.header-schedule{
+} ****** */
+
+.header-schedule{
   height: 220px;
   background-image: linear-gradient(to bottom , #99ffcc , #99ffcc  , #ccff33);
-}*/
+}
 
 /***********************  ********************  ******************************************  ------ /
 /* scrollbar */

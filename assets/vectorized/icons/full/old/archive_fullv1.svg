@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 280 255">
+  <defs>
+    <style>
+      .cls-1{fill:#fff}
+    </style>
+  </defs>
+  <g id="artboard_2" data-name="artboard 2">
+    <g id="archive">
+      <path d="M78 0h195v3h4v4h3v191h-3v4h-68v49h-4v4H3v-4H0V60h3v-4h4v-3h63V7h4V3h4V0Z"/>
+      <path d="M3 251h25V141h4v-3h2.9l.1-4h139v4h3v3h4v110h24V60h-3v-4h-42v54h-4v3h-3v4H56v-4h-3v-3h-4V56H7v4H3v191z" class="cls-1"/>
+      <path d="M35 141h-3v110h145V141h-3v-3H35v3zm18-85v54h3v3h97v-3h3V56H53zm71-53v50h78v3h3v4h19v-3h3V3H124zm85 195h39V88h-3v-3h-36v113z" class="cls-1"/>
+      <path d="M84 152h41v4h10v3h4v4h3v7h4v7h3v39h-3v7h-4v3h-4v4h-3v3h-11v4H85v-4H74v-3h-3v-4h-4v-3h-4v-7h-3v-39h3v-7h4v-7h3v-4h4v-3h10v-4Zm4 3v4H78v3h-4v4h-4v7h-3v7h-3v32h3v7h4v4h3v3h4v4h11v3h31v-3h11v-4h4v-3h3v-4h4v-7h3v-32h-3v-7h-3v-7h-4v-4h-4v-3h-10v-4H88Zm34 54v3h-3v3h-3v3H93v-3h-3v-3h-3v-3h-3v-7h-3v-3h-3v3h3v7h3v3h3v3h3v3h3v4h23v-4h3v-3h3v-3h3v-3h3v-7h3v-3h-3v3h-3v7m-33-32h-7v7h7v-7Zm31 0h-7v7h7v-7Zm22-74h-22V66h22v37Zm-19-3h16V69h-16v31Zm90-51h-22V12h22v37Zm-19-3h16V15h-16v31Z"/>
+    </g>
+  </g>
+</svg>

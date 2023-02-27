@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 209">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #020202;
+      }
+    </style>
+  </defs>
+  <g id="instagram">
+    <g>
+      <path d="M0,182V28.08H14V14h14V0H187V14h14v14h14V182h-14v14h-14v13H28v-13H14v-14H0ZM14,28.08V182h14v14H187v-14h14V28h-14V14H28v14l-14,.08Z"/>
+      <polygon points="72 85 59 85 59 133 72 133 72 147 86 147 86 161 134 161 134 147 148 147 148 133 162 133 162 85 148 85 148 71 134 71 134 57 86 57 86 71 72 71 72 85 86 85 86 71 134 71 134 85 148 85 148 133 134 133 134 147 86 147 86 133 72 133 72 85"/>
+      <rect class="cls-1" x="155" y="40" width="22" height="22"/>
+    </g>
+  </g>
+</svg>

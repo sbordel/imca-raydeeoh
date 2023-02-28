@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 27">
+  <g id="info">
+    <polygon points="8 27 20 27 20 23 24 23 24 19 28 19 28 8 24 8 24 4 20 4 20 0 8 0 8 4 4 4 4 8 0 8 0 19 4 19 4 23 8 23 8 19 4 19 4 8 8 8 8 4 20 4 20 8 24 8 24 19 20 19 20 23 8 23 8 27"/>
+    <path d="M16,6v4h-4V6h4Zm-4,15h4V11h-4v10Z"/>
+  </g>
+</svg>

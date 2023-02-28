@@ -1,238 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="assets/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<title> IMCA RAYDEEOH! </title>
-<link rel="stylesheet" type="text/css" href="css/squeleton.css">
-<script src="lib/xlsx.full.min.js"></script>
-<script src="lib/jquery.min.js"></script>
-<script type="text/javascript" src="js/ux.js"></script>
-<script type="text/javascript" src="js/schedule.js"></script>
-<script type="text/javascript" src="js/player.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title> IMCA RAYDEEOH! </title>
+  <link rel="stylesheet" type="text/css" href="css/squeleton.css">
+  <script src="lib/xlsx.full.min.js"></script>
+  <script src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/ux.js"></script>
+  <script type="text/javascript" src="js/schedule.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
 </head>
+
 <body class="body-about" onload="startTime()">
 
-<header class="header-about">
-<h1 id="about-page-title"><a id="about-page-link" href="https://drive.google.com/file/d/1MblDhl9tOMFPumNnQ8n4aAHu5Ufd-tOV/view?usp=sharing" target="_blank">what is IMCA RAYDEEOH?</a><span class="tooltip">click here for the imca raydeeoh handbook</span></h1>
-<a id="return-button" href="/">⤶</a>
-<img id="header-icon" src="assets/vectorized/icons/full/about_full.svg" alt="about icon">
-  <img id="second-logo" src="assets/vectorized/logo/full/imagelogo_full.svg" alt="imca raydeeoh logo">
-</header>
+  <header class="header-about">
+    <h1 id="about-page-title"><a id="about-page-link" href="#" target="_blank">what is IMCA RAYDEEOH?</a><span
+        class="tooltip">click here for the imca raydeeoh handbook</span></h1>
+    <a id="return-button" href="/">⤶</a>
+    <img id="header-icon" src="assets/icons/about_full.svg" alt="about icon">
+    <img id="second-logo" src="assets/logo/imagelogo_full.svg" alt="imca raydeeoh logo">
+  </header>
 
-<!-- modals -->
+  <!-- modals -->
   <div id="modal1">
     <h3>MISSION</h3>
-  <a class="close" href="#">&times;</a>
-  <span class="inner-modal">The purpose of this web radio is to showcase the work of students who are interested in sharing their own sound pieces, transmission artworks, podcasts, and any other forms of audio content relating to DIY, experimental or non-mainstream arts. IMCA RAYDEEOH’s live stream will be accessible on a website, along with an archive of past shows and links to the personal portfolios of the showcased artists.
-IMCA RAYDEEOH will accept material from any student, no matter their identity or level of experience, as long as their content puts forward and empowers marginalized or non-mainstream ideas or views and does not promote any violent, discriminatory or oppressive behavior (as explained in the policies section).</span></div>
+    <a class="close" href="#">&times;</a>
+    <span class="inner-modal">The purpose of this web radio is to showcase the work of students who are interested in
+      sharing their own sound pieces, transmission artworks, podcasts, and any other forms of audio content relating to
+      DIY, experimental or non-mainstream arts. IMCA RAYDEEOH’s live stream will be accessible on a website, along with
+      an archive of past shows and links to the personal portfolios of the showcased artists.
+      IMCA RAYDEEOH will accept material from any student, no matter their identity or level of experience, as long as
+      their content puts forward and empowers marginalized or non-mainstream ideas or views and does not promote any
+      violent, discriminatory or oppressive behavior (as explained in the policies section).</span>
+  </div>
 
   <div id="modal2">
     <h3>MANDATE</h3>
-  <a class="close" href="#">&times;</a>
-  <span class="inner-modal">IMCA RAYDEEOH is a web radio founded by Intermedia students at Concordia University, which is located on unceded Kanien’kehá:ka territory. IMCA RAYDEEOH is available for active participation from all students of the Fine Arts Faculty and accessible for listening to anyone with an internet connection. This project serves as a platform for artists to create and promote their work outside of the context of a campus radio station, art gallery or artist run center, while still operating within the context of the Concordia University community.</span></div>
+    <a class="close" href="#">&times;</a>
+    <span class="inner-modal">IMCA RAYDEEOH is a web radio founded by Intermedia students at Concordia University, which
+      is located on unceded Kanien’kehá:ka territory. IMCA RAYDEEOH is available for active participation from all
+      students of the Fine Arts Faculty and accessible for listening to anyone with an internet connection. This project
+      serves as a platform for artists to create and promote their work outside of the context of a campus radio
+      station, art gallery or artist run center, while still operating within the context of the Concordia University
+      community.</span>
+  </div>
 
- <div id="modal3">
-   <h3>VALUES</h3>
- <a class="close" href="#">&times;</a>
- <span class="inner-modal">
-<h4>IMCA RAYDEEOH endorses notions of</h4>
-<br>
-<b>RESPECT + ACCOUNTABILITY</b><br>IMCA RAYDEEOH does not own the content sent or aired by the artists, meaning that students retain ownership of their material. If aired, they have the right to approve or refuse the archival of their content for future reference.
-As members of IMCA RAYDEEOH we are committed to maintaining open communication with all listeners and participating artists. We welcome feedback and suggestions regarding the programming and operation of the radio. IMCA RAYDEEOH actively works toward making a positive and welcoming online space for all.
-IMCA RAYDEEOH is a project taking part at Concordia University, which is located on unceded Indigenous lands. The Kanien’kehá:ka Nation is recognized as the custodians of the lands and waters on which we gather today. Tiohtiá:ke/Montreal is historically known as a gathering place for many First Nations. Today, it is home to a diverse population of Indigenous and other peoples. We respect the continued connections with the past, present and future in our ongoing relationships with Indigenous and other peoples within the Montreal community.
-<br>
-<br>
-<b>INCLUSION + ACCESSIBILITY</b><br>The purpose of IMCA RAYDEEOH is to offer a platform for students with ideas that extend  beyond the realm of mainstream and polished sound practices and into more amateur, activist,  DIY and experimental approaches.
-It is in IMCA RAYDEEOH’s mission to render the web radio accessible for any student enrolled in Fine Arts, regardless of their identity or their level of experience with sound. We are aware of the inequality issues in the sound industry and are hoping to create a space that will counteract this problem by making this web radio accessible. We strongly encourage QTBIPOC, students with disabilities and students from any social or economic background to submit their work.
-<br>
-<br>
-We welcome any and all feedback on the accessibility of our platform.
-</span></div>
+  <div id="modal3">
+    <h3>VALUES</h3>
+    <a class="close" href="#">&times;</a>
+    <span class="inner-modal">
+      <h4>IMCA RAYDEEOH endorses notions of</h4>
+      <br>
+      <b>RESPECT + ACCOUNTABILITY</b><br>IMCA RAYDEEOH does not own the content sent or aired by the artists, meaning
+      that students retain ownership of their material. If aired, they have the right to approve or refuse the archival
+      of their content for future reference.
+      As members of IMCA RAYDEEOH we are committed to maintaining open communication with all listeners and
+      participating artists. We welcome feedback and suggestions regarding the programming and operation of the radio.
+      IMCA RAYDEEOH actively works toward making a positive and welcoming online space for all.
+      IMCA RAYDEEOH is a project taking part at Concordia University, which is located on unceded Indigenous lands. The
+      Kanien’kehá:ka Nation is recognized as the custodians of the lands and waters on which we gather today.
+      Tiohtiá:ke/Montreal is historically known as a gathering place for many First Nations. Today, it is home to a
+      diverse population of Indigenous and other peoples. We respect the continued connections with the past, present
+      and future in our ongoing relationships with Indigenous and other peoples within the Montreal community.
+      <br>
+      <br>
+      <b>INCLUSION + ACCESSIBILITY</b><br>The purpose of IMCA RAYDEEOH is to offer a platform for students with ideas
+      that extend beyond the realm of mainstream and polished sound practices and into more amateur, activist, DIY and
+      experimental approaches.
+      It is in IMCA RAYDEEOH’s mission to render the web radio accessible for any student enrolled in Fine Arts,
+      regardless of their identity or their level of experience with sound. We are aware of the inequality issues in the
+      sound industry and are hoping to create a space that will counteract this problem by making this web radio
+      accessible. We strongly encourage QTBIPOC, students with disabilities and students from any social or economic
+      background to submit their work.
+      <br>
+      <br>
+      We welcome any and all feedback on the accessibility of our platform.
+    </span>
+  </div>
 
- <div id="modal4">
-   <h3>POLICIES</h3>
- <a class="close" href="#">&times;</a>
- <span class="inner-modal">
-  While IMCA RAYDEEOH encourages any student enrolled in Fine Arts to apply with their original content, we will not accept any material that supports violent, discriminatory or oppressive behavior such as (but not limited to) racism, sexism, homophobia, transphobia, xenophobia, ableism, ageism and religion or culture discrimination.
-   <br><br>
-  IMCA RAYDEEOH will only accept original and non-commercial projects and will refuse any content that utilizes copyrighted material. This said, IMCA RAYDEEOH recognizes the importance of engaging with and making political and social commentary on mainstream media, and as such will accept works that fall within the realm of fair-dealing when it comes to remixes and mashups, parody and satire.
-   <br><br>
-  Ideas presented in our programming are solely those of the artists, and do not reflect the views or politics of IMCA RAYDEEOH. IMCA RAYDEEOH will do its best to monitor the activity of the radio, but is not in a position to vet all content before it airs. If you find any issues with some of the content aired, feel free to contact IMCA RAYDEEOH by email and the organizers will revise and mediate the situation as soon as possible.
+  <div id="modal4">
+    <h3>POLICIES</h3>
+    <a class="close" href="#">&times;</a>
+    <span class="inner-modal">
+      While IMCA RAYDEEOH encourages any student enrolled in Fine Arts to apply with their original content, we will not
+      accept any material that supports violent, discriminatory or oppressive behavior such as (but not limited to)
+      racism, sexism, homophobia, transphobia, xenophobia, ableism, ageism and religion or culture discrimination.
+      <br><br>
+      IMCA RAYDEEOH will only accept original and non-commercial projects and will refuse any content that utilizes
+      copyrighted material. This said, IMCA RAYDEEOH recognizes the importance of engaging with and making political and
+      social commentary on mainstream media, and as such will accept works that fall within the realm of fair-dealing
+      when it comes to remixes and mashups, parody and satire.
+      <br><br>
+      Ideas presented in our programming are solely those of the artists, and do not reflect the views or politics of
+      IMCA RAYDEEOH. IMCA RAYDEEOH will do its best to monitor the activity of the radio, but is not in a position to
+      vet all content before it airs. If you find any issues with some of the content aired, feel free to contact IMCA
+      RAYDEEOH by email and the organizers will revise and mediate the situation as soon as possible.
 
-</span></div>
+    </span>
+  </div>
 
-<div id="modal5">
-  <h3>CONTACT</h3>
-<a class="close" href="#">&times;</a>
-<span class="inner-modal"><br>Feel free to contact us for questions, information or feedback at <u>imcaraydeeoh@gmail.com</u> :-)
-<br><br>
-<b>★ OUR CLUB ADMINS ★</b>
-<br>
-Sam Bordeleau: Resource Officer + Graphic Designer + Front-end Web Developer
-<br>
-Alexandra O’Sullivan: Club Representative + Booking Officer + Social Media Manager
-<br>
-Matthew Halpenny: Back-end Web Developer
-<br>
-Marissa Cruz: Financial Signing Officer
-<br>
-Caro Delarrosa: Financial Signing Officer
-<br>
-Alex Pruneau: Financial Signing Officer
-<br><br>
-<div class="socialmedia-icons-bar">
-<a class="socialmedia-icons" id="facebook-icon" href="https://www.facebook.com/imcaraydeeoh/" target="_blank"><img src="assets/vectorized/icons/transparent/facebook_transparent.svg" alt="facebook icon" title="facebook icon"></a>
-<a class="socialmedia-icons" id="instagram-icon" href="https://www.instagram.com/imcaraydeeoh/" target="_blank"><img src="assets/vectorized/icons/transparent/instagram_transparent.svg" alt="instagram icon" title="instagram icon"></a>
-<a class="socialmedia-icons" id="mixcloud-icon" href="https://www.mixcloud.com/IMCARAYDEEOH/" target="_blank"><img src="assets/vectorized/icons/transparent/mixcloud_transparent.svg" alt="mixcloud icon" title="mixcloud icon"></a>
-</div>
-</span>
-</div>
+  <div id="modal5">
+    <h3>CONTACT</h3>
+    <a class="close" href="#">&times;</a>
+    <span class="inner-modal"><br>Feel free to contact us for questions, information or feedback at
+      <u>imcaraydeeoh@gmail.com</u> :-)
+      <br><br>
+      <b>★ OUR CLUB ADMINS ★</b>
+      <br>
+      Sam Bordeleau: Resource Officer + Graphic Designer + Front-end Web Developer
+      <br>
+      Alexandra O’Sullivan: Club Representative + Booking Officer + Social Media Manager
+      <br>
+      Matthew Halpenny: Back-end Web Developer
+      <br>
+      Marissa Cruz: Financial Signing Officer
+      <br>
+      Caro Delarrosa: Financial Signing Officer
+      <br>
+      Alex Pruneau: Financial Signing Officer
+      <br><br>
+      <div class="socialmedia-icons-bar">
+        <a class="socialmedia-icons" id="facebook-icon" href="https://www.facebook.com/imcaraydeeoh/"
+          target="_blank"><img src="assets/icons/facebook_transparent.svg" alt="facebook icon"
+            title="facebook icon"></a>
+        <a class="socialmedia-icons" id="instagram-icon" href="https://www.instagram.com/imcaraydeeoh/"
+          target="_blank"><img src="assets/icons/instagram_transparent.svg" alt="instagram icon"
+            title="instagram icon"></a>
+        <a class="socialmedia-icons" id="mixcloud-icon" href="https://www.mixcloud.com/IMCARAYDEEOH/"
+          target="_blank"><img src="assets/icons/mixcloud_transparent.svg" alt="mixcloud icon"
+            title="mixcloud icon"></a>
+      </div>
+    </span>
+  </div>
 
-<!-- TO ADD IN ABOUT.HTML -->
-<div id="modal7">
-  <h3>CREDITS</h3>
-<a class="close" href="#">&times;</a>
-<span class="inner-modal">
-  This project would not be possible without the support of the <b>Fine Arts Student Association</b> (FASA) and the <b>Concordia Council Of Student Life</b> (CCSL).
-  <br><br>
-  The IMCA RAYDEEOH team would also like to thank IMCA faculty members Amanda Dawn Christie and Benoît Chaussé whom have offered resources, knowledge and immense support since the embryonic stage of this project.
-  <br><br>
-  All the fonts used on this website are open source creations from the VTF Type Foundry (velvetyne.fr). Mister Pixel is a font by Christophe Badani and is licensed under Velvetyne Black Licence. VG5000 is a font by Justin Bihan and is licensed under the SIL Open Font License, Version 1.1.
-  <br><br>
-  Mister Pixel, VTF Mister Pixel
-  <br>
-  Copyright © 2003-2011, Christophe Badani (badani@typophage.com)
-  <br><br>
-  VG5000
-  <br>
-  Copyright © 2015-2018, Justin Bihan (justin.bihan@gmail.com)
-</span></div>
+  <!-- TO ADD IN ABOUT.HTML -->
+  <div id="modal7">
+    <h3>CREDITS</h3>
+    <a class="close" href="#">&times;</a>
+    <span class="inner-modal">
+      This project would not be possible without the support of the <b>Fine Arts Student Association</b> (FASA) and the
+      <b>Concordia Council Of Student Life</b> (CCSL).
+      <br><br>
+      The IMCA RAYDEEOH team would also like to thank IMCA faculty members Amanda Dawn Christie and Benoît Chaussé whom
+      have offered resources, knowledge and immense support since the embryonic stage of this project.
+      <br><br>
+      All the fonts used on this website are open source creations from the VTF Type Foundry (velvetyne.fr). Mister
+      Pixel is a font by Christophe Badani and is licensed under Velvetyne Black Licence. VG5000 is a font by Justin
+      Bihan and is licensed under the SIL Open Font License, Version 1.1.
+      <br><br>
+      Mister Pixel, VTF Mister Pixel
+      <br>
+      Copyright © 2003-2011, Christophe Badani (badani@typophage.com)
+      <br><br>
+      VG5000
+      <br>
+      Copyright © 2015-2018, Justin Bihan (justin.bihan@gmail.com)
+    </span>
+  </div>
 
-<!-- icon navigation section -->
-<div class="sub-navigation-box-2">
-<div class="sub-icon-box" id="mission-icon-box">
-<a href="#modal1" id="mission-icon" >
-  <svg class="about-icons" alt="mission icon" title="mission icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="mission_icon" data-name="mission_icon" viewBox="0 0 232 289">
-    <defs>
-      <style>
-        .cls-1{fill:#cf3}
-      </style>
-    </defs>
-    <g id="mission">
-      <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z"/>
-      <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1"/>
-      <path d="M10 9h147v76h66v194H10V9z" class="cls-1"/>
-      <image xlink:href="data:image/png;base64,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" id="mission-2" width="88" height="92" data-name="mission" transform="matrix(2.1 0 0 2.1 24 76)"/>
-    </g>
-  </svg><h2 class="about-nav">mission</h2></a></div>
+  <!-- icon navigation section -->
+  <div class="sub-navigation-box-2">
+    <div class="sub-icon-box" id="mission-icon-box">
+      <a href="#modal1" id="mission-icon">
+        <svg class="about-icons" alt="mission icon" title="mission icon" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" id="mission_icon" data-name="mission_icon" viewBox="0 0 232 289">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #cf3
+              }
+            </style>
+          </defs>
+          <g id="mission">
+            <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z" />
+            <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1" />
+            <path d="M10 9h147v76h66v194H10V9z" class="cls-1" />
+            <image
+              xlink:href="data:image/png;base64,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"
+              id="mission-2" width="88" height="92" data-name="mission" transform="matrix(2.1 0 0 2.1 24 76)" />
+          </g>
+        </svg>
+        <h2 class="about-nav">mission</h2>
+      </a>
+    </div>
 
-<div class="sub-icon-box" id="mandate-icon-box">
-<a href="#modal2" id="mandate-icon" >
-<svg class="about-icons"  alt="mandate icon" alt="title icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="mandate_icon" data-name="mandate_icon" viewBox="0 0 232 289">
-    <defs>
-      <style>
-        .cls-1{fill:#cf3}
-      </style>
-    </defs>
-    <g id="mandate">
-      <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z"/>
-      <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1"/>
-      <path d="M10 9h147v76h66v194H10V9z" class="cls-1"/>
-      <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABxCAYAAAC+9A/0AAAACXBIWXMAAAWwAAAFsAFAmUYlAAAGZElEQVR4nO2cTYgcRRTHX/V8ZCbssmTdmN2NiChqQtxkFY3iqiDmIOrBqycRRCSHBBKCARXxkIuCB29eAiLk5FXw5M2vgF8IGlGzH0ajLglRd3dmZ3b6eZiPrarp6o/q7tfdO+93mtddr3vm369f13S9KtFsNvbCCFGr1VfJTzpKImf1W50sTjpqsMgElLP+Alkjp5C08jVHMnTFrdXqq2nlbBaZABaZgJHPyTpp5GgWWUIXtdls7E1CaE4XBLDIBHC6CCCJHM0i+5BUjuZ0QQCLTACni4jY5GgWOQK2OZrTBQEsMgGcLmISJkezyDEIm6M5XRDAkQzpj2IHinz8hedRtr+4+NXgMyKCEEJpj6g0T5ynnnxCsc+9864wNA0FRR1GrHQhC5y2uEUmssgmMfWIjuof+vyuG8s/CyKL3BfTVqywF8Po7xTvWS2C/hq2t9q7ALEMQmwBAGy125NBB0WAqgBoAXRFlXN30MXR2//915WPAbEGQjQBAB68f+Gw3H7xt+VZ2a7V6ldNx86iTKtWq6+G6130BPZCFrT/uW9vu5uj19Nfb98T2NM/wgWkLjbsX9Ro9x7i0EWRBdXFHXYfFiGKPyDWhvylCxI3FaVFNJF7EY0AVZuTDSLO0n8Q0QXryQSmi0q5sqltMua8lDgiG88cO6YofOmHb/7Q2ucunIv3qC4gLDIBLDIFozSdgRq7LhxjBYtMAItMAItMAItMAItMAItMQOSB1NdOn1TeHXQ6HWW/iwiALoDoXr/HHn8E0HUHL9uffva53L1bSJt0Ilk4mjnaNwzpry/i+FwSWIlsPb43ohEdOSeXSiXF1gXXZTx54qxiv3rqhOJwaO6A7/mi1nXo7SuVimLffegexZ6bfyj1Z0TioRU3JbhuzJKBHI6aJC5y3JTgODFLBgzjfFk+D0YmSWb5PAisu4jLyvLP38n2hfPnDwNsD+UvLV+xO7CLAF5Rr6WbzZY6AH55cQXk87tahI+Pj6mH0/YvLDzQ9e/1/V8/97bx1utrm/7l9RjGB4gwfG/K0SmlFR1jWVqEOyN9keXCFIPgvsQUMy5J1HLQJiqfSqCdTOo5OW80Ghsz/c8IUP3z96XP5f3/3rg+A9DtSjqOgHJFrcO5eXr2PcXed8vLpnPR5eQco5SFISr/WuJ2JZVjJXakgmAsEROiHcrfor89ciIHFjUG+Vv0t0duYk69vluv5Zv1bJggIxfJWcAiE8AiE1D4nOwiOvIY4rXVq2/J+5d+vXRatjfW1hR//UEWtfcwcdOUYs/f9/BQ329HRLIsFKI75tM0kDTeRxdeZD3yhHDWDE1Dkca8k8KLXIRxw6GcvNXpKH8vP/3ko1id97hsaXUdFz/7EgC23wcfnVOmlMB/62og75+ZVuzd9ToAdOtDHC1qvbaZ6LfdPzsd2Db3YYA4/CDymjhv9vfe7iWm1zbXcICwFwOgACILoTzUetvC/8C4KVYW0yR44DHifQVahHAyHY2OEr0yQzm5ubE23/tYB4DGK2feMDr73bb9fX51E2H8dVHvuP02xb7w4QfKQMBdB47UZfunxcvG70+FXyQ3gpz91rsIsxZGWP8wIGIpuFU2kKx3EVVwP0zFL0KIjueOHGC93oUtcf2THLEgg+fxpQfP4yOERSaARSaARSaARSaARSaARSaARSaARSaARSaARSYg87qLTqejXOgrK7/8CADgum7VcZzW5mbzVnl/yXEG69QhYnlyat8pef/4xOT7vZ2D9UWN+LXp7RPCUca/yqVSqOpPmdxEMgIo74MdxxkM4JreFQtJoKF6C1k8j+UvA9uox46lU25EFgDK+2DXdQd1xPK7YjQI5ltvEVXw4WPHmgSYG5F15EiW6UevSexA+mLa+lsQ+USt1uaEbL959swN2XZdV6lfWF29pvh//e33ij21Z1Kz9yh2pVwGxO1RZ0RQZlCtbawrczha7bZix6Wqzc0Gi7VAU4lk21FdEzldsTc0uU0XOwnb9S6G7qGI/nHcPauK8oxV8hfSTCG9Vq2k3dsHD96p2C8df1Gx7z366BgilvsPtEqlum7znfJM8utdWPiIoD8NBSf59S4M200pwrorViDIHnymeoudHsUAFjm5Wt31j7ap4B2s9OEuHAEsMgEsMgEsMgEsMgEsMgEsMgEsMgEsMgEsMgFlAJ7SwOwA/gc5pkH90Fx9RwAAAABJRU5ErkJggg==" id="mandate-2" width="88" height="112" data-name="mandate" transform="matrix(1.95 0 0 1.95 29 52)"/>
-    </g>
-  </svg>
-  <h2 class="about-nav">mandate</h2></a></div>
+    <div class="sub-icon-box" id="mandate-icon-box">
+      <a href="#modal2" id="mandate-icon">
+        <svg class="about-icons" alt="mandate icon" alt="title icon" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" id="mandate_icon" data-name="mandate_icon" viewBox="0 0 232 289">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #cf3
+              }
+            </style>
+          </defs>
+          <g id="mandate">
+            <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z" />
+            <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1" />
+            <path d="M10 9h147v76h66v194H10V9z" class="cls-1" />
+            <image
+              xlink:href="data:image/png;base64,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"
+              id="mandate-2" width="88" height="112" data-name="mandate" transform="matrix(1.95 0 0 1.95 29 52)" />
+          </g>
+        </svg>
+        <h2 class="about-nav">mandate</h2>
+      </a>
+    </div>
 
-<div class="sub-icon-box" id="values-icon-box">
-<a href="#modal3" id="values-icon">
-<svg class="about-icons" id="values-icon-svg" alt="values icon" title="valuesicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="values_icon" data-name="values_icon" viewBox="0 0 232 289.4">
-  <defs>
-    <style>
-      .cls-1{fill:#cf3}
-    </style>
-  </defs>
-  <g id="values">
-    <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z"/>
-    <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1"/>
-    <path d="M10 9h147v76h66v194H10V9z" class="cls-1"/>
-    <image xlink:href="data:image/png;base64,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" id="values-2" width="88" height="112" data-name="values" transform="matrix(2.41 0 0 2.29 7 33)"/>
-  </g>
-</svg>
-<h2 class="about-nav">values</h2></a></div>
+    <div class="sub-icon-box" id="values-icon-box">
+      <a href="#modal3" id="values-icon">
+        <svg class="about-icons" id="values-icon-svg" alt="values icon" title="valuesicon"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="values_icon"
+          data-name="values_icon" viewBox="0 0 232 289.4">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #cf3
+              }
+            </style>
+          </defs>
+          <g id="values">
+            <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z" />
+            <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1" />
+            <path d="M10 9h147v76h66v194H10V9z" class="cls-1" />
+            <image
+              xlink:href="data:image/png;base64,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"
+              id="values-2" width="88" height="112" data-name="values" transform="matrix(2.41 0 0 2.29 7 33)" />
+          </g>
+        </svg>
+        <h2 class="about-nav">values</h2>
+      </a>
+    </div>
 
-<div class="sub-icon-box" id="policies-icon-box">
-<a href="#modal4" id="policies-icon">
-<svg class="about-icons" alt="policies icon" title="policies icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="policies_icon" data-name="policies_icon" viewBox="0 0 232 289">
-  <defs>
-    <style>
-      .cls-1{fill:#cf3}
-    </style>
-  </defs>
-  <g id="policies">
-    <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z"/>
-    <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1"/>
-    <path d="M10 9h147v76h66v194H10V9z" class="cls-1"/>
-    <image xlink:href="data:image/png;base64,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" id="policies-2" width="88" height="112" data-name="policies" transform="matrix(1.97 0 0 1.97 33 58)"/>
-  </g>
-</svg><h2 class="about-nav">policies</h2></a></div>
+    <div class="sub-icon-box" id="policies-icon-box">
+      <a href="#modal4" id="policies-icon">
+        <svg class="about-icons" alt="policies icon" title="policies icon" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" id="policies_icon" data-name="policies_icon" viewBox="0 0 232 289">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #cf3
+              }
+            </style>
+          </defs>
+          <g id="policies">
+            <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z" />
+            <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1" />
+            <path d="M10 9h147v76h66v194H10V9z" class="cls-1" />
+            <image
+              xlink:href="data:image/png;base64,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"
+              id="policies-2" width="88" height="112" data-name="policies" transform="matrix(1.97 0 0 1.97 33 58)" />
+          </g>
+        </svg>
+        <h2 class="about-nav">policies</h2>
+      </a>
+    </div>
 
-<div class="sub-icon-box" id="contact-icon-box">
-<a href="#modal5" id="contact-icon">
- <svg class="about-icons" alt="contact icon" title="contact icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="contact_icon" data-name="contact_icon" viewBox="0 0 232 289">
-  <defs>
-    <style>
-      .cls-1{fill:#cf3}
-    </style>
-  </defs>
-  <g id="contact">
-    <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z"/>
-    <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1"/>
-    <path d="M10 9h147v76h66v194H10V9z" class="cls-1"/>
-    <image xlink:href="data:image/png;base64,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" id="contact_us" width="72" height="76" data-name="contact us" transform="matrix(2.12 0 0 2.12 40 100)"/>
-  </g>
-</svg><h2 class="about-nav">contact us</h2></a></div>
+    <div class="sub-icon-box" id="contact-icon-box">
+      <a href="#modal5" id="contact-icon">
+        <svg class="about-icons" alt="contact icon" title="contact icon" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" id="contact_icon" data-name="contact_icon" viewBox="0 0 232 289">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #cf3
+              }
+            </style>
+          </defs>
+          <g id="contact">
+            <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z" />
+            <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1" />
+            <path d="M10 9h147v76h66v194H10V9z" class="cls-1" />
+            <image
+              xlink:href="data:image/png;base64,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"
+              id="contact_us" width="72" height="76" data-name="contact us" transform="matrix(2.12 0 0 2.12 40 100)" />
+          </g>
+        </svg>
+        <h2 class="about-nav">contact us</h2>
+      </a>
+    </div>
 
-<div class="sub-icon-box" id="credits-icon-box">
-<a href="#modal7" id="credits-icon">
-<svg class="about-icons" alt="credits icon" title="credits icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="credits_icon" data-name="credits_icon" viewBox="0 0 232 289">
-  <defs>
-    <style>
-      .cls-1{fill:#cf3}
-    </style>
-  </defs>
-  <g id="credits">
-    <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z"/>
-    <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1"/>
-    <path d="M10 9h147v76h66v194H10V9z" class="cls-1"/>
-    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABACAYAAACjgtGkAAAACXBIWXMAAASdAAAEnQF8NGuhAAACmUlEQVR4nO2aPYxMURTHZ9b6n0Q0CpEoZFVEoSCrU4iOimyrwvY+IlGqfCQE0QgRX9sqhEQjEiESFYlCK6LTiOqe+GqQM799O8/z3swsOb/uf+a+d+78c+6Z9+7cfq8hJu1F6B30pyiK+/umOSbJ1KQnsNxIQ0AaAvp1A0y6jtCXmkvWQG+CvhlFcb9YN4dhmLQVIc7vA/Rn5P8WdVYISENAGgIW9RCTniD0BvpRFMX94bAEJt1FiM8lH3G/8zX3247QDejv0F+hDyLfq6izQkAaAtIQ0DdpI2LPoOejqOsZdZh0G6EduP9mjGdP24Lx62ry8d3rOK7fFXVWCEhDQBoCqnrI8yiK+/pRTsCkUwithh7Ybynul1vmu4rQ/SiyQkAaAtIQ0DdpBrGnURT3DUtdbNIU9xPaYtJp5D/Z5f0r8j2IOisEpCGglSFdL5flQN8kmnIUeuA5pLjz838akx5HnUsGpCEgDQF9k37vqxZ37kf2TDqBEPcv5kY0t7/i1/ep+i4/P+f+yJEoskJAGgLSEDC91FoL8L/RVVGYNPA/SnE/1sXEuqKiZ+yHXhFFVgiYnvQEuuYPKn4o/50hFaxsMrj2fAipWJOHoiju+5rec5SY9BKhS1EU94Wos4eANASkIaBxDyEVPWV3FOPePzFpHqEDURT3ncOuzwoBaQhIQ0DrBzOeFzGpB/0W4wfOf7TFpNcIvUC+oT2DZIWANASM/V3GpIGf4eJ+oeH1Z7qd0SCdG1LRU3j2fVvLFDyvcg75F3otyCUD0hCQhoDW7zJNMekOQrNRVJxTvYXxazF+T3ezywpZRBoC0hAw9h5CTLqH0Cz02SiK+5VRzicrBKQhIA0BE+8hxKRrURf3w+PMnxUC0hCQhoAfZVetAeeu7DEAAAAASUVORK5CYII=" id="credits-2" width="68" height="64" data-name="credits" transform="matrix(2.38 0 0 2.38 36 102)"/>
-  </g>
-</svg><h2 class="about-nav">credits</h2></a></div>
+    <div class="sub-icon-box" id="credits-icon-box">
+      <a href="#modal7" id="credits-icon">
+        <svg class="about-icons" alt="credits icon" title="credits icon" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" id="credits_icon" data-name="credits_icon" viewBox="0 0 232 289">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #cf3
+              }
+            </style>
+          </defs>
+          <g id="credits">
+            <path d="M166 0v10h9v9h10v9h9v10h9v10h10v9h9v9h10v223H0V0h166z" />
+            <path d="M166 19h9v10h10v9h9v10h9v9h10v9h9v10h-56V19z" class="cls-1" />
+            <path d="M10 9h147v76h66v194H10V9z" class="cls-1" />
+            <image
+              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABACAYAAACjgtGkAAAACXBIWXMAAASdAAAEnQF8NGuhAAACmUlEQVR4nO2aPYxMURTHZ9b6n0Q0CpEoZFVEoSCrU4iOimyrwvY+IlGqfCQE0QgRX9sqhEQjEiESFYlCK6LTiOqe+GqQM799O8/z3swsOb/uf+a+d+78c+6Z9+7cfq8hJu1F6B30pyiK+/umOSbJ1KQnsNxIQ0AaAvp1A0y6jtCXmkvWQG+CvhlFcb9YN4dhmLQVIc7vA/Rn5P8WdVYISENAGgIW9RCTniD0BvpRFMX94bAEJt1FiM8lH3G/8zX3247QDejv0F+hDyLfq6izQkAaAtIQ0DdpI2LPoOejqOsZdZh0G6EduP9mjGdP24Lx62ry8d3rOK7fFXVWCEhDQBoCqnrI8yiK+/pRTsCkUwithh7Ybynul1vmu4rQ/SiyQkAaAtIQ0DdpBrGnURT3DUtdbNIU9xPaYtJp5D/Z5f0r8j2IOisEpCGglSFdL5flQN8kmnIUeuA5pLjz838akx5HnUsGpCEgDQF9k37vqxZ37kf2TDqBEPcv5kY0t7/i1/ep+i4/P+f+yJEoskJAGgLSEDC91FoL8L/RVVGYNPA/SnE/1sXEuqKiZ+yHXhFFVgiYnvQEuuYPKn4o/50hFaxsMrj2fAipWJOHoiju+5rec5SY9BKhS1EU94Wos4eANASkIaBxDyEVPWV3FOPePzFpHqEDURT3ncOuzwoBaQhIQ0DrBzOeFzGpB/0W4wfOf7TFpNcIvUC+oT2DZIWANASM/V3GpIGf4eJ+oeH1Z7qd0SCdG1LRU3j2fVvLFDyvcg75F3otyCUD0hCQhoDW7zJNMekOQrNRVJxTvYXxazF+T3ezywpZRBoC0hAw9h5CTLqH0Cz02SiK+5VRzicrBKQhIA0BE+8hxKRrURf3w+PMnxUC0hCQhoAfZVetAeeu7DEAAAAASUVORK5CYII="
+              id="credits-2" width="68" height="64" data-name="credits" transform="matrix(2.38 0 0 2.38 36 102)" />
+          </g>
+        </svg>
+        <h2 class="about-nav">credits</h2>
+      </a>
+    </div>
 
 
-<!-- PLAYER -->
-<div class="player-container" id="main-player"><div>
-	<a href="javascript:void(0)" onclick="window.open('player',
-	'newWin','resizable=no,width=440,height=400')"><input id="volumeon-icon" type="image" src="assets/audio_player_files/playbutton.png"></a>
-<p id="player-text"></p><div id="clock"></div>
-</div>
+    <!-- PLAYER -->
+    <div class="player-container" id="main-player">
+      <div>
+        <a href="javascript:void(0)" onclick="window.open('player.html',
+	'newWin','resizable=no,width=440,height=400')"><input id="volumeon-icon" type="image"
+            src="assets/icons/audio_player/play.svg"></a>
+        <p id="player-text"></p>
+        <div id="clock"></div>
+      </div>
 
 </body>
+
 </html>

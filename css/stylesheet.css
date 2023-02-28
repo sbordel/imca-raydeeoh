@@ -184,149 +184,71 @@
   ::-webkit-scrollbar-corner { background: transparent; }
   
   /************************ PLAYER ************************/
-  /* main player */
+  /* footer-player */
   .player-container#main-player{
-     position:fixed;
-     text-align:center;
-     bottom:0;
-     left:0;
-     width:100%;
-     background-color:#000000;
-     height: 4%;
-     padding:5px;
-     padding-bottom:2.5%;
-     overflow-y: visible;
-  }
-  p#player-text{
-    font-family: 'MisterPixel', 'VG5000';
-    font-size: 1.25vw;
-    text-transform: uppercase;
-    font-weight: lighter;
-    color: #ccff33;
-    padding: 0.5%;
-    max-width: 80%;
-    text-align: center;
-    margin: 0;
-    -moz-animation: player-text 5s linear infinite alternate;
-    -webkit-animation: player-text 5s linear infinite alternate;
-    animation: player-text 5s linear infinite alternate;
-  }
-  #player-text{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    position: relative;
+    position:fixed;
+    text-align:center;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:#000000;
+    height: 4%;
+    padding: 5px;
+    overflow-y: visible;
+    border: 1px red solid;
+ } 
+  /* external player */
+  .body-player #player-text {
+    text-align:center;
+    color: blue;
+    background-color: rgba(255, 255, 255, 0.856);
+    text-decoration: none;
   }
   .external-player-container#main-player{
     position:fixed;
     text-align:center;
     background: #ffffff;
-    width:100%;
-    max-height:15%;
-    padding:5px;
-    padding-top: 10px;
-    margin-bottom: 5%;
-    top: 0;
-    left:0;
     overflow-y: scroll;
     overflow-x: hidden;
   }
-  p#external-player-text{
+  /* main player */
+  p#player-text {
     font-family: 'MisterPixel', 'VG5000';
-    font-size: 3vw;
-    font-weight: lighter;
+    font-size: 16px;
     text-transform: uppercase;
-    color: #0000ff;
-    background-color: #ffffff;
+    font-weight: lighter;
+    color: #ccff33;
     padding: 0.5%;
-    padding-right: 5%;
-    margin-right: 5%;
-    margin-left: 9%;
     text-align: center;
-    -moz-animation: external-player-text 5s linear infinite alternate;
-    -webkit-animation: external-player-text 5s linear infinite alternate;
-    animation: external-player-text 5s linear infinite alternate;
+    text-decoration: none;
+    -moz-animation: player-text 5s linear infinite alternate;
+    -webkit-animation: player-text 5s linear infinite alternate;
+    animation: player-text 5s linear infinite alternate;
   }
-  #external-player-text{
-    display: block;
-    position: relative;
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  input[type="image"]{
+  /* p#external-player-text{
+    font-family: 'MisterPixel', 'VG5000';
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #0000ff;
+  }  */
+
+  /* input[type="image"]{
    float:left;
    height:1%;
-  }
-  #volumeon-icon{
-    float:left;
-    width: 2%;
-    padding: 0.1%;
-    outline: none;
-    margin-left: 1%;
-    margin-top: 2px;
-  }
-  #volumeoff-icon{
-    display: none;
-    width: 2%;
-    padding: 0.1%;
-    outline: none;
-  }
-  #external-volume-icon{
+  } */
+  #external-volume-icon {
     position: fixed;
+    width: 30px;
     bottom: 0;
     left:0;
-    width: 25px;
-    height: 25px;
-    margin: 2%;
+    padding: 0 0 10px 10px;
     z-index: 1;
     outline: none;
   }
-  
-  /* secondary player (in-page player for about, schedule and submission pages) */
-  .player-container#secondary-player{
-   position:fixed;
-   text-align:left;
-   bottom:0;
-   left:0;
-   width:100%;
-   background-color: none;
-   height: 4%;
-   padding:5px;
-   padding-bottom:2%;
-   margin-bottom: 0.1%;
-   overflow-y: visible;
-  }
-  #sec-volumeon-icon{
-    float:left;
-    width: 2.1%;
-    padding: 0.1%;
-    margin-left: 0.25%;
-  }
-  #sec-info-icon{
-    float:left;
-    width: 2.1%;
-    padding: 0.1%;
-  }
-  #info-button .tooltip {
-    visibility: hidden;
-    background-color: #000000;
-    color: #ccff33;
-    border: 0.5px black solid;
-    width:20%;
-    height: 80px;
-    padding: 5px 0;
-    padding-top: 1%;
+  #external-player-logo {
+    margin: 20px;
     text-align: center;
-    /* tool tip position */
-    position: absolute;
-    z-index: 1;
-    top: -50px;
-    left: 6%;
-  }
-  #info-button:hover .tooltip {
-    visibility: visible;
   }
   /* player-text */
   @-moz-keyframes player-text {

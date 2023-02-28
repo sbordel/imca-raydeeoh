@@ -1,121 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="assets/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<title> IMCA RAYDEEOH! player </title>
-<link rel="stylesheet" type="text/css" href="css/squeleton.css">
-<script src="lib/xlsx.full.min.js"></script>
-<script src="lib/jquery.min.js"></script>
-<script type="text/javascript" src="js/ux.js"></script>
-<script type="text/javascript" src="js/schedule.js"></script>
-<script type="text/javascript" src="js/stream.js"></script>
-<script type="text/javascript" src="js/player.js"></script>
-<style>
-.player-container#main-player {
-  position: fixed;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent;
-  height: 8%;
-  padding: 5px;
-  padding-bottom: 2.5%;
-  overflow-y: visible;
-}
-
-/* external player */
-.body-player p#player-text {
-  color: blue;
-  text-decoration: none;
-}
-
-p#player-text{
-  font-family: 'MisterPixel', 'VG5000';
-  font-size: 3.25vw;
-  text-transform: uppercase;
-  font-weight: lighter;
-  color: #ccff33;
-  padding: 0.5%;
-  max-width: 80%;
-  text-align: center;
-  text-decoration: none;
-  margin: 0;
-  bottom: 0px;
-  -moz-animation: player-text 5s linear infinite alternate;
-  -webkit-animation: player-text 5s linear infinite alternate;
-  animation: player-text 5s linear infinite alternate;
-}
-
-
-#external-volume-icon {
-  position: fixed;
-  bottom: 2%;
-  left: 2%;
-  width: 4%;
-  max-height: 4%;
-  margin: 0%;
-  z-index: 1;
-  outline: none;
-}
-
-#external-player-logo{
-  width:85%;
-  max-height:80%;
-  top:0px;
-  left:5%;
-  position: fixed;
-  padding:0;
-  margin:0;
-}
-
-.body-player{
-  top:0;
-  left:0;
-  position: fixed;
-}
-
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title> IMCA RAYDEEOH! player </title>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <script src="lib/xlsx.full.min.js"></script>
+  <script src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/ux.js"></script>
+  <script type="text/javascript" src="js/schedule.js"></script>
+  <!-- <script type="text/javascript" src="js/stream.js"></script> -->
+  <script type="text/javascript" src="js/player.js"></script>
 </head>
+
 <body class="body-player" onload="startTime()">
   <div id="clock"></div>
-  <div class="external-player" style="text-align: center;"><img id="external-player-logo" alt="imca raydeeoh logo" title="imca raydeeoh logo" src="assets/vectorized/logo/full/splayer.svg"></div>
 
-
-  <!-- 
-  <a href="#void"><input id="external-volume-icon" type="image" src="assets/audio_player_files/volumeoffbutton-2.png" onclick ="play()"></a>
-
-<div class="external-player-container" id="main-player"> -->
-  <!--<a id="volumeoff-button" href="#void"><input type="image" src="assets/audio_player_files/volumeoffbutton.png" id="volumeoff-icon">-->
-<!-- <p id="external-player-text"></p>
-  </div> -->
+  <div class="external-player" style="text-align: center;"><img id="external-player-logo" alt="imca raydeeoh logo"
+      title="imca raydeeoh logo" src="assets/logo/playerlogo.svg"></div>
 
   <!-- MAIN PLAYER -->
-<div class="player-container" id="main-player"><div>
-	<a href="#void" id=svgBox><image id="external-volume-icon" type="image" src="assets/audio_player_files/volumeoffbutton-2.svg" onclick ="play()"></a>
-<p id="player-text" ></p>
-</div>
-<script>
-  
-</script>
+  <div class="player-container" id="main-player">
+    <div>
+      <a href="#void">
+        <image id="external-volume-icon" type="image" src="assets/icons/audio_player/volume-off_negative.svg">
+      </a>
+      <p id="player-text"></p>
+    </div>
 </body>
+
 </html>
